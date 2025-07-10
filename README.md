@@ -18,28 +18,6 @@ Mathematical foundations for consciousness studies arise from this framework. It
 
 ---
 
-## References
-
-Please see [`references.bib`](references.bib) for the epistemology upon which this work stands.
-
-## License
-
-Modified Unlicense:
-
-This is free and unencumbered information released into the public domain.
-
-Scope: "information" as used here means the (1) mathematical frameworks/structures, (2) equations, (3) algorithms, and/or (4) descriptions contained in this repository.
-
-Anyone is free to copy, modify, publish, use, compile, sell, or distribute this information, for any purpose, commercial or non-commercial, and by any means.
-
-In jurisdictions that recognize copyright laws, the author or authors of this information dedicate any and all copyright interest in the information to the public domain. We make this dedication for the benefit of humanity at large. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights of exclusivity to this information under copyright law.
-
-THE INFORMATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE INFORMATION OR THE USE OR OTHER DEALINGS IN THE INFORMATION.
-
-For more information, please refer to <https://unlicense.org>
-
----
-
 ## Building the Document
 
 This repository contains the full source for the Recurgent Field Theory manuscript in LaTeX. To compile the PDF from source, you will need:
@@ -59,3 +37,25 @@ A build script is provided to automate the compilation process. From the root of
 ```
 
 The final output will be `manuscript/recurgent_field_theory.pdf`.
+
+---
+
+## References
+
+Please see [`references.bib`](references.bib) for the epistemology upon which this work stands.
+
+## License
+
+Modified Unlicense:
+
+This is free and unencumbered information released into the public domain.
+
+Scope: "information" as used here means the (1) mathematical frameworks/structures, (2) equations, (3) algorithms, and/or (4) descriptions contained in this repository.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this information, for any purpose, commercial or non-commercial, and by any means.
+
+In jurisdictions that recognize copyright laws, the author or authors of this information dedicate any and all copyright interest in the information to the public domain. We make this dedication for the benefit of humanity at large. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights of exclusivity to this information under copyright law.
+
+THE INFORMATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE INFORMATION OR THE USE OR OTHER DEALINGS IN THE INFORMATION.
+
+For more information, please refer to <https://unlicense.org>
