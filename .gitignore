@@ -1,0 +1,13 @@
+.env
+.DS_Store
+.cursor/
+
+*.aux
+*.bbl
+*.blg
+*.fls
+*.log
+*.out
+*.toc
+*.bcf
+*.xml
