@@ -1,6 +1,7 @@
 .env
 .DS_Store
 .cursor/
+private/
 
 *.aux
 *.bbl
