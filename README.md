@@ -44,7 +44,7 @@ For more information, please refer to <https://unlicense.org>
 
 This repository contains the full source for the Recurgent Field Theory manuscript in LaTeX. To compile the PDF from source, you will need:
 
-- LaTeX: You will need a full LaTeX installation.
+- LaTeX:
   - macOS: [MacTeX](https://www.tug.org/mactex/)
   - Windows: [MiKTeX](https://miktex.org/)
   - Linux: TeX Live (usually available via your package manager, e.g., `sudo apt-get install texlive-full`)
