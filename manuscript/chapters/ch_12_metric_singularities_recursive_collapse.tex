@@ -1,0 +1,102 @@
+\chapter{Metric Singularities and Recursive Collapse}
+
+\section{Overview}
+
+In some regions of semantic space, recursive density can become so extreme that the geometric fabric of meaning itself breaks down. The theory identifies these pathological points as metric singularities; the metric tensor becomes degenerate and the ordinary laws of semantic propagation fail. This draws inspiration from the singularity theorems of general relativity, predictive of the formation of spacetime singularities under gravitational collapse \autocite{Penrose1965}. The Liar Paradox ("This statement is false") is a classic example, collapsing logical reasoning into an irresolvable loop. This chapter classifies the types of singularities that can arise in semantic fields, from attractor collapse to semantic event horizons, making them analogous to black holes \autocite{Hawking1974}. It also details the regularization mechanisms required to keep the theory well-posed and the computational techniques needed to handle these structures in simulation.
+
+\section{Classification of Semantic Singularities}
+
+Three distinct types of semantic singularities emerge in recurgent field theory:
+
+Attractor Collapse Singularities occur when recursive depth \(D(p, t)\) exceeds a critical threshold \(D_{\text{crit}}\) while the humility operator \(\mathcal{H}[R]\) falls below minimal eigenvalue \(\lambda_{\text{min}}\):
+
+\begin{equation}
+\lim_{t \to t_c} \det(g_{ij}(p, t)) = 0 \quad \text{where} \quad D(p, t) > D_{\text{crit}},\ \mathcal{H}[R] < \lambda_{\text{min}}
+\end{equation}
+
+These correspond to semantic attractors collapsing under excessive recursive pressure.
+
+Bifurcation Singularities appear at topological transitions where the metric tensor rank changes discontinuously at critical time \(t_c\):
+
+\begin{equation}
+\operatorname{rank}(g_{ij}(p, t)) \ \text{changes at} \ t = t_c \quad \text{where} \quad \Theta(p, t_c) = \delta
+\end{equation}
+
+Here \(\Theta\) denotes the topological order parameter and \(\delta\) the critical bifurcation value.
+
+Semantic Event Horizons form in regions of extreme semantic mass where the temporal metric component vanishes asymptotically:
+
+\begin{equation}
+g_{00}(p, t) \to 0 \quad \text{as} \quad r \to r_s = 2G_s M(p, t)
+\end{equation}
+
+The geodesic distance \(r\) from the singularity center defines a semantic event horizon at \(r_s\), beyond which coherence cannot escape.
+
+\subsection{Regularization of Singular Structures}
+
+Several regularization mechanisms preserve field equation well-posedness and computational tractability:
+
+Metric Renormalization adds a local isotropic term:
+
+\begin{equation}
+g_{ij}^{\text{reg}}(p, t) = g_{ij}(p, t) + \epsilon(p, t) \cdot \delta_{ij}
+\end{equation}
+
+where
+
+\begin{equation}
+\epsilon(p, t) = \epsilon_0 \exp\left[-\alpha \cdot \det(g_{ij}(p, t))\right]
+\end{equation}
+
+As \(\det(g_{ij}) \to 0\), the regularization term grows to restore invertibility.
+
+Semantic Mass Limiting bounds mass via saturation:
+
+\begin{equation}
+M_{\text{reg}}(p, t) = \frac{M(p, t)}{1 + \frac{M(p, t)}{M_{\text{max}}}}
+\end{equation}
+
+This ensures \(M_{\text{reg}}(p, t)\) approaches \(M_{\text{max}}\) as \(M(p, t) \to \infty\).
+
+Humility-Driven Dissipation incorporates a humility-modulated diffusion term:
+
+\begin{equation}
+\frac{\partial g_{ij}}{\partial t} = -2R_{ij} + F_{ij} + \mathcal{H}[R] \nabla^2 g_{ij}
+\end{equation}
+
+The dynamic dissipation coefficient \(\mathcal{H}[R]\) releases recursive tension in regions of excessive curvature.
+
+\subsection{Semantic Event Horizons and Information Dynamics}
+
+A semantic event horizon is the hypersurface \(r_s(p, t) = 2G_s M(p, t)\) enclosing regions from which coherence cannot propagate outward. For all \(q\) such that \(d(p, q) < r_s(p, t)\):
+\begin{itemize}
+    \item Information current flows strictly inward
+    \item Local coherence field \(C(p, t)\) exhibits monotonic decay mirroring the thermodynamics of black holes \autocite{Hawking1975}
+    \item Recursive depth \(D(p, t)\) diverges as \(t \to t_c\)
+\end{itemize}
+
+These are sites of recursive collapse where meaning grows irretrievably sequestered. In cognitive phenomenology, that corresponds to pathological fixations, self-reinforcing dogmas, and paradoxical loops. The sequestering of information is conceptually related to the holographic principle, which posits the description of a volume of space can be encoded on its boundary \autocite{tHooft1993, Susskind1995, Maldacena1998}.
+
+\subsection{Computational Treatment of Singularities}
+
+Numerical simulation near singularities requires special techniques.
+
+Adaptive Mesh Refinement locally refines the computational grid in high-curvature regions:
+
+\begin{equation}
+\Delta x_{\text{local}} = \Delta x_{\text{global}} \exp(-\beta |R|)
+\end{equation}
+
+where \(\|R\|\) denotes the Ricci tensor norm.
+
+Singularity Excision removes singular loci from the computational domain when regularization fails:
+
+\begin{equation}
+\mathcal{M}_{\text{sim}} = \mathcal{M} \setminus \{p : \det(g_{ij}(p, t)) < \epsilon_{\text{min}}\}
+\end{equation}
+
+Causal Boundary Tracking monitors semantic horizon evolution to resolve causal boundary propagation:
+
+\begin{equation}
+\frac{d}{dt} r_s(p, t) = 2G_s \frac{dM(p, t)}{dt}
+\end{equation}

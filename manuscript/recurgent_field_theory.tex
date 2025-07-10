@@ -1,0 +1,108 @@
+\documentclass[11pt, a4paper]{report}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}
+\usepackage{unicode-math}
+\setmathfont{latinmodern-math.otf}
+\usepackage{longtable}
+
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black!70,
+    filecolor=black!70,
+    urlcolor=black!70,
+    citecolor=black!70,
+    pdftitle={Recurgent Field Theory},
+    pdfpagemode=FullScreen,
+}
+
+\usepackage[backend=biber, style=authoryear, sorting=ynt]{biblatex}
+\addbibresource{../references.bib}
+
+\setlength{\bibitemsep}{0.5em}
+\setlength{\bibhang}{2em}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge\raggedright}
+\titlespacing*{\chapter}{0pt}{20pt}{30pt}
+
+\title{Recurgent Field Theory \\ A Mathematical Physics of Consciousness}
+\author{Diesel Black}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+Recurgent Field Theory treats meaning as a geometric phenomenon governed by field equations in which ideas and consciousness exist within a curved manifold. In this space, accumulated meaning creates gravitational-like effects that shape the formation and propagation of subsequent thoughts. Conscious agents are described geometrically as bounded regions within this space, actively constructing and reconstructing reality through interpretation. The engagement with ideas by agents reshapes the landscape of attractors, providing a mathematical framework for observer-dependent reality in which consciousness (1) emerges naturally, (2) experiences forward temporal flow, and (3) exerts genuine causal influence on the world.
+
+Temporal flow in semantic systems operates bidirectionally: causal influence propagates forward from semantic mass concentrations, while interpretive influence flows backward. Present reinterpretation thereby modifies the meaning of past events. Ideas undergo critical phase transitions, achieving autopoietic self-maintenance when semantic mass exceeds threshold values. Wisdom fields and humility operators, both emergent, constrain pathological recursive amplification.
+
+Geometric signatures for twelve orthogonal pathological dynamics span four distinct categories. Rigidity pathologies emerge from over-constraint: attractor dogmatism, belief calcification, and metric crystallization. Fragmentation pathologies arise from under-constraint: attractor splintering, coherence dissolution, and reference decay. Inflation pathologies result from runaway autopoiesis: delusional expansion, semantic hypercoherence, and recurgent parasitism. Observer-coupling pathologies reflect interpretation operator breakdown: paranoid interpretation, observer solipsism, and semantic narcissism.
+
+Differential equations govern these twelve configurations to enable algorithmic detection and therapeutic intervention. Theorem 7 establishes computational realizability; the continuous field equations admit stable numerical discretization preserving essential geometric structure. A working implementation operates on 2000-dimensional semantic manifolds and performs real-time geometric analysis of curvature tensors and recursive coupling relationships. Twelve detection algorithms identify pathology classes across individual cognition and collective coordination, providing early forecasting of emergent destabilization patterns.
+
+Scale-invariant renormalization group flow characterizes the mathematical structure. RGF governs coherence dynamics across organizational hierarchies at scales from individual to institutional to societal. A fundamental uncertainty relation constrains simultaneous precision in semantic coherence and recursive flexibility. These principles extend from neural computation through cultural evolution.
+
+Mathematical foundations for consciousness studies arise from this framework. It engages with existing work such as Integrated Information Theory (Tononi, 2004), as well as for artificial intelligence safety, and collective coordination dynamics. Formal agency metrics enable geometric pathology detection and therapeutic intervention. Constraint-based mechanisms offer principled, emergent approaches to AI alignment via wisdom field regulation and humility operators. The field equations governing meaning achieve mathematical precision comparable to current established physical theories.
+
+\tableofcontents
+\input{chapters/ch_01_axiomatic_foundation.tex}
+\input{chapters/ch_02_field_index.tex}
+\input{chapters/ch_03_semantic_manifold.tex}
+\input{chapters/ch_04_recursive_coupling.tex}
+\input{chapters/ch_05_semantic_mass.tex}
+\input{chapters/ch_06_recurgent_field_equation.tex}
+\input{chapters/ch_07_autopoietic_function.tex}
+\input{chapters/ch_08_wisdom_function.tex}
+\input{chapters/ch_09_field_equations.tex}
+\input{chapters/ch_10_bidirectional_temporal_flow.tex}
+\input{chapters/ch_11_global_attractors_bifurcation.tex}
+\input{chapters/ch_12_metric_singularities_recursive_collapse.tex}
+\input{chapters/ch_13_agents_interpretation_semantic_particles.tex}
+\input{chapters/ch_14_symbolic_compression_recurgent_abstraction.tex}
+\input{chapters/ch_15_pathologies_and_healing.tex}
+\input{chapters/ch_16_detection_and_prediction_algorithms.tex}
+
+\appendix
+\chapter{Implementation Repository}
+\label{appendix:implementation}
+
+The theory's expositive vector application, PRISM (Pathology Recognition In Semantic Manifolds), is available at:
+
+\begin{center}
+\url{https://github.com/someobserver/prism}
+\end{center}
+
+The repository contains:
+\begin{itemize}
+\item PostgreSQL schema definitions for all geometric structures
+\item Detection + prediction algorithms for the twelve pathology classes
+\item Real-time analysis functions for ≤2000-dimensional semantic manifolds
+\item Curvature tensor computations and recursive coupling analysis
+\item Operational monitoring and therapeutic intervention protocols
+\end{itemize}
+
+PRISM demonstrates the computational realizability described in Theorem 7 and Chapter 16.
+
+\printbibliography
+
+\end{document} 

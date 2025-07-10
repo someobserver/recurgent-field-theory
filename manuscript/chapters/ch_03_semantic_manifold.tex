@@ -1,0 +1,67 @@
+\chapter{Semantic Manifold and Metric Geometry}
+
+\section{Overview}
+
+The geometric foundation is the semantic manifold, \(\mathcal{M}\), whose geometry can encode every potential configuration of meaning. This has historical parallels to the abstract state spaces of modern physics \autocite{vonNeumann1932}; such abstract manifolds can be formally embedded in Euclidean space for analysis \autocite{Whitney1936}. Its metric tensor, \(g_{ij}(p, t)\), evolves in response to recursive processes and creates a landscape of varying conceptual "distance" and curvature. In regions of high constraint the geometry is rigid, forcing thought along well-defined paths. In regions of low constraint the geometry runs fluid, permitting facile transitions and innovation. The manifold gets curved by semantic mass, a quantity that integrates the depth, density, and stability of meaning to generate the attractor basins that guide future attention and interpretation.
+
+\section{The Metric Tensor and Semantic Distance}
+
+Semantic space possesses intrinsic curvature that cannot be captured by flat Euclidean geometry. Moving from one idea to another requires varying degrees of cognitive effort; some conceptual transitions are harder than others. This is formalized as a dynamic metric tensor that evolves as semantic structures form and decay, this based on Riemannian geometry \autocite{Riemann1868, doCarmo1992, Lee2003}.
+
+The infinitesimal squared distance between neighboring semantic points is given by:
+\begin{equation}
+ds^2 = g_{ij}(p, t) \, dp^i \, dp^j
+\end{equation}
+
+where \(g_{ij}(p, t)\) is the time-dependent metric tensor and \(dp^i\) represents an infinitesimal displacement in the \(i\)-th semantic dimension. This metric encodes the local constraint structure, modulating the cost of semantic displacement along and between dimensions.
+
+Interpretation:
+\begin{itemize}
+    \item High constraint: Large \(g_{ij}\) components correspond to regions where semantic distinctions are rigid and transitions are energetically costly.
+    \item Low constraint: Small \(g_{ij}\) components correspond to regions of semantic fluidity where transitions are facile.
+\end{itemize}
+
+\section{Evolution Equation for the Semantic Metric}
+
+The evolution of the metric tensor is governed by a flow equation analogous to Ricci flow \autocite{Hamilton1982, Perelman2002}. Additional forcing terms reflect recursive structure. The equation describes how semantic geometry deforms under intrinsic curvature and recursive feedback mechanisms.
+\begin{equation}
+\frac{\partial g_{ij}}{\partial t} = -2 R_{ij} + F_{ij}(R, D, A)
+\end{equation}
+
+where:
+\begin{itemize}
+    \item \(R_{ij}\) is the Ricci curvature tensor associated with \(g_{ij}\), encoding the intrinsic curvature induced by constraint density.
+    \item \(F_{ij}(R, D, A)\) is a symmetric tensor-valued functional incorporating:
+    \begin{itemize}
+        \item \(R\): the recursive coupling tensor (quantifying nonlocal feedback),
+        \item \(D\): the recursive depth field (maximal sustainable recursion at \(p\)),
+        \item \(A\): the attractor stability field (local resilience to perturbation).
+    \end{itemize}
+\end{itemize}
+
+\section{Constraint Density}
+
+The metric tensor gives rise to the constraint density \(\rho(p, t)\) at each point via:
+\begin{equation}
+\rho(p, t) = \frac{1}{\det(g_{ij}(p, t))}
+\end{equation}
+
+Regions of high constraint density (\(\rho \gg 1\)) correspond to tightly packed semantic states where transitions are suppressed. Low constraint density (\(\rho \ll 1\)) marks regions of semantic flexibility where boundaries are diffuse and transitions are energetically favorable. The geometry of \(\mathcal{M}\) encodes both rigidity and plasticity, modulating coherence propagation and recursive structure formation.
+
+\section{The Coherence Field}
+
+The coherence field \(C_i(p, t)\) is a vector field on \(\mathcal{M}\), representing the local alignment and self-consistency of semantic structure. The metric \(g_{ij}\) is used to raise and lower indices, compute gradients, and define the norm of coherence:
+\begin{equation}
+C_{\mathrm{mag}}(p, t) = \sqrt{g^{ij}(p, t) C_i(p, t) C_j(p, t)}
+\end{equation}
+
+where \(g^{ij}\) is the inverse metric. \(C_{\mathrm{mag}}\) quantifies the scalar magnitude of coherence at \(p\), independent of direction. This provides the basis for defining attractor potentials and autopoietic capacity in subsequent sections.
+
+\section{Recursive Depth, Attractor Stability, and Semantic Mass}
+
+The geometry of \(\mathcal{M}\) is modulated by recursive depth field \(D(p, t)\) and attractor stability field \(A(p, t)\). \(D(p, t)\) quantifies the maximal recursion depth sustainable at \(p\) before coherence degrades. \(A(p, t)\) measures the local tendency of a semantic state to return after perturbation. Together with constraint density, these fields define semantic mass:
+\begin{equation}
+M(p, t) = D(p, t) \cdot \rho(p, t) \cdot A(p, t)
+\end{equation}
+
+Semantic mass \(M(p, t)\) curves the manifold, generating attractor basins and shaping coherence flow. High-mass regions function as stable attractors, anchoring interpretation and resisting transformation. Low-mass regions are more open to innovation and recursive branching. 
