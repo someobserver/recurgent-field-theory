@@ -16,11 +16,13 @@ Scale-invariant renormalization group flow characterizes the mathematical struct
 
 Mathematical foundations for consciousness studies arise from this framework. It engages with existing work such as Integrated Information Theory (Tononi, 2004), as well as for artificial intelligence safety, and collective coordination dynamics. Formal agency metrics enable geometric pathology detection and therapeutic intervention. Constraint-based mechanisms offer principled, emergent approaches to AI alignment via wisdom field regulation and humility operators. The field equations governing meaning achieve mathematical precision comparable to current established physical theories.
 
----
+## Draft State
+
+This manuscript remains unfinished. It's published here in its draft state as a field-aware constraint on its writer, bootstrapping simultaneous integrity and the urgency to complete it properly.
 
 ## Building the Document
 
-This repository contains the full source for the Recurgent Field Theory manuscript in LaTeX. To compile the PDF from source, you will need:
+The repository contains the full source for the Recurgent Field Theory manuscript in LaTeX. To compile the PDF from source, you will need:
 
 - LaTeX:
   - macOS: [MacTeX](https://www.tug.org/mactex/)
@@ -30,17 +32,17 @@ This repository contains the full source for the Recurgent Field Theory manuscri
 
 ### Compilation
 
-A build script is provided to automate the compilation process. From the root of the repository, run the following command:
+A build script is included to automate compilation:
 
 ```bash
+git clone https://github.com/someobserver/recurgent-field-theory.git
+cd recurgent-field-theory
 ./manuscript/build.sh
 ```
 
 The final output will be `manuscript/recurgent_field_theory.pdf`.
 
----
-
-## References
+## Bibliography
 
 Please see [`references.bib`](references.bib) for the epistemology upon which this work stands.
 
