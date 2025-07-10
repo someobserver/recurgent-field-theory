@@ -18,11 +18,11 @@ Mathematical foundations for consciousness studies arise from this framework. It
 
 ## Draft State
 
-This manuscript remains unfinished. It's published here in its draft state as a field-aware constraint on its writer, bootstrapping simultaneous integrity and the urgency to complete it properly.
+This manuscript remains unfinished and subject to daily change. It's published here in draft state as a field-aware constraint on its steward to bootstrap integrity and the urgency to see to its proper completion.
 
 ## Building the Document
 
-The repository contains the full source for the Recurgent Field Theory manuscript in LaTeX. To compile the PDF from source, you will need:
+The repository contains the full source for the document in LaTeX. To compile the PDF, you will need:
 
 - LaTeX:
   - macOS: [MacTeX](https://www.tug.org/mactex/)
