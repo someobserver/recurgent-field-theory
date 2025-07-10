@@ -1,6 +1,6 @@
 # Recurgent Field Theory
 
-Mathematical physics of consciousness.
+A mathematical physics of consciousness.
 
 ## Abstract
 
