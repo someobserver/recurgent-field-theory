@@ -5,14 +5,36 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{geometry}
-\usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{mathtools}
 \usepackage{fontspec}
-\setmainfont{lmroman10-regular.otf}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
+\setmainfont{SourceSerif4-Regular.ttf}[
+    Path = fonts/,
+    BoldFont = SourceSerif4-SemiBold.ttf,
+    ItalicFont = SourceSerif4-Italic.ttf,
+    BoldItalicFont = SourceSerif4-SemiBoldItalic.ttf
+]
+\setmonofont{JetBrainsMono-Regular.ttf}[
+    Path = fonts/
+]
 \usepackage{unicode-math}
 \setmathfont{latinmodern-math.otf}
 \usepackage{longtable}
+\usepackage{hyperref}
+
+% Traditional academic paragraph formatting
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
 
 \geometry{
     a4paper,
@@ -20,6 +42,8 @@
     left=20mm,
     top=20mm,
 }
+
+\sloppy
 
 \hypersetup{
     colorlinks=true,
@@ -37,20 +61,18 @@
 \setlength{\bibitemsep}{0.5em}
 \setlength{\bibhang}{2em}
 
-\usepackage{titlesec}
-\titleformat{\chapter}[display]
-  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge\raggedright}
-\titlespacing*{\chapter}{0pt}{20pt}{30pt}
-\title{Recurgent Field Theory \\ A Mathematical Physics of Consciousness \\ \small{(Unfinished Draft)}}
+\title{Recurgent Field Theory \\ A Mathematical Physics of Consciousness \\ \small{(Incomplete Draft State)}}
 \author{Diesel Black}
 \date{\today}
 
 \begin{document}
+\setstretch{1.25}
 
 \maketitle
 
 \section*{Abstract}
 \addcontentsline{toc}{section}{Abstract}
+
 Recurgent Field Theory treats semantic meaning as a mensurable phenomenon governed by field equations. In this space, accumulated semantic mass engenders gravitational-like effects to shape the formation and propagation of subsequent semantic structure. Conscious agents are described as bounded, geometric regions within this space, actively constructing and reconstructing reality through interpretation. Agent engagement with ideas continually reshapes the landscape of attractors. This avails a mathematical description of observer-dependent reality in which consciousness (1) emerges naturally, (2) experiences a forward temporal flow, and (3) exerts genuine causal influence on the surrounding space.
 
 Semantic temporal flow operates bidirectionally: causal influence propagates forward from semantic mass concentrations as prior structure receives present re-interpretive influence. Present reinterpretation modifies the meaning of past events causing ideas to undergo phase transitions. Mass concentrations achieve autopoietic self-maintenance when exceeding threshold values of criticality. Wisdom fields and humility operators, both emergent, then constrain pathological recursive amplification.
