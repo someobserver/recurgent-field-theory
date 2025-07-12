@@ -1,4 +1,4 @@
-\chapter{Detection and Prediction Algorithms}
+\chapter{Detection & Prediction Algorithms}
 
 \section{Overview}
 
@@ -91,7 +91,7 @@ The partial derivatives are approximated using central differences with adaptive
 
 where $h = \min(0.01, \epsilon \cdot \|g_{ab}\|)$ ensures numerical stability while preserving gradient accuracy.
 
-The metric inverse $g^{ij}$ is computed via Cholesky decomposition with iterative refinement to handle near-singular configurations that arise during pathological episodes.
+The metric inverse $g^{ij}$ is computed via Cholesky decomposition with iterative refinement to handle near-singular configurations arising during pathological episodes.
 
 \subsection{Curvature Tensor Evaluation}
 
@@ -195,7 +195,7 @@ where $|g|$ is the determinant of the metric tensor. The eigenvalue problem:
 \Delta_g \phi_n = \lambda_n \phi_n
 \end{equation}
 
-yields eigenmodes $\phi_n$ with eigenvalues $\lambda_n$ that encode the intrinsic geometric scale structure. This is standard in spectral graph theory, where the eigenvalues of a graph Laplacian reveal connectivity properties \autocite{Chung1997}.
+yields eigenmodes $\phi_n$ with eigenvalues $\lambda_n$ which encode the intrinsic geometric scale structure. This is standard in spectral graph theory, where the eigenvalues of a graph Laplacian reveal connectivity properties \autocite{Chung1997}.
 
 \subsection{Recursive Coupling Spectral Decomposition}
 
@@ -232,7 +232,7 @@ Grid cells are subdivided when $\mathcal{R}(x) > \mathcal{R}_{\text{crit}}$, mai
 The numerical scheme exhibits second-order convergence in space and time for smooth solutions. The error estimate:
 
 \begin{equation}
-\|C_{\text{exact}} - C_h\|_{L^2} \leq K h^2 \|\nabla^2 C_{\text{text{exact}}\|_{L^2}
+\|C_{\text{exact}} - C_h\|_{L^2} \le K h^2 \|\nabla^2 C_{\text{exact}}\|_{L^2}
 \end{equation}
 
 where $h$ is the mesh spacing and $K$ is a constant depending on the manifold geometry. Near singularities, the scheme degrades gracefully to first-order convergence while maintaining stability through adaptive time-stepping.
@@ -242,4 +242,4 @@ where $h$ is the mesh spacing and $K$ is a constant depending on the manifold ge
 \section{Theorem 7: Computational Realizability}
 
 Statement:  
-Recurgent Field Theory admits a stable, convergent, real-world implementation that preserves geometric structure and field dynamics. 
+There exists a finite-dimensional discretization of Recurgent Field Theory which: (1) converges to the continuous solution as mesh resolution increases, (2) maintains numerical stability under bounded perturbations, and (3) preserves the essential geometric invariants of the semantic manifold structure. 

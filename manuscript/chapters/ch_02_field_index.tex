@@ -1,4 +1,4 @@
-\chapter{Field Index and Formal Structure}
+\chapter{Field Index \\ and Formal Structure}
 
 \section{Overview}
 
@@ -10,7 +10,8 @@ Each field in RFT carries geometric information through its tensor rank and symm
 
 The semantic manifold evolves through the fields it supports. This evolution requires careful attention to how tensorial structures couple and transform.
 
-{\footnotesize
+{\scriptsize
+\renewcommand{\arraystretch}{0.9}
 \begin{longtable}{|p{2.5cm}|p{4cm}|c|c|p{2.5cm}|c|c|}
 \hline
 \textbf{Symbol} & \textbf{Name} & \textbf{Rank} & \textbf{Symmetry} & \textbf{Domain} & \textbf{Range} & \textbf{Dim} \\
@@ -82,7 +83,7 @@ Notes on Dimensionality:
 
 The primary interdependencies between fields form a closed loop of recursive influence:
 
-Semantic mass curves metric space. \rightarrow Curved space shapes coherence flow. \rightarrow Coherence flow generates recursive coupling. \rightarrow Recursive coupling reshapes the metric.
+Semantic mass curves metric space. $\rightarrow$ Curved space shapes coherence flow. $\rightarrow$ Coherence flow generates recursive coupling. $\rightarrow$ Recursive coupling reshapes the metric.
 
 These equations formalize the closed loop:
 
@@ -241,7 +242,7 @@ For theoretical consistency, the relationship between fundamental and derived fi
 Semantic Field vs. Coherence Field:
 \begin{itemize}
     \item The semantic field \(\psi_i(p,t)\) represents the fundamental state variables of the system, or raw semantic content at each point
-    \item The coherence field \(C_i(p,t)\) is a derived field that measures the self-consistency of semantic patterns:
+    \item The coherence field \(C_i(p,t)\) is a derived field measuring the self-consistency of semantic patterns:
 \end{itemize}
 \begin{equation}
 C_i(p,t) = \mathcal{F}_i[\psi](p,t) = \int_{\mathcal{N}(p)} K_{ij}(p,q) \psi_j(q,t) \, dq
@@ -264,13 +265,13 @@ And second derivatives as used in the recursive coupling tensor:
 \frac{\partial^2 C_k(p,t)}{\partial \psi_i(p') \partial \psi_j(q')} = \frac{\partial K_{ki}(p,p')}{\partial \psi_j(q')}
 \end{equation}
 
-While the action principle could be formulated directly in terms of \(\psi_i\), using \(C_i\) as the primary dynamical variable provides a more direct connection to semantic coherence, the central observable of interest. The Lagrangian is thus expressed in terms of \(C_i\) with the understanding that it is functionally dependent on the underlying semantic field \(\psi_i\).
+While the action principle could be formulated directly in terms of \(\psi_i\), using \(C_i\) as the primary dynamical variable provides a more direct connection to semantic coherence, the central observable of interest. The Lagrangian is thus expressed in terms of \(C_i\), with the understanding it is functionally dependent on the underlying semantic field \(\psi_i\).
 
 For computational implementations, the distinction between \(\psi_i\) and \(C_i\) becomes particularly important when:
 \begin{enumerate}
     \item Initializing field configurations
     \item Interpreting field evolution
-    \item Calculating recursive properties that depend on derivatives with respect to \(\psi_i\)
+    \item Calculating recursive properties dependent upon derivatives with respect to \(\psi_i\)
 \end{enumerate}
 
 In simulation contexts, both fields are typically tracked simultaneously, with \(\psi_i\) evolving according to its own dynamics and \(C_i\) updated according to the functional relationship above.
@@ -334,7 +335,7 @@ This dual perspective is reconciled by imposing a consistency requirement:
 \frac{d}{dt}\left(\frac{\partial^2 C_k(p,t)}{\partial \psi_i(p) \partial \psi_j(q)}\right) = \Phi(C_{\mathrm{mag}}(p,t)) \cdot \chi_{ijk}(p,q,t)
 \end{equation}
 
-The dynamics of \(C_k\) and \(\psi_i\) satisfy this constraint. In practice, the evolution of \(\psi_i\) includes terms that maintain this relationship. Consistency is achieved through the coupled field system rather than by treating \(R_{ijk}\) as strictly derived.
+The dynamics of \(C_k\) and \(\psi_i\) satisfy this constraint. In practice, the evolution of \(\psi_i\) includes terms to maintain this relationship. Consistency is achieved through the coupled field system rather than by treating \(R_{ijk}\) as strictly derived.
 
 Lagrangian Treatment:
 In the Lagrangian formulation, \(R_{ijk}\) appears directly only through the humility operator \(\mathcal{H}[R]\). Variation of the action with respect to \(C_i\) incorporates the chain-rule effect through \(\psi_i\), which suffices to capture the coupling relationship. This avoids the need to vary \(R_{ijk}\) independently while preserving the physical interpretation of recursive coupling. 
