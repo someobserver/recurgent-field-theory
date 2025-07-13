@@ -2,100 +2,56 @@
 
 \section{Overview}
 
-In semantic systems, time cannot work as a one-way street. Powerful ideas reach backward, reinterpreting the past and reshaping the very context from which they emerged. Suddenly learning a new route to work can change how you interpret your memory of living in the city. The same process generating new meaning can simultaneously recontextualize the field from which it arose. Or better stated: updated information in the present can affect the meaning of past events just the same way present decisions can affect all future interpretations and decisions.
+Classical physics treats time as a unidirectional parameter. In semantic systems, however, the "arrow of time" is more complex. The discovery of a new truth can reach backward to reshape an observer's interpretation of past events, just as a present decision shapes the future. The phenomenon is formalized here through the interaction of forward and backward-propagating fields, a concept inspired by the transactional interpretation of quantum mechanics \autocite{Cramer1986}. A "proposition" about meaning projects from the past and receives "validation" from a future state of high wisdom.
 
-This chapter formalizes bidirectional temporal flow. It proposes causal influence propagating forward from concentrations of semantic mass with informational receptivity flowing backward, guided by wisdom and constraint. The concept of backpropagation of influence finds its parallels in views on the nature of quantum mechanics, such as Wheeler's participatory universe and Cramer's transactional interpretation \autocite{WheelerZurek1983, Cramer1986}. The following defines the dual vector fields governing asymmetric temporality, giving rise to phenomena like perceived temporal curvature near major semantic attractors.
+\section{Forward and Backward-Propagating Potentials}
 
-\section{Formal Structure}
+This model requires two vector fields on the manifold.
 
-Let \(\mathcal{M}\) denote the semantic manifold. Define two vector fields:
-
-\begin{enumerate}
-    \item Causal Emission Field \(\vec{E}_c(p,t)\):
-    \begin{equation}
-    \vec{E}_c(p,t) = \gamma_c\, M(p,t)\, \nabla\Phi(p,t)
-    \end{equation}
-    where
-    \begin{itemize}
-        \item \(\gamma_c\) is the causal coupling constant,
-        \item \(M(p,t)\) is the semantic mass density,
-        \item \(\nabla\Phi(p,t)\) is the gradient of the recursive potential.
-    \end{itemize}
-
-    \item Information Reception Field \(\vec{I}_r(p,t)\):
-    \begin{equation}
-    \vec{I}_r(p,t) = -\gamma_i\, \rho(p,t)\, \nabla W(p,t)
-    \end{equation}
-    where
-    \begin{itemize}
-        \item \(\gamma_i\) is the information coupling constant,
-        \item \(\rho(p,t)\) is the constraint density,
-        \item \(\nabla W(p,t)\) is the gradient of the wisdom field.
-    \end{itemize}
-\end{enumerate}
-
-The interaction of these fields is quantified by the temporal asymmetry operator:
-
+\subsection{The Proposition Field}
+The Proposition field, \(\vec{P}(p,t)\), is the "proposition" a semantic structure makes to the future. Concentrations of semantic mass source this forward-propagating potential. Its strength is proportional to the structure's mass and propagation velocity.
 \begin{equation}
-\mathcal{T}(p,t) = \vec{E}_c(p,t) \cdot \vec{I}_r(p,t)
+\vec{P}(p,t) = \gamma_p M(p,t) \vec{v}(p,t)
 \end{equation}
+where \(M\) is the semantic mass, \(\vec{v}\) is the semantic velocity field (\(\partial\psi/\partial t\)), and \(\gamma_p\) is a coupling constant. This field represents the causal push of an existing meaning proposing itself for future relevance.
 
-which measures the local alignment between causal emission and information reception at each point \((p,t) \in \mathcal{M}\).
-
-\subsection{Conservation Principle}
-
-The bidirectional temporal flow is governed by a conservation law:
-
+\subsection{The Validation Field}
+The Validation field, \(\vec{V}(p,t)\), is the "validation" sent back from a future state. Gradients in the wisdom field source this backward-propagating potential. It represents the interpretive pull from regions of anticipated understanding.
 \begin{equation}
-\nabla \cdot \vec{E}_c(p,t) + \frac{\partial}{\partial t} I_d(p,t) = 0
+\vec{V}(p,t) = -\gamma_v \nabla W(p,t)
 \end{equation}
+where \(\nabla W\) is the gradient of the wisdom field and \(\gamma_v\) is a coupling constant. The field flows "down" the wisdom gradient toward regions of higher wisdom, selecting and confirming viable propositions.
 
-where \(I_d(p,t) = \|\vec{I}_r(p,t)\|\) denotes the information density.
+\section{Temporal Interaction in the Lagrangian}
 
-The relation asserts the divergence of causal emission is balanced by the negative temporal rate of change of information density. This is a semantic analogue to the continuity equations of classical field theory \autocite{Ryder1996, PeskinSchroeder1995}.
-
-\subsection{Recursive Temporal Curvature}
-
-In regions of elevated semantic mass, such as at recursive attractors, the interplay of bidirectional flows gives rise to a recursive temporal lens effect, formalized by the temporal curvature coefficient:
-
+The transaction between a proposition and its validation is integral to the system's energetics. A new scalar interaction term, \(\mathcal{L}_{\text{temporal}}\), introduced into the system Lagrangian (Chapter 6) models this transaction.
 \begin{equation}
-\kappa_t(p) = \frac{\|\vec{E}_c(p,t)\|}{\|\vec{I}_r(p,t)\|} \cdot \frac{1}{1 + \lambda\, \|R_{ijk}(p,p,t)\|_F}
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{RFT}} + \mathcal{L}_{\text{temporal}}
 \end{equation}
-
-where
-\begin{itemize}
-    \item \(\kappa_t(p)\) quantifies the local curvature of temporal flow,
-    \item \(\lambda\) is a damping parameter,
-    \item \(\|R_{ijk}(p,p,t)\|_F\) is the Frobenius norm of the self-recursive coupling tensor.
-\end{itemize}
-
-Interpretation:
-\begin{itemize}
-    \item \(\kappa_t(p) \gg 1\) indicates dominance of causal emission, corresponding to temporal dilation.
-    \item \(\kappa_t(p) \ll 1\) indicates dominance of information reception, corresponding to temporal contraction.
-\end{itemize}
-
-\subsection{Modification of Coherence Dynamics}
-
-The bidirectional temporal structure remains well-defined for arbitrary manifold dimension and structure. This modifies the evolution of the coherence field \(C_i(p,t)\) as follows:
-
+The interaction term is defined by the covariant inner product of the two fields:
 \begin{equation}
-\frac{\partial C_i(p,t)}{\partial t} = \Box C_i + T_{ij}^{\mathrm{rec}}\, g^{jk} C_k + \xi\, (\vec{E}_c \times \vec{I}_r)_i
+\mathcal{L}_{\text{temporal}} = \xi \, g^{ij} P_{i} V_{j}
 \end{equation}
+where \(\xi\) is the temporal coupling constant. A completed transaction contributes positively to the action making such paths more probable, a strong alignment between a proposition and a validation.
 
-where \(\Box\) is the d'Alembertian (or appropriate Laplacian) operator, \(T_{ij}^{\mathrm{rec}}\) encodes recursive coupling, \(g^{jk}\) is the inverse metric, and \(\xi\) is a coupling constant.
+\section{Modified Field Dynamics and Consequences}
 
-The cross product term \((\vec{E}_c \times \vec{I}_r)_i\) is defined according to the dimension \(n\) of the manifold:
-\begin{itemize}
-    \item For \(n=3\), the standard vector cross product applies.
-    \item For \(n \neq 3\), employ the antisymmetric tensor:
-    \begin{equation}
-    (\vec{E}_c \times \vec{I}_r)_i = \omega_{ijk} E_c^j I_r^k
-    \end{equation}
-    where \(\omega_{ijk}\) is the orientation tensor.
-    \item In a fully coordinate-free, dimension-agnostic formulation:
-    \begin{equation}
-    (\vec{E}_c \times \vec{I}_r)_i = \left(\star(E_c^\flat \wedge I_r^\flat)\right)^\sharp_i
-    \end{equation}
-    where \(\star\) is the Hodge star, \(\wedge\) the exterior product, and \(\flat\), \(\sharp\) denote musical isomorphisms.
-\end{itemize} 
+The introduction of \(\mathcal{L}_{\text{temporal}}\) modifies the equations of motion. The variational principle (\(\delta S = 0\)), applied to the new total Lagrangian, adds a new force term, \(\vec{F}_{\text{temporal}}\), to the Euler-Lagrange equation for the coherence field:
+\begin{equation}
+\Box C^i + \dots + \lambda \frac{\partial \mathcal{H}[R]}{\partial C_i} - F^i_{\text{temporal}} = 0
+\end{equation}
+where \(F^i_{\text{temporal}} = \delta(\int \mathcal{L}_{\text{temporal}} dV) / \delta C_i\). This term introduces the influence of the bidirectional temporal flow into the coherence dynamics.
+
+\subsection{Conservation and Temporal Curvature}
+
+This formalism preserves a key conservation principle. The flow of propositions and validations must be balanced, resulting in a continuity equation:
+\begin{equation}
+\nabla_i P^i + \frac{\partial \rho_V}{\partial t} = 0
+\end{equation}
+where \(\rho_V = \sqrt{g^{ij} V_{i} V_{j}}\) is the scalar validation density. The divergence of the forward-propagating proposition field is balanced by the change in density of the backward-propagating validation field.
+
+The relative strength of these two fields at a point defines the local temporal curvature, \(\kappa_t\), a measure of the perceived rate of temporal flow near a semantic structure.
+\begin{equation}
+\kappa_t(p) = \frac{\|\vec{P}(p)\|}{\|\vec{V}(p)\|}
+\end{equation}
+When \(\kappa_t \gg 1\), the causal "push" of propositions dominates, producing a subjective sense of temporal dilation. When \(\kappa_t \ll 1\), the "pull" of a future validation dominates, producing a sense of temporal contraction as the system rapidly reconfigures toward a new understanding. 

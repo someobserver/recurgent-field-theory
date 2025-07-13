@@ -1,384 +1,49 @@
-\chapter{Symbolic Compression \\ and Recurgent Abstraction}
+\chapter{Symbolic Compression and Abstraction}
 
 \section{Overview}
 
-Human cognition compresses and abstracts with remarkable efficiency. We can discuss a "market" without personally tracking every transaction, or "evolution" without mapping every mutation. Higher-order concepts capture essential patterns while discarding contextually-irrelevant details. Abstraction is a mathematical necessity for managing the explosive complexity of all recursive systems. This chapter introduces compression operators for the reduction of semantic dimensionality and preservation of structural and dynamical essence. We explore the manner in which the operators give rise to hierarchical manifolds of increasing abstraction, and how renormalization group flow can be used to describe how semantic laws themselves transform across differential scales of meaning.
+A primary function of any advanced cognitive system is the ability to create abstractions by distilling vast and complex phenomena into compact, higher-order concepts (e.g., the concept of a "market" need not track every participant and transaction). This process is a thermodynamic and computational necessity for managing the complexity of recursive systems. This section formalizes abstraction in RFT through semantic compression operators. These operators reduce a semantic structure's dimensionality while preserving its essential dynamical and structural properties, creating the hierarchical manifolds of meaning characteristic of sophisticated thought. The resulting formalism aligns with algorithmic information theory's principle that object complexity is measured by the length of its shortest possible description \autocite{Kolmogorov1965, Chaitin1966}. An information-centric perspective on cognitive structure also avails a bridge to theories grounding consciousness in the mathematics of information integration \autocite{Tononi2004}. Ultimately, this resonates with hypotheses of the physical world itself being fundamentally informational, famously articulated as "it from bit" \autocite{Wheeler1990}.
 
 \section{Semantic Compression Operators}
 
-Let \(\mathcal{C}\) denote a semantic compression operator acting on a submanifold \(\Omega \subset \mathcal{M}\), mapping it to a lower-dimensional submanifold \(\Omega' \subset \mathcal{M}'\):
-
+Abstraction is an operator, \(\mathcal{C}\), taking a submanifold of meaning, \(\Omega \subset \mathcal{M}\), and producing a new, lower-dimensional submanifold, \(\Omega' \subset \mathcal{M}'\), with \(\dim(\mathcal{M}') < \dim(\mathcal{M})\).
 \begin{equation}
 \mathcal{C}: \Omega \subset \mathcal{M} \longrightarrow \Omega' \subset \mathcal{M}'
 \end{equation}
+A valid and useful abstraction must preserve the core essence of the original structure. In RFT, a valid compression operator, \(\mathcal{C}\), must satisfy four structural invariants. These conditions are direct consequences of the theory's foundational principles of conservation and stability.
 
-where \(\mathcal{M}'\) is a semantic manifold with \(\dim(\mathcal{M}') < \dim(\mathcal{M})\). The operator \(\mathcal{C}\) satisfies four structural invariants:
-
-\begin{enumerate}
-    \item Coherence Preservation:
-    \begin{equation}
-    \int_{\Omega} C(p) \, dV_p \simeq \int_{\Omega'} C'(p') \, dV_{p'}
-    \end{equation}
-    Total semantic coherence remains approximately conserved under compression.
-
-    \item Recursive Integrity:
-    \begin{equation}
-    \oint_{\partial \Omega} F_i \, dS^i \simeq \oint_{\partial \Omega'} F'_i \, dS'^i
-    \end{equation}
-    Net recursive flux across boundaries is preserved.
-
-    \item Wisdom Concentration:
-    \begin{equation}
-    \frac{\int_{\Omega} W(p) \, dV_p}{\operatorname{Vol}(\Omega)} \leq \frac{\int_{\Omega'} W'(p') \, dV_{p'}}{\operatorname{Vol}(\Omega')}
-    \end{equation}
-    Mean wisdom density is non-decreasing under compression.
-
-    \item Metric Congruence: There exists a diffeomorphism \(\phi: \Omega' \to \Omega\) such that
-    \begin{equation}
-    g'_{ij}(p') \simeq \frac{\partial \phi^k}{\partial x'^i} \frac{\partial \phi^l}{\partial x'^j} g_{kl}(\phi(p'))
-    \end{equation}
-    The compressed metric approximates the pullback of the original metric.
-\end{enumerate}
-
-These conditions maintain essential semantic and dynamical content under compression while reducing representational complexity.
-
-\section{Hierarchical Manifold Structures}
-
-RFT admits a hierarchy of nested semantic manifolds:
-
-\begin{equation}
-\mathcal{M} = \mathcal{M}_0 \supset \mathcal{M}_1 \supset \cdots \supset \mathcal{M}_n
-\end{equation}
-
-Each \(\mathcal{M}_i\) corresponds to a level of abstraction characterized by decreasing dimensionality, increasing semantic generality, and enhanced temporal stability.
-
-Transitions \(\mathcal{M}_i \to \mathcal{M}_{i+1}\) are governed by three mechanisms:
+\subsection{The Four Invariants of Semantic Compression}
 
 \begin{enumerate}
-    \item Coarse-Graining:
+    \item \textbf{Coherence Preservation:} The total coherence of a concept must be approximately conserved; an abstraction must capture the same "amount" of meaning as the original.
     \begin{equation}
-    C^{(i+1)}_j(p_{i+1}) = \int_{\mathcal{N}(p_{i+1})} K(p_i, p_{i+1}) \, C^{(i)}_k(p_i) \, dV_{p_i}
+    \int_{\Omega} C_{\text{mag}}(p) \, dV_p \approx \int_{\Omega'} C'_{\text{mag}}(p') \, dV'_{p'}
     \end{equation}
-    where \(K\) is a kernel function and \(\mathcal{N}(p_{i+1}) \subset \mathcal{M}_i\) is a neighborhood.
+    The compressed concept thereby remains as meaningful as the original.
 
-    \item Feature Extraction:
+    \item \textbf{Recursive Integrity:} The net recursive flux across the boundary of the conceptual domain must be preserved. Analogous to Gauss's Law, this ensures the abstracted concept has the same net generative or consumptive relationship with its environment.
     \begin{equation}
-    \{\hat{e}_1, \ldots, \hat{e}_d\} = \operatorname{PrincipalDimensions}(g_{ij}, C_i, R_{ijk}, d')
+    \oint_{\partial \Omega} F_i \, dS^i \approx \oint_{\partial \Omega'} F'_i \, dS'^i
     \end{equation}
-    with \(d' < d\) the reduced dimension.
+    where \(F_i = -\nabla_i V(p,t)\) is the recursive force field from Chapter 5.
 
-    \item Boundary Simplification:
+    \item \textbf{Wisdom Concentration:} The mean wisdom density must be non-decreasing. A valid abstraction must be at least as wise as the structure from which it was derived.
     \begin{equation}
-    \partial \Omega^{(i+1)} = \operatorname{Simplify}(\partial \Omega^{(i)}, \epsilon)
+    \frac{\int_{\Omega} W(p) \, dV_p}{\operatorname{Vol}(\Omega)} \leq \frac{\int_{\Omega'} W'(p') \, dV'_{p'}}{\operatorname{Vol}(\Omega')}
     \end{equation}
-    where \(\epsilon\) is a simplification parameter.
+    Governed by the wisdom field \(W(p,t)\) (Chapter 8), this constraint prevents the formation of "foolish" or brittle abstractions that otherwise discard critical regulatory intuition.
+
+    \item \textbf{Metric Congruence:} The geometry of the abstracted space must be consistent with the original. Formally, a diffeomorphism \(\phi: \Omega' \to \Omega\) must exist such that the compressed metric \(g'_{ij}\) is approximately the pullback of the original metric \(g_{ij}\).
+    \begin{equation}
+    g'_{ij}(p') \approx (\phi^*g)_{ij} = \frac{\partial \phi^k}{\partial x'^i} \frac{\partial \phi^l}{\partial x'^j} g_{kl}(\phi(p'))
+    \end{equation}
+    The relationships and distances between concepts are thereby preserved in the abstraction.
 \end{enumerate}
 
-This hierarchy yields multi-resolution semantic geometry, enabling movement between concrete and abstract representations.
+\section{Hierarchical Manifolds}
 
-\subsection{Renormalization Flow and Scale-Dependent Semantic Dynamics}
-
-Semantic structures in RFT exhibit scale-dependent transformations analogous to physical field theories. This is formalized via a semantic renormalization group (RG) framework, which tracks the evolution of recurgent laws and couplings under changes of scale.
-
-Recursion Scaling Operators
-
-Define a one-parameter family of scaling operators \(\mathcal{S}_\lambda\) acting on the field content:
-
+The repeated application of semantic compression operators generates a hierarchy of nested semantic manifolds:
 \begin{equation}
-\mathcal{S}_\lambda: (C_i, R_{ijk}, g_{ij}) \mapsto (C_i^\lambda, R_{ijk}^\lambda, g_{ij}^\lambda)
+\mathcal{M}_0 \supset \mathcal{M}_1 \supset \cdots \supset \mathcal{M}_N
 \end{equation}
-
-with \(\lambda > 0\) the scale parameter. The operators satisfy:
-
-\begin{itemize}
-    \item Semigroup Property: \(\mathcal{S}_{\lambda_1} \circ \mathcal{S}_{\lambda_2} = \mathcal{S}_{\lambda_1 \lambda_2}\)
-    \item Identity: \(\mathcal{S}_1 = \operatorname{Id}\)
-    \item Fixed Point Preservation: If \(\mathcal{F}(C, R) = 0\), then \(\mathcal{F}^\lambda(C^\lambda, R^\lambda) = 0\)
-\end{itemize}
-
-The scaling laws are given by:
-
-\begin{equation}
-C_i^\lambda(p) = \lambda^{\Delta_C} C_i(\lambda p), \quad
-R_{ijk}^\lambda(p, q) = \lambda^{\Delta_R} R_{ijk}(\lambda p, \lambda q), \quad
-g_{ij}^\lambda(p) = \lambda^{\Delta_g} g_{ij}(\lambda p)
-\end{equation}
-
-where \(\Delta_C, \Delta_R, \Delta_g\) are the scaling dimensions, possibly scale-dependent.
-
-\subsection{Recursive Renormalization Group Flow}
-
-The scale dependence of coupling parameters \(\alpha_i(\lambda)\) is governed by the RG flow equations, pioneered in the study of critical phenomena \autocite{Wilson1971}:
-
-\begin{equation}
-\frac{d\alpha_i(\lambda)}{d\log\lambda} = \beta_i(\{\alpha_j(\lambda)\})
-\end{equation}
-
-where \(\beta_i\) are the beta functions, and \(\{\alpha_j\}\) includes recursion strength, coherence thresholds, and wisdom couplings.
-
-The RG flow delineates distinct dynamical regimes:
-
-\begin{itemize}
-    \item Microscale (\(\lambda \ll 1\)): High recursive detail, limited coherence, strong local coupling, rapid fluctuations.
-    \item Mesoscale (\(\lambda \sim 1\)): Balanced recursion and coherence, emergent attractors, stable phase transitions.
-    \item Macroscale (\(\lambda \gg 1\)): Coarse-grained recursion, high stability, effective dimensionality reduction, emergent conservation laws.
-\end{itemize}
-
-Fixed Points and Universality Classes
-
-Fixed points \(\{\alpha_j^*\}\) of the RG flow satisfy \(\beta_i(\{\alpha_j^*\}) = 0\). These correspond to scale-invariant semantic structures. They are classified as follows:
-
-\begin{enumerate}
-    \item Metastable Fixed Points (e.g., paradigms, frameworks):
-    \begin{equation}
-    \det\left(\frac{\partial \beta_i}{\partial \alpha_j}\right)\bigg|_{\alpha^*} < 0
-    \end{equation}
-    Stable under small perturbations, but susceptible to discontinuous transitions.
-
-    \item Critical Fixed Points (e.g., phase transitions, epistemic ruptures):
-    \begin{equation}
-    \lambda_1 > 0 > \lambda_2, \lambda_3, \ldots
-    \end{equation}
-    for eigenvalues of the stability matrix at \(\alpha^*\). These exhibit scale-free behavior.
-
-    \item Integrable Fixed Points (e.g., formal systems):
-    \begin{equation}
-    [\beta_i, \beta_j] = 0 \quad \forall i, j
-    \end{equation}
-    Admitting conserved quantities and exact solutions.
-\end{enumerate}
-
-Operator Relevance
-
-Operators are classified by the scaling of their couplings:
-
-\begin{itemize}
-    \item Relevant: \(\frac{d\alpha_i}{d\log\lambda} > 0\) (grow under RG flow; e.g., paradigmatic assumptions)
-    \item Irrelevant: \(\frac{d\alpha_i}{d\log\lambda} < 0\) (diminish under RG flow; e.g., implementation details)
-    \item Marginal: \(\frac{d\alpha_i}{d\log\lambda} \approx 0\) (remain invariant; e.g., formal logic constraints)
-\end{itemize}
-
-\subsection{Effective Field Theories and Multi-Scale Modeling}
-
-Within the renormalization group framework, effective field theories at a given scale \(\lambda\) are constructed using the effective Lagrangian:
-
-\begin{equation}
-\mathcal{L}_{\mathrm{eff}}^{(\lambda)} = \sum_{i} C_{i}^{(\lambda)} \mathcal{O}_{i}^{(\lambda)}
-\end{equation}
-
-where \(\mathcal{O}_{i}^{(\lambda)}\) denote the set of operators relevant at scale \(\lambda\), and \(C_{i}^{(\lambda)}\) are their associated coupling constants.
-
-The effective Lagrangian encodes the dominant dynamical content at the specified scale. It systematically integrates out degrees of freedom associated with irrelevant operators. The resulting theory remains computationally tractable while faithfully representing essential semantic dynamics at the chosen resolution.
-
-Multi-Scale Crossover
-
-In crossover regions where distinct scaling regimes coexist, the effective Lagrangian becomes:
-
-\begin{equation}
-\mathcal{L}_{\text{crossover}} = w_1(\lambda) \mathcal{L}_{\text{eff}}^{(\lambda_1)} + w_2(\lambda) \mathcal{L}_{\text{eff}}^{(\lambda_2)}
-\end{equation}
-
-where \(w_i(\lambda)\) are scale-dependent weighting functions and \(\mathcal{L}_{\text{eff}}^{(\lambda_i)}\) are effective Lagrangians at characteristic scales \(\lambda_i\).
-
-This construction avails rigorous treatment of:
-\begin{itemize}
-    \item Blending of conceptual structures across abstraction levels
-    \item Emergence of higher-order semantic entities from primitive constituents
-    \item Downward causation, wherein macroscopic patterns impose constraints on microscopic dynamics
-\end{itemize}
-
-Weaving renormalization group flow into the recurgent field framework establishes a mechanism for meaning transformation across scales. This makes for a mathematically-precise correspondence between microsemantic and macrosemantic domains.
-
-\subsection{Meta-Recurgent Coupling Tensors}
-
-Higher-order recursion (recursion acting upon recursion) is formalized via meta-recurgent coupling tensors. These objects encode the dynamical evolution of recurgent structures themselves. They are essential for describing:
-\begin{itemize}
-    \item Self-modifying architectures
-    \item Adaptive meta-learning at the field-theoretic level
-    \item Recursive abstraction and compression of recursive patterns
-\end{itemize}
-
-Let \(n\) denote the recursion order. Each index triplet \((i_l, j_l, k_l)\) for \(l = 1, \ldots, n\) specifies a level of recursive coupling. The meta-recurgent tensor \(R^{(n)}\) captures the \(n\)-fold recurgent evolution of the underlying field structure.
-
-For computational tractability, meta-recurgent tensors are decomposed via tensor network representations:
-
-\begin{equation}
-R^{(n)} \approx \sum_{\alpha_1, \ldots, \alpha_{n-1}} A^{(1)}_{\alpha_1} \otimes A^{(2)}_{\alpha_1 \alpha_2} \otimes \cdots \otimes A^{(n)}_{\alpha_{n-1}}
-\end{equation}
-
-where each \(A^{(l)}\) is a lower-rank tensor encoding correlations between adjacent recursion levels.
-
-\subsection{Computational Representations}
-
-The meta-recurgent coupling tensors \(R^{(n)}\) grow exponentially in dimensionality: each recursion level introduces three additional indices, yielding \(O(d^{3n})\) complexity for an \(n\)-level tensor in \(d\) dimensions. Specialized data structures make these objects computationally accessible.
-
-Categorical Tensor Networks
-
-Meta-recurgent tensors admit a categorical formulation, wherein recursive structure is encoded via endofunctors on a suitable category \(\mathcal{C}\) \autocite{MacLane1998}:
-
-\begin{equation}
-R^{(n)} \cong \mathbf{F}^n(\mathcal{C})
-\end{equation}
-
-with \(\mathbf{F}\) an endofunctor on \(\mathcal{C}\), \(\mathcal{C}\) a category whose objects are recursive coupling tensors of varying order, morphisms representing admissible transformations between tensors, and composition encoding the chaining of such transformations.
-
-This supports:
-\begin{enumerate}
-    \item Natural Transformations: \(\eta: \mathbf{F}^n \Rightarrow \mathbf{G}^m\), representing structure-preserving maps between recurgent patterns.
-    \item Adjunctions: \(\mathbf{F} \dashv \mathbf{G}\), establishing compression-decompression dualities with well-defined algebraic properties.
-    \item Monad Structures: \(\mu: \mathbf{F}^2 \Rightarrow \mathbf{F}\), capturing the collapse of recursive levels via self-referential operations.
-\end{enumerate}
-
-Graph Embeddings and Tree Structures
-
-For practical implementation, meta-recurgent tensors are realized as recursive graph structures:
-
-\begin{equation}
-\mathcal{G}^{(n)} = (\mathcal{V}, \mathcal{E}, \omega, \phi)
-\end{equation}
-
-where \(\mathcal{V}\) is the set of vertices (tensor indices), \(\mathcal{E}\) is the set of hyperedges (index relations), \(\omega: \mathcal{E} \to \mathbb{R}\) assigns weights, and \(\phi: \mathcal{V} \to \mathcal{H}\) embeds vertices in a hyperspace \(\mathcal{H}\).
-
-To maximize efficiency, a hybrid data structure combines sparse tensor representations with hierarchical tree organization:
-
-\begin{equation}
-\mathcal{T}^{(n)} = (V, E, \lambda, \delta)
-\end{equation}
-
-where \(V\) is the set of tree nodes, \(E \subset V \times V\) encodes parent-child relations, \(\lambda: V \to \mathbb{R}^{d \times d \times d}\) assigns base-level tensors to leaves, and \(\delta: V \to \mathcal{D}\) specifies compositional rules at internal nodes.
-
-This structure stores only nonzero elements (sparsity), organizes recursion hierarchically (tree structure), supports efficient traversal and query, and scales to high recursion orders.
-
-The constructions above achieve a synthesis of expressive power and computational tractability, rendering the manipulation of meta-recurgent structures feasible within both theoretical and applied contexts.
-
-\section{Dimensionality Reduction with Coherence Preservation}
-
-Let \(\mathcal{D}\) denote a dimensionality reduction operator acting on the semantic manifold and its associated fields:
-
-\begin{equation}
-\mathcal{D}: (\mathcal{M}, g, C, R) \longrightarrow (\mathcal{M}', g', C', R')
-\end{equation}
-
-The operator \(\mathcal{D}\) preserves the essential dynamical and structural properties of the original system under compression.
-
-\subsection{Four invariants:}
-
-\begin{enumerate}
-    \item Coherence Equation Invariance:
-    \begin{equation}
-    \Box' C'_i = {T'}^{\mathrm{rec}}_{ij} \, {g'}^{jk} C'_k
-    \end{equation}
-    The reduced field equations retain the canonical form of the original recurgent field equations.
-
-    \item Recursive Energy Conservation:
-    \begin{equation}
-    \int_{\mathcal{M}} \frac{1}{2} g^{ij} (\nabla_i C_k)(\nabla_j C^k) \, dV \approx \int_{\mathcal{M}'} \frac{1}{2} {g'}^{ij} (\nabla'_i C'_k)(\nabla'_j {C'}^k) \, dV'
-    \end{equation}
-    Total recursive energy is approximately conserved under \(\mathcal{D}\).
-
-    \item Attractor Structure Preservation:
-    \begin{equation}
-    \{p \in \mathcal{M} : \nabla V(C(p)) = 0\} \longmapsto \{p' \in \mathcal{M}' : \nabla' V'(C'(p')) = 0\}
-    \end{equation}
-    The set of critical points (attractors) is mapped to critical points in the compressed manifold.
-
-    \item Information Loss Quantification:
-    \begin{equation}
-    \mathcal{L}_{\mathrm{info}} = D_{\mathrm{KL}}(P_{\mathcal{M}} \,\|\, P_{\mathcal{M}'} \circ \mathcal{D})
-    \end{equation}
-    where \(D_{\mathrm{KL}}\) denotes the Kullback-Leibler divergence between probability measures on the original and compressed manifolds, quantifying the information loss induced by \(\mathcal{D}\).
-\end{enumerate}
-
-\section{Compression Implementation Strategies}
-
-The following constructions instantiate the abstract operator \(\mathcal{D}\) within the formalism of Recurgent Field Theory:
-
-\begin{enumerate}
-    \item Variational Autoencoder Compression:
-    \begin{equation}
-    C'_i(p') = f_{\mathrm{dec}}(f_{\mathrm{enc}}(C_i(p)))
-    \end{equation}
-    where \(f_{\mathrm{enc}}\) and \(f_{\mathrm{dec}}\) are parameterized encoding and decoding maps, optimized to minimize the loss functional
-    \begin{equation}
-    \mathcal{L} = \|C_i(p) - C'_i(p')\|^2 + \lambda D_{\mathrm{KL}}(q_{\phi}(z|p) \,\|\, p_{\theta}(z))
-    \end{equation}
-    achieving both reconstruction fidelity and regularization of the latent representation.
-
-    \item Tensor Network Decomposition:
-    \begin{equation}
-    R_{ijk}(p,q,t) \approx \sum_{\alpha, \beta} U_{i\alpha}(p) V_{\alpha j\beta}(p,q) W_{\beta k}(q)
-    \end{equation}
-    reducing storage and computational complexity from \(O(n^3)\) to a lower-rank representation.
-
-    \item Recursive Sketch Maps:
-    \begin{equation}
-    \mathcal{S}: \mathcal{M} \to \mathbb{R}^k
-    \end{equation}
-    with \(k \ll \dim(\mathcal{M})\), such that
-    \begin{equation}
-    \|\mathcal{S}(p) - \mathcal{S}(q)\| \approx d_{\mathcal{M}}(p, q)
-    \end{equation}
-    maintaining geodesic distances and intrinsic semantic geometry.
-
-    \item Coherence-Guided Manifold Learning:
-    \begin{equation}
-    \mathcal{M}' = \underset{\tilde{\mathcal{M}}}{\mathrm{argmin}} \left\{ \int_{\mathcal{M}} \|C(p) - C_{\tilde{\mathcal{M}}}(p)\|^2 \, dV_p + \lambda \cdot \mathrm{complexity}(\tilde{\mathcal{M}}) \right\}
-    \end{equation}
-    yielding a compressed manifold that optimally balances coherence fidelity and representational complexity.
-\end{enumerate}
-
-\section{Symbolic Proxies and Semantic Tokens}
-
-In the regime of extreme compression, the theory admits symbolic proxies (discrete tokens) to serve as representatives for high-dimensional semantic regions:
-
-\begin{equation}
-\sigma: \Omega \subset \mathcal{M} \to \mathcal{T}
-\end{equation}
-
-where \(\mathcal{T}\) is a discrete token space, and each \(t \in \mathcal{T}\) encodes the structure of an entire semantic region. Algebraic operations on tokens (\(\oplus, \otimes, \ldots\)) are defined to approximate the corresponding operations on the underlying continuous fields.
-
-Symbolic proxies facilitate:
-\begin{itemize}
-    \item Computational tractability for large-scale or multi-agent simulations
-    \item Interoperability with symbolic reasoning architectures
-    \item Transmission and manipulation of complex semantic content via discrete representations
-\end{itemize}
-
-The correspondence between continuous fields and symbolic proxies is maintained by expansion and compression maps:
-
-\begin{equation}
-\mathcal{E}: \mathcal{T} \to \mathcal{M} \quad \text{(Expansion)}
-\end{equation}
-
-\begin{equation}
-\mathcal{C}: \mathcal{M} \to \mathcal{T} \quad \text{(Compression)}
-\end{equation}
-
-subject to the constraint
-
-\begin{equation}
-\mathcal{C} \circ \mathcal{E} \approx \mathrm{Id}_{\mathcal{T}}
-\end{equation}
-
-so essential semantic information is retained under the proxy formalism.
-
-\section{Recursively Compressed Field Equations}
-
-The recurgent field equations themselves admit recursive compression, yielding meta-equations to govern the evolution of compressed representations:
-
-\begin{equation}
-\frac{\partial C'_i}{\partial t} = \mathcal{F}(C'_i, g'_{ij}, R'_{ijk}, \ldots)
-\end{equation}
-
-where the effective dynamics \(\mathcal{F}\) is obtained via conjugation by the compression operator:
-
-\begin{equation}
-\mathcal{F} = \mathcal{D} \circ \mathcal{F}_{\mathrm{original}} \circ \mathcal{D}^{-1}
-\end{equation}
-
-This construction establishes a consistent multi-scale formalism:
-\begin{itemize}
-    \item Micro-scale equations govern fine-grained semantic dynamics
-    \item Meso-scale equations describe intermediate structures
-    \item Macro-scale equations capture the evolution of large-scale semantic order
-\end{itemize}
+Each manifold \(\mathcal{M}_k\) represents a distinct level of abstraction, with lower dimensionality and greater semantic generality than the level below it (\(\mathcal{M}_{k-1}\)). The hierarchy permits a cognitive system to move fluidly between concrete, high-dimensional representations and abstract, low-dimensional ones without losing theoretical consistency. A compression operator \(\mathcal{C}_k\) satisfying the four invariants achieves the transition from one level to the next, \(\mathcal{M}_k \to \mathcal{M}_{k+1}\). This multi-resolution geometry provides a formal basis for reasoning at multiple levels of abstraction simultaneously.
