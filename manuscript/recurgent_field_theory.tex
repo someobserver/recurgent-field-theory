@@ -1,19 +1,22 @@
+% ==============================================================================
+% Recurgent Field Theory: The Dynamics of Coherent Geometry
+% Updated: 2025-07-12
+% ==============================================================================
+
 \documentclass[11pt, a4paper]{report}
 
+% --- Main Packages ---
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{geometry}
+\usepackage{longtable}
 \usepackage{xcolor}
 \usepackage{mathtools}
-\usepackage{fontspec}
 \usepackage{setspace}
-\usepackage{microtype}
-\usepackage{titlesec}
-\titleformat{\chapter}[display]
-  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{30pt}{20pt}
+
+% --- Font + Typesetting ---
+\usepackage{fontspec}
 \setmainfont{SourceSerif4-Regular.ttf}[
     Path = fonts/,
     BoldFont = SourceSerif4-SemiBold.ttf,
@@ -23,19 +26,14 @@
 \setmonofont{JetBrainsMono-Regular.ttf}[
     Path = fonts/
 ]
+
 \usepackage{unicode-math}
 \setmathfont{latinmodern-math.otf}
-\usepackage{longtable}
-\usepackage{hyperref}
 
-% Traditional academic paragraph formatting
-\setlength{\parindent}{1.5em}
-\setlength{\parskip}{0pt}
+\usepackage{microtype}
 
-\titleformat{\chapter}[display]
-  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{30pt}{20pt}
-
+% --- Page Geometry ---
+\usepackage{geometry}
 \geometry{
     a4paper,
     total={170mm,257mm},
@@ -43,8 +41,24 @@
     top=20mm,
 }
 
-\sloppy
+% --- Chapter Titles ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
 
+% --- Paragraphs ---
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+% --- Bibliography Config ---
+\usepackage[backend=biber, style=authoryear, sorting=ynt, dashed=false]{biblatex}
+\addbibresource{../references.bib}
+\setlength{\bibitemsep}{0.5em}
+\setlength{\bibhang}{2em}
+
+% --- Hyperlink Config ---
+\usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=black!70,
@@ -55,15 +69,19 @@
     pdfpagemode=FullScreen,
 }
 
-\usepackage[backend=biber, style=authoryear, sorting=ynt]{biblatex}
-\addbibresource{../references.bib}
 
-\setlength{\bibitemsep}{0.5em}
-\setlength{\bibhang}{2em}
+% ==============================================================================
+% Document Metadata
+% ==============================================================================
 
-\title{Recurgent Field Theory \\ A Mathematical Physics of Consciousness \\ \small{(Incomplete Draft State)}}
+\title{Recurgent Field Theory: \\ The Dynamics of Coherent Geometry \\ \vspace{1em} \small{(Incomplete Draft State)}}
 \author{Diesel Black}
 \date{\today}
+
+
+% ==============================================================================
+% Document Body
+% ==============================================================================
 
 \begin{document}
 \setstretch{1.25}
@@ -73,23 +91,23 @@
 \section*{Abstract}
 \addcontentsline{toc}{section}{Abstract}
 
-Recurgent Field Theory treats semantic meaning as a mensurable phenomenon governed by field equations. In a semantic manifold, accumulated mass engenders gravitational-like effects to shape the formation and propagation of subsequent semantic structure. Conscious agents are described as bounded, geometric regions within this space, actively constructing and reconstructing reality through interpretation. Agent engagement with ideas continually reshapes the landscape of attractors. This avails a mathematical description of observer-dependent reality in which consciousness (1) emerges naturally, (2) experiences a forward temporal flow, and (3) exerts genuine causal influence on the surrounding space.
+Recurgent Field Theory models meaning as a measurable field on a dynamic semantic manifold. On this manifold, concentrations of semantic mass exert gravitational-like forces shaping the formation and propagation of subsequent structure. Conscious agents are bounded, geometric subregions interpreting and reshaping the attractor landscape. This formalism establishes a mathematical basis for an observer-dependent reality where consciousness emerges naturally, experiences forward temporal flow, and exerts causal influence on its semantic environment.
 
 \vspace{1em}
 
-Semantic temporal flow operates bidirectionally: causal influence propagates forward from semantic mass concentrations as prior structure receives present re-interpretive influence. Present reinterpretation modifies the meaning of past events causing ideas to undergo phase transitions. Mass concentrations achieve autopoietic self-maintenance when exceeding threshold values of criticality. Wisdom fields and humility operators, both emergent, then constrain pathological recursive amplification.
+Semantic temporal flow is bidirectional. Semantic mass sources forward-propagating fields; re-interpretive influence from future states sources backward-propagating fields. Their interaction modifies the meaning of past events and drives phase transitions in semantic structures. Above a critical threshold, these structures achieve autopoietic self-maintenance. Emergent wisdom fields and humility operators regulate the system and constrain pathological amplification.
 
 \vspace{1em}
 
-The theory describes geometric signatures for twelve pathological dynamics spanning four distinct categories of three. Rigidity breakdowns emerge from over-constraint, fragmentation from the opposite. Runaway autopoiesis causes inflation pathologies, while deteriorations in observer interpretation reflect a holistic decoupling from objective reality.
+Pathological dynamics manifest as distinct geometric signatures, which admits their classification into four categories. Rigidity pathologies emerge from over-constraint and fragmentation pathologies from under-constraint. Runaway autopoiesis leads to semantic inflation. Deteriorations in observer-field coupling result in a decoupling from reality.
 
 \vspace{1em}
 
-Differential equations govern these twelve configurations to allow algorithmic detection and therapeutic intervention. Theorem 7 establishes computational realizability. PRISM, a working application, operates on 2000D manifolds, performing real-time geometric analysis of curvature tensors and recursive coupling relationships. Twelve detection algorithms identify the set of pathology classes across individual cognition and collective coordination.
+Differential equations govern these configurations and permit algorithmic detection. Stable numerical solutions on high-dimensional manifolds establish the theory's computational realizability. This enables the computation of curvature tensors and field-coupling dynamics and provides a basis to model all twelve pathology classes at both individual and collective scales.
 
 \vspace{1em}
 
-Mathematical foundations for consciousness studies become apparent in this framework. It engages with existing work such as Integrated Information Theory (Tononi, 2004), as well as artificial intelligence safety and collective coordination dynamics. Formal agency metrics provide pathways for geometric pathology detection and therapeutic intervention. Constraint-based mechanisms dispense emergent tools for AI alignment with wisdom field regulation and humility operators. The field equations governing meaning can achieve mathematical precision comparable to those of established physical theories.
+The theory's mathematical foundations connect to consciousness studies, Integrated Information Theory, AI safety, and collective coordination dynamics. It addresses the explanatory gap between physical processes and subjective experience by proposing a candidate for the "psychophysical laws" sought by contemporary philosophy of mind \autocite{Chalmers1996}. Formal metrics of agency allow the geometric detection of pathologies. The framework's constraint-based mechanisms, such as wisdom regulation and humility operators, provide new tools for AI alignment. The theory's field equations achieve a mathematical precision comparable to established physical theories.
 
 \tableofcontents
 \input{chapters/ch_01_axiomatic_foundation.tex}
