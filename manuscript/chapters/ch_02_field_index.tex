@@ -69,12 +69,11 @@ Each field's tensor rank and symmetry properties encode its geometric informatio
 \end{longtable}
 }
 
-Notes on Dimensionality:
+Notes:
 \begin{itemize}
     \item \(n\) is the dimensionality of the semantic manifold \(\mathcal{M}\).
     \item The coherence field \(C_i\) is an \(n\)-dimensional vector field; each component represents coherence along one semantic axis.
     \item Tensor contractions follow the Einstein summation convention.
-    \item The Ricci curvature tensor is named after Gregorio Ricci-Curbastro and Tullio Levi-Civita \autocite{RicciLeviCivita1901}.
 \end{itemize}
 
 \section{System Architecture}
@@ -121,7 +120,7 @@ Integrals over the manifold use the invariant volume element, \(dV = \sqrt{|\det
 
 \subsection{Fundamental vs. Derived Fields}
 
-The theory distinguishes between the fundamental state of the system and its measured coherence:
+We distinguish between the fundamental state of the system and its measured coherence:
 \begin{itemize}
     \item The \textbf{semantic field} \(\psi_i(p,t)\) represents the raw, underlying semantic content at each point. It is the fundamental dynamical variable.
     \item The \textbf{coherence field} \(C_i(p,t)\) is a derived, observable quantity that measures the self-consistency and alignment of the underlying semantic field. It is a functional of \(\psi_i\):
