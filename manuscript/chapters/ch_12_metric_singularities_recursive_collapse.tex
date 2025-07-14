@@ -2,7 +2,7 @@
 
 \section{Overview}
 
-In some regions of semantic space, extreme recursive density causes the geometric fabric of meaning to break down. The theory identifies these pathological points as metric singularities, where the metric tensor becomes degenerate and the ordinary laws of semantic propagation fail. The singularity theorems of general relativity, predictive of the formation of spacetime singularities under gravitational collapse \autocite{Penrose1965}, inspire this concept. The Liar Paradox ("This statement is false") is a classic example of collapsing logical reasoning into an irresolvable loop of fallacy. This section classifies the types of singularities in semantic fields, ranging from attractor collapse to semantic event horizons analogous to black holes \autocite{Hawking1974}, and details the required regularization mechanisms and computational techniques.
+In some regions of semantic space, extreme recursive density induces the geometric fabric of meaning to break down. The theory identifies these pathological points as metric singularities, where the metric tensor becomes degenerate and the ordinary laws of semantic propagation fail. The singularity theorems of general relativity, predictive of the formation of spacetime singularities under gravitational collapse \autocite{Penrose1965}, inspire this concept. The Liar Paradox ("This statement is false") represents a classic example of collapsing logical reasoning into an irresolvable loop of fallacy. This section classifies the types of singularities in semantic fields, ranging from attractor collapse to semantic event horizons analogous to black holes \autocite{Hawking1974}, and details the required regularization mechanisms and computational techniques.
 
 \section{Classification of Semantic Singularities}
 
@@ -36,7 +36,7 @@ The geodesic distance \(r\) from the singularity center defines a semantic event
 
 Several regularization mechanisms preserve field equation well-posedness and computational tractability:
 
-Metric Renormalization adds a local isotropic term:
+Metric Renormalization introduces a local isotropic term:
 
 \begin{equation}
 g_{ij}^{\text{reg}}(p, t) = g_{ij}(p, t) + \epsilon(p, t) \cdot \delta_{ij}
@@ -48,9 +48,9 @@ where
 \epsilon(p, t) = \epsilon_0 \exp\left[-\alpha \cdot \det(g_{ij}(p, t))\right]
 \end{equation}
 
-As \(\det(g_{ij}) \to 0\), the regularization term grows to restore invertibility.
+As \(\det(g_{ij}) \to 0\), the regularization term increases to restore invertibility.
 
-Semantic Mass Limiting bounds mass via saturation:
+Semantic Mass Limiting constrains mass via saturation:
 
 \begin{equation}
 M_{\text{reg}}(p, t) = \frac{M(p, t)}{1 + \frac{M(p, t)}{M_{\text{max}}}}
@@ -64,22 +64,22 @@ Humility-Driven Dissipation incorporates a humility-modulated diffusion term:
 \frac{\partial g_{ij}}{\partial t} = -2R_{ij} + F_{ij} + \mathcal{H}[R] \nabla^2 g_{ij}
 \end{equation}
 
-The dynamic dissipation coefficient \(\mathcal{H}[R]\) releases recursive tension in regions of excessive curvature.
+The dynamic dissipation coefficient \(\mathcal{H}[R]\) dissipates recursive tension in regions of excessive curvature.
 
 \subsection{Semantic Event Horizons and Information Dynamics}
 
-A semantic event horizon is the hypersurface \(r_s(p, t) = 2G_s M(p, t)\) enclosing the regions from which coherence cannot propagate outward. For all \(q\) such that \(d(p, q) < r_s(p, t)\):
+A semantic event horizon represents the hypersurface \(r_s(p, t) = 2G_s M(p, t)\) enclosing those regions from which coherence cannot propagate outward. For all \(q\) such that \(d(p, q) < r_s(p, t)\):
 \begin{itemize}
     \item Information current flows strictly inward.
     \item Local coherence field \(C(p, t)\) exhibits monotonic decay mirroring the thermodynamics of black holes \autocite{Hawking1975}.
     \item Recursive depth \(D(p, t)\) diverges as \(t \to t_c\).
 \end{itemize}
 
-These are sites of recursive collapse where meaning becomes irretrievably sequestered. In cognitive phenomenology, this corresponds to pathological fixations, self-reinforcing dogmas, and paradoxical loops. The sequestering of information relates conceptually to the holographic principle, positing a volume's description can be encoded on its boundary \autocite{tHooft1993, Susskind1995, Maldacena1998}.
+These constitute sites of recursive collapse where meaning becomes irretrievably sequestered. In cognitive phenomenology, this corresponds to pathological fixations, self-reinforcing dogmas, and paradoxical loops. The sequestering of information relates conceptually to the holographic principle, positing that a volume's description can be encoded on its boundary \autocite{tHooft1993, Susskind1995, Maldacena1998}.
 
 \subsection{Computational Treatment of Singularities}
 
-Numerical simulation near singularities requires special techniques.
+Numerical simulation near singularities requires specialized techniques.
 
 Adaptive Mesh Refinement locally refines the computational grid in high-curvature regions:
 
