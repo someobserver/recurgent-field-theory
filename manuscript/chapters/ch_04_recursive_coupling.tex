@@ -2,15 +2,15 @@
 
 \section{Overview}
 
-Self-reference is integral to the structure of meaning. The act of thinking about thinking, or using language to describe language, creates recursive loops which both stabilize and transform semantic structures. While often modeled as discrete graphs in network science \autocite{Barabasi2016}, the feedback mechanisms are formalized here by continuous tensor fields governing recursive processes. The interplay of these tensors generates forces to shape the manifold, leading to complexity and emergent patterns of thought. The core tensors quantifying their dynamics are defined below.
+Self-reference is integral to the structure of meaning. The act of thinking about thinking, or using language to describe language, creates recursive loops that both stabilize and transform semantic structures. While often modeled as discrete graphs in network science \autocite{Barabasi2016}, these feedback mechanisms are formalized here by continuous tensor fields governing recursive processes. The interplay of these tensors generates forces that shape the manifold, leading to complexity and emergent patterns of thought. The core tensors quantifying their dynamics are defined below.
 
 \section{\texorpdfstring{The Recursive Coupling Tensor $R_{ijk}(p, q, t)$}{The Recursive Coupling Tensor R_ijk(p, q, t)}}
 
-The recursive coupling tensor, \(R_{ijk}(p, q, t)\), captures the non-local, bidirectional influence semantic activity at one point has on another. It is the second-order variation of the coherence field with respect to the underlying semantic field, \(\psi\):
+The recursive coupling tensor, \(R_{ijk}(p, q, t)\), captures the non-local, bidirectional influence that semantic activity at one point exerts on another. It is the second-order variation of the coherence field with respect to the underlying semantic field, \(\psi\):
 \begin{equation}
 R_{ijk}(p, q, t) = \frac{\partial^2 C_k(p,t)}{\partial \psi_i(p) \partial \psi_j(q)}
 \end{equation}
-This tensor quantifies how a change in the semantic field component \(\psi_j\) at point \(q\) affects the sensitivity of the coherence component \(C_k\) at point \(p\) to changes in its own local semantic field, \(\psi_i\). It formalizes the interdependence of recursive effects across the manifold. Per Chapter 2, this tensor has a dual character: it is both a measurement of the field's response properties and a dynamical field.
+This tensor quantifies how a change in the semantic field component \(\psi_j\) at point \(q\) affects the sensitivity of the coherence component \(C_k\) at point \(p\) to changes in its own local semantic field, \(\psi_i\). It formalizes the interdependence of recursive effects across the manifold. Per Chapter 2, this tensor possesses a dual character: it is both a measurement of the field's response properties and a dynamical field.
 
 \section{\texorpdfstring{Recursive Depth $D(p, t)$}{Recursive Depth D(p, t)}}
 
@@ -22,7 +22,7 @@ where the norm is taken over the tensor indices of the higher-order derivative. 
 
 \section{\texorpdfstring{The Recursive Stress-Energy Tensor $T_{ij}^{\text{rec}}$}{The Recursive Stress-Energy Tensor Tij\_rec}}
 
-The recursive stress-energy tensor, \(T_{ij}^{\text{rec}}\), details the contribution of recursive activity to the curvature of the semantic manifold, analogous to the stress-energy tensor in general relativity. It quantifies the momentum and pressure of recursive processes.
+The recursive stress-energy tensor, \(T_{ij}^{\text{rec}}\), quantifies the contribution of recursive activity to the curvature of the semantic manifold, analogous to the stress-energy tensor in general relativity. It captures the momentum and pressure of recursive processes.
 \begin{equation}
 T_{ij}^{\text{rec}} = \rho(p,t) v_i(p,t) v_j(p,t) + P_{ij}(p,t)
 \end{equation}
@@ -30,7 +30,7 @@ where:
 \begin{itemize}
     \item \(\rho(p,t)\) is the constraint density from the metric.
     \item \(v_i(p,t) = \frac{d\psi_i(p,t)}{dt}\) is the semantic velocity, the rate of change in the underlying semantic field.
-    \item The recursive pressure tensor, \(P_{ij}(p,t)\), accounts for internal stresses within the semantic fluid caused by recursive flows. It is modeled as:
+    \item The recursive pressure tensor, \(P_{ij}(p,t)\), accounts for internal stresses within the semantic fluid caused by recursive flows. It takes the form:
 \end{itemize}
 \begin{equation}
 P_{ij} = \gamma(\nabla_i v_j + \nabla_j v_i) - \eta g_{ij} (\nabla_k v^k)

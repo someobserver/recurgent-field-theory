@@ -2,18 +2,18 @@
 
 \section{Overview}
 
-Unchecked recursive thought presents inherent risks, from infinite regress to rigid dogma. Productive recursion requires regulation, a principle central to control theory and cybernetics \autocite{Kalman1960, AndersonMoore1990, Wiener1948, Ashby1952}. It is formalized here by two complementary, emergent mechanisms: the wisdom field and the humility operator. Wisdom, \(W(p,t)\), is a system's capacity to anticipate the consequences of its structural elaborations. Humility, \(\mathcal{H}[R]\), is a direct braking constraint penalizing recursive complexity beyond optimal bounds. Together, they guide the evolution of adaptive semantic structures away from collapse into either rigid certainty or chaotic, runaway growth.
+Unchecked recursive thought presents inherent risks, from infinite regress to rigid dogma. Productive recursion requires regulation, a principle central to control theory and cybernetics \autocite{Kalman1960, AndersonMoore1990, Wiener1948, Ashby1952}. This requirement is formalized here by two complementary, emergent mechanisms: the wisdom field and the humility operator. Wisdom, \(W(p,t)\), represents a system's capacity to anticipate the consequences of its structural elaborations. Humility, \(\mathcal{H}[R]\), functions as a direct braking constraint that penalizes recursive complexity beyond optimal bounds. Together, they guide the evolution of adaptive semantic structures away from collapse into either rigid certainty or chaotic, runaway growth.
 
 \section{The Wisdom Field \(W(p, t)\)}
 
-The wisdom field, \(W(p, t)\), is a high-order emergent property of the system quantifying its capacity for foresight-driven self-regulation. It is a statistical functional of the primary fields, and its emergence is defined by a functional integrating four factors:
+The wisdom field, \(W(p, t)\), is a high-order emergent property of the system that quantifies its capacity for foresight-driven self-regulation. It is a statistical functional of the primary fields, and its emergence is defined by a functional that integrates four factors:
 \begin{enumerate}
     \item \textbf{Coherence (\(C\)):} A baseline of internal consistency is prerequisite.
-    \item \textbf{Recursive Sensitivity (\(\nabla_f R\)):} The system's forecast of its recursive structure's response to future semantic states, computed via a semantic forecast operator projecting the sensitivity of \(R\) to the evolution of \(\psi\).
-    \item \textbf{Semantic Mass (\(M\)):} A measure of accumulated structural integrity grounding wisdom in established meaning.
-    \item \textbf{Gradient Stability (\(\Psi\)):} A response function favoring productive, "edge-of-chaos" coherence gradients and damps pathological extremes.
+    \item \textbf{Recursive Sensitivity (\(\nabla_f R\)):} The system's forecast of its recursive structure's response to future semantic states, computed via a semantic forecast operator that projects the sensitivity of \(R\) to the evolution of \(\psi\).
+    \item \textbf{Semantic Mass (\(M\)):} A measure of accumulated structural integrity that grounds wisdom in established meaning.
+    \item \textbf{Gradient Stability (\(\Psi\)):} A response function favoring productive, "edge-of-chaos" coherence gradients and dampening pathological extremes.
 \end{enumerate}
-Because \(W(p,t)\) is a functional of other dynamic fields, it is inherently provisional. A dynamic forecast of systemic consequence, it is continuously updated as the underlying fields evolve. Wisdom in this model is therefore a state of adaptive foresight.
+Because \(W(p,t)\) is a functional of other dynamic fields, it is inherently provisional. As a dynamic forecast of systemic consequence, it is continuously updated as the underlying fields evolve. Wisdom in this model therefore represents a state of adaptive foresight.
 
 The full emergence functional, \(W = \mathcal{E}[C, R, M]\), combines these nonlinearly. The interplay of the same components then governs the temporal evolution (dynamics) of the wisdom field:
 \begin{equation}
@@ -27,18 +27,18 @@ The humility operator, \(\mathcal{H}[R]\), is a direct regulatory mechanism. It 
 \begin{equation}
 \mathcal{H}[R] = \|R\|_F \cdot e^{-k(\|R\|_F - R_{\text{optimal}})^2}
 \end{equation}
-where \(\|R\|_F\) is the Frobenius norm of the recursive coupling tensor, \(R_{\text{optimal}}\) is the contextually optimal recursion magnitude, and \(k\) controls the severity of the penalty. This operator is a strong brake on excessive recursion and increases exponentially as the system deviates from its optimal complexity.
+where \(\|R\|_F\) is the Frobenius norm of the recursive coupling tensor, \(R_{\text{optimal}}\) is the contextually optimal recursion magnitude, and \(k\) controls the severity of the penalty. This operator functions as a strong brake on excessive recursion and increases exponentially as the system deviates from its optimal complexity.
 
 \section{Integration into System Dynamics}
 
-Wisdom and humility integrate into the theory's dynamics at different levels reflecting their distinct roles.
+Wisdom and humility integrate into the theory's dynamics at different levels, reflecting their distinct roles.
 
 The humility operator \(\mathcal{H}[R]\) appears directly in the core Lagrangian, where it acts as a dampening constraint on excessive or unstable recursive amplification:
 \begin{equation}
 \mathcal{L} = \frac{1}{2} g^{ij} (\nabla_i C_k)(\nabla_j C^k) - V(C) + \Phi(C) - \lambda \mathcal{H}[R]
 \end{equation}
-It also directly modulates the manifold's geometry; it adds a term to the metric flow equation to resist the formation of pathologically intricate structures.
+It also directly modulates the manifold's geometry, adding a term to the metric flow equation to resist the formation of pathologically intricate structures.
 
 The wisdom field \(W\), an emergent statistical property, does not appear as a fundamental term in the Lagrangian. Instead, its influence shapes the system's \textit{parameters} over time. A high-wisdom state, for example, might modulate the humility operator's optimal value (\(R_{\text{optimal}}\)) or the autopoietic coupling constant (\(\alpha\)). An effective Lagrangian, \(\mathcal{L}_{\text{eff}} = \mathcal{L} + \mu W\), can model this phenomenologically, capturing wisdom's statistical influence on primary field dynamics.
 
-Humility is a direct, instantaneous brake on runaway recursion. Wisdom is a slower, forward-looking regulatory pressure guiding the system toward sustainable and adaptive configurations.
+Humility functions as a direct, instantaneous brake on runaway recursion. Wisdom operates as a slower, forward-looking regulatory pressure guiding the system toward sustainable and adaptive configurations.

@@ -2,17 +2,17 @@
 
 \section{Overview}
 
-The theory has so far described a self-contained geometric universe of meaning. Meaning, however, is not a static backdrop; observers actively engage with and shape it. Agents are bounded, autonomous, self-maintaining structures within the semantic manifold. This geometric conception of agency, wherein cognition arises from the dynamic coupling of an agent and its environment, provides a physical formalism for the enactive and extended mind hypotheses of cognitive science \autocite{VarelaThompsonRosch1991, ClarkChalmers1998}. The interaction between an agent and the coherence field derives from a necessary term in the system's fundamental Lagrangian. The agent-field coupling term, \(\mathcal{L}_{AF}\), accounts for the process of an agent's internal state affecting and being affected by the semantic environment, or the "energy" of interpretation. Agency grounded in the principle of stationary action positions the observer as a fully integrated, energy-conserving participant in structural dynamics.
+We have thus far described a self-contained geometric universe of meaning. Meaning, however, is not a static backdrop but rather a dynamic medium with which observers actively engage. Agents are bounded, autonomous, self-maintaining structures within the semantic manifold. This geometric conception of agency, wherein cognition arises from the dynamic coupling of an agent and its environment, provides a physical formalism for the enactive and extended mind hypotheses of cognitive science \autocite{VarelaThompsonRosch1991, ClarkChalmers1998}. The interaction between an agent and the coherence field derives from a necessary term in the system's fundamental Lagrangian. The agent-field coupling term, \(\mathcal{L}_{AF}\), accounts for the process of an agent's internal state affecting and being affected by the semantic environment, or the energetic cost of interpretation. Agency grounded in the principle of stationary action positions the observer as a fully integrated, energy-conserving participant in structural dynamics.
 
 \section{The Agent-Field Interaction Lagrangian}
 
-Incorporating the observer requires augmenting the system Lagrangian (Chapter 6) with an interaction term, \(\mathcal{L}_{AF}\):
+To incorporate the observer, we augment the system Lagrangian (Chapter 6) with an interaction term, \(\mathcal{L}_{AF}\):
 
 \begin{equation}
 \mathcal{L}_{\text{Total}} = \mathcal{L}_{RFT} + \mathcal{L}_{AF}
 \end{equation}
 
-This new term must capture the essential dynamic of interpretation: an agent's attempt to reconcile the external coherence field, \(C_i\), with its internal belief state, \(\psi_i\). The energetic cost of this discrepancy drives the interaction. An interpretive field, \(I_i\), representing the agent's active engagement with the manifold, mediates this interaction.
+This interaction term captures the essential dynamic of interpretation: an agent's attempt to reconcile the external coherence field, \(C_i\), with its internal belief state, \(\psi_i\). The energetic cost of this discrepancy drives the interaction. An interpretive field, \(I_i\), representing the agent's active engagement with the manifold, mediates this interaction.
 
 The Lagrangian for this interaction takes the form:
 
@@ -25,12 +25,12 @@ where:
     \item The first term is the standard kinetic and mass term for the interpretive field \(I_i\), with \(m_I\) its mass.
     \item The second term is the crucial coupling term. The coupling constant \(\lambda\) determines the interaction strength.
     \item The term \((C^i - \psi^i)\) is the discrepancy between the external field and the agent's internal state.
-    \item The agent's scalar attention field, \(S_A\), localizes the interaction so an agent only interprets parts of the manifold to which it attends. \(S_A\) is a function of the agent's state and position.
+    \item The agent's scalar attention field, \(S_A\), localizes the interaction such that an agent interprets only those regions of the manifold to which it directs attention. \(S_A\) is a function of the agent's state and position.
 \end{itemize}
 
 \section{The Interpretation Operator as an Equation of Motion}
 
-Bach's Goldberg Variations begins with a simple aria. Thirty subsequent variations traverse canons, fugues, and dances before the aria returns. Identical in form, it is completely transformed by the listener's journey through its facets \autocite{Bach1741}. This is a genuine semantic field transformation, mediated by the dynamic coupling between an agent and a coherence structure. RFT formalizes interpretation as a physical process.
+Bach's Goldberg Variations begins with a simple aria. Thirty subsequent variations traverse canons, fugues, and dances before the aria returns. Identical in form, it is completely transformed by the listener's journey through its facets \autocite{Bach1741}. This is a genuine semantic field transformation, mediated by the dynamic coupling between an agent and a coherence structure. Here, we formalize interpretation as a physical process.
 
 Applying the principle of stationary action, \(\delta \mathcal{S} = \int \delta \mathcal{L}_{\text{Total}} d^4x = 0\), yields the Euler-Lagrange equations for the interpretive field \(I_i\). The variation with respect to \(I_i\) gives its equation of motion:
 
@@ -38,15 +38,15 @@ Applying the principle of stationary action, \(\delta \mathcal{S} = \int \delta 
 (\Box + m_I^2) I_i = -\lambda (C_i - \psi_i) S_A
 \end{equation}
 
-This is a Klein-Gordon equation with a source term. The source of an agent's interpretive field is the difference between perceived reality (\(C_i\)) and expected reality (\(\psi_i\)), filtered by attention (\(S_A\)).
+This takes the form of a Klein-Gordon equation with a source term. The source of an agent's interpretive field is the difference between perceived reality (\(C_i\)) and expected reality (\(\psi_i\)), filtered by attention (\(S_A\)).
 
-Solving for \(I_i\) with a Green's function, \(G(x-y)\), for the Klein-Gordon operator clarifies the interaction's effect on the coherence field:
+Solving for \(I_i\) with a Green's function, \(G(x-y)\), for the Klein-Gordon operator elucidates the interaction's influence on the coherence field:
 
 \begin{equation}
 I_i(x) = -\lambda \int G(x-y) \left( C_i(y) - \psi_i(y) \right) S_A(y) d^4y
 \end{equation}
 
-For the equation of motion for the coherence field, \(C_i\), the variation of \(\mathcal{L}_{AF}\) with respect to \(C_i\) adds a new source term to its equation of motion (Chapter 9):
+To derive the equation of motion for the coherence field, \(C_i\), the variation of \(\mathcal{L}_{AF}\) with respect to \(C_i\) adds a new source term to its equation of motion (Chapter 9):
 
 \begin{equation}
 \frac{\delta \mathcal{L}_{AF}}{\delta C^i} = -\lambda I_i S_A
@@ -58,11 +58,11 @@ This leads to the coupled equation for the coherence field in the presence of an
 \Box C_i + V'(C_i) = \lambda I_i S_A
 \end{equation}
 
-The agent's act of interpretation, \(I_i\), directly alters the coherence field's evolution, acting as a physical force. Substituting the expression for \(I_i\) yields a single integro-differential equation for the agent-field system. This formulation unifies agent and field within a self-consistent dynamical framework derived from first principles.
+The agent's act of interpretation, \(I_i\), directly alters the coherence field's evolution, functioning as a physical driving force. Substituting the expression for \(I_i\) yields a single integro-differential equation for the agent-field system. This formulation unifies agent and field within a self-consistent dynamical framework derived from first principles.
 
 \section{Formal Definition of an Agent}
 
-From this, an agent \(\mathcal{A}\) is formally a submanifold of \(\mathcal{M}\) possessing a persistent, dynamically-evolving internal belief state \(\psi_i\), and an attention field \(S_A\), and satisfies four conditions:
+Within this framework, an agent \(\mathcal{A}\) is formally defined as a submanifold of \(\mathcal{M}\) that possesses a persistent, dynamically-evolving internal belief state \(\psi_i\) and an attention field \(S_A\), and satisfies four conditions:
 
 \begin{enumerate}
     \item \textbf{Recursive Closure:} The agent maintains a stable boundary and is prevented from dissolving into the wider manifold. The net recursive flux across its boundary, \(\partial \mathcal{A}\), must be contained:
@@ -86,4 +86,4 @@ From this, an agent \(\mathcal{A}\) is formally a submanifold of \(\mathcal{M}\)
     \end{equation}
 \end{enumerate}
 
-An entity meeting these criteria is an active participant in the semantic universe, its existence defined by its capacity to interpret and transform its environment.
+Any entity satisfying these criteria constitutes an active participant in the semantic universe, its existence defined by its capacity to interpret and transform its environment.
