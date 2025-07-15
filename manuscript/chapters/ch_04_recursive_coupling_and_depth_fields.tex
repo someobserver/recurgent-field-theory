@@ -2,7 +2,7 @@
 
 \section{Overview}
 
-Self-reference is integral to the structure of meaning. The act of thinking about thinking, or using language to describe language, creates feedback loops that both stabilize and transform semantic structures. While often modeled as discrete graphs in network science \autocite{Barabasi2016}, these feedback mechanisms are formalized here by continuous tensor fields governing recursive processes. The interplay of these tensors generates forces that shape the manifold, leading to complexity and emergent patterns of thought. The core tensors quantifying their dynamics are defined below.
+Self-reference is integral to the structure of meaning. The act of thinking about thinking, or using language to describe language, creates feedback loops that both stabilize and transform semantic structures. While often modeled as discrete graphs in network science \autocite{Barabasi2016}, we formalize these feedback mechanisms here with continuous tensor fields governing recursive processes. The interplay of these tensors generates forces that shape the manifold, leading to complexity and emergent patterns of thought. We define the core tensors quantifying their dynamics below.
 
 \section{\texorpdfstring{The Recursive Coupling Tensor $R_{ijk}(p, q, t)$}{The Recursive Coupling Tensor R_ijk(p, q, t)}}
 
@@ -20,13 +20,15 @@ Bach's strictest mathematical rules enabled vast interpretive variance within bo
 
 \section{\texorpdfstring{Recursive Depth $D(p, t)$}{Recursive Depth D(p, t)}}
 
-The tensor \(R_{ijk}\) defines the mechanism of recursion; the depth field, \(D(p, t)\), quantifies its local sustainability. The scalar function \(D(p,t)\) is the maximal number of recursive layers a structure at point \(p\) can support before its coherence degrades below a functional threshold, \(\epsilon\):
+The tensor \(R_{ijk}\) defines the mechanism of recursion; the depth field, \(D(p, t)\), quantifies its local sustainability. We define the scalar function \(D(p,t)\) as the maximal number of recursive layers a structure at point \(p\) can support before its coherence degrades below a functional threshold, \(\epsilon\):
 \begin{equation}
 D(p, t) = \max \left\{ d \in \mathbb{N} : \left\| \frac{\partial^d C(p,t)}{\partial \psi^d} \right\| \geq \epsilon \right\}
 \end{equation}
 where the norm is taken over the tensor indices of the higher-order derivative. Structures with high depth (e.g., persistent personal narratives) maintain coherence across many layers of self-reference, whereas those with low depth (e.g., simple arithmetic) have a shallow recursive structure.
 
-\section{\texorpdfstring{The Recursive Stress-Energy Tensor $T_{ij}^{\text{rec}}$}{The Recursive Stress-Energy Tensor Tij\_rec}}
+This measure distinguishes meaningful, structured complexity from both trivial simplicity and incompressible randomness. A crystal is simple, a gas is random, but a living organism is deep. This is a direct implementation of "logical depth," which defines complexity not by the length of a description but by the computational time required to generate an object from its most compressed representation \autocite{Bennett1988}.
+
+\section{\texorpdfstring{The Recursive Stress-Energy Tensor $T_{ij}^{\text{rec}}$}{The Recursive Stress-Energy Tensor Tij_rec}}
 
 The recursive stress-energy tensor, \(T_{ij}^{\text{rec}}\), quantifies the contribution of recursive activity to the curvature of the semantic manifold, analogous to the stress-energy tensor in general relativity \autocite{Einstein1915}. It captures the momentum and pressure of recursive processes.
 \begin{equation}
@@ -41,4 +43,4 @@ where:
 \begin{equation}
 P_{ij} = \gamma(\nabla_i v_j + \nabla_j v_i) - \eta g_{ij} (\nabla_k v^k)
 \end{equation}
-where \(\gamma\) is a shear viscosity (the elasticity of recursive loops) and \(\eta\) is a bulk viscosity (the resistance to isotropic recursive compression or expansion).
+where \(\gamma\) is a shear viscosity (the elasticity of recursive loops) and \(\eta\) is a bulk viscosity (the resistance to isotropic recursive compression or expansion). The mathematical structure of this viscous pressure tensor is adopted directly from the classical theory of fluid mechanics \autocite{LandauLifshitz1987}.

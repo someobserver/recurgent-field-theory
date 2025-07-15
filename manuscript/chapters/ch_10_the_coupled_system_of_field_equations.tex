@@ -2,7 +2,7 @@
 
 \section{Overview}
 
-The semantic manifold, the coherence and recursion fields, and the Lagrangian encoding their energetic landscape have been defined. This section consolidates them into a single, closed system of coupled partial differential equations, the standard language used to describe continuous systems in physics and mathematics \autocite{Evans2010}. These equations describe the co-evolution of meaning and the geometry it inhabits. The system contains two primary sets of equations: one for the evolution of the coherence field, and one for the evolution of the manifold's geometry in response to the field.
+We have defined the semantic manifold, the coherence and recursion fields, and the Lagrangian encoding their energetic landscape. In this section, we consolidate them into a single, closed system of coupled partial differential equations, the standard language used to describe continuous systems in physics and mathematics \autocite{Evans2010}. These equations describe the co-evolution of meaning and the geometry it inhabits. The system contains two primary sets of equations: one for the evolution of the coherence field, and one for the evolution of the manifold's geometry in response to the field.
 
 \section{Coherence Field Dynamics}
 
@@ -40,4 +40,26 @@ Within this geometry, the natural paths of semantic structures, or test particle
 \begin{equation}
 \frac{d^2 p^i}{ds^2} + \Gamma^i_{jk} \frac{dp^j}{ds} \frac{dp^k}{ds} = 0
 \end{equation}
-Derived from a diffeomorphism-invariant action, the system's architecture guarantees its self-consistency. The geometric construction of the field equations (9.2) automatically conserves the recursive stress-energy tensor ($\nabla_j T^{\text{rec}}_{ij} = 0$), a mathematical consequence of the Bianchi identities \autocite{Bianchi1902}. 
+Derived from a diffeomorphism-invariant action, the system's architecture guarantees its self-consistency. The geometric construction of the field equations (9.2) automatically conserves the recursive stress-energy tensor ($\nabla_j T^{\text{rec}}_{ij} = 0$), a mathematical consequence of the Bianchi identities \autocite{Bianchi1902}.
+
+\section{Temporal Dynamics and Conservation}
+
+The bidirectional temporal flow mechanism from Chapter 9 introduces its own dynamics and conservation principles into the coupled system. The temporal force term, \(F^i_{\text{temporal}}\), modifies the coherence field's evolution:
+\begin{equation}
+F^i_{\text{temporal}} = \frac{\delta(\int \mathcal{L}_{\text{temporal}} dV)}{\delta C_i}
+\end{equation}
+This term introduces the causal influence of anticipated future states into the present.
+
+\subsection{Conservation of Temporal Flow}
+The flow of propositions and validations is balanced and preserved by a continuity equation:
+\begin{equation}
+\nabla_i P^i + \frac{\partial \rho_V}{\partial t} = 0
+\end{equation}
+where \(\rho_V = \sqrt{g^{ij} V_{i} V_{j}}\) is the scalar validation density. The divergence of the forward-propagating proposition field is balanced by the change in density of the backward-propagating validation field, ensuring no temporal charge is lost.
+
+\subsection{Temporal Curvature}
+We define the local temporal curvature, \(\kappa_t\), as the relative strength of the forward and backward fields at a point, which measures the perceived rate of temporal flow:
+\begin{equation}
+\kappa_t(p) = \frac{\|\vec{P}(p)\|}{\|\vec{V}(p)\|}
+\end{equation}
+When \(\kappa_t \gg 1\), the "push" of existing propositions dominates, producing a subjective sense of temporal dilation. When \(\kappa_t \ll 1\), the "pull" of a future validation state dominates, producing a sense of temporal contraction as the system rapidly reconfigures toward a new understanding. This quantity provides a direct, measurable link between the field dynamics and the subjective experience of time. 

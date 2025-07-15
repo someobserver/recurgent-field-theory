@@ -2,7 +2,7 @@
 
 \section{Overview}
 
-The field equations determine the evolution of semantic structures, but not long-term system behavior. The semantic manifold is a dynamical system whose global state is a position in a phase space defined by the principal fields. The long-term statistical properties of trajectories within the space are assumed to be ergodic, meaning: time averages along a trajectory equal phase-space averages \autocite{Birkhoff1931}. The geometry of this phase space reveals critical transitions that \textit{bifurcations} induce, which cause qualitative shifts in the manifold's topology. These transitions represent the emergence of new paradigms, the collapse of old ones, and the spontaneous generation of novel modes of meaning.
+The field equations determine the evolution of semantic structures, but not long-term system behavior. The semantic manifold is a dynamical system whose global state is a position in a phase space defined by the principal fields. We assume the long-term statistical properties of trajectories within the space to be ergodic, meaning: time averages along a trajectory equal phase-space averages \autocite{Birkhoff1931}. The geometry of this phase space reveals critical transitions that \textit{bifurcations} induce, which cause qualitative shifts in the manifold's topology. These transitions represent the emergence of new paradigms, the collapse of old ones, and the spontaneous generation of novel modes of meaning.
 
 \section{Phase Space and Stability Regimes}
 
@@ -23,7 +23,7 @@ A bifurcation represents a qualitative change in the topological structure of th
 
 \subsection{Indicators of Topological Change}
 
-Observable changes in the manifold's structure characterize bifurcation events. The following metrics constitute the formal criteria for detecting these transitions, grounded in fundamental objects:
+Observable changes in the manifold's structure characterize bifurcation events. We use the following metrics as the formal criteria for detecting these transitions, grounded in fundamental objects:
 \begin{enumerate}
     \item \textbf{Attractor Basin Morphology:} Changes in the number and configuration of attractor basins constitute a direct indicator of bifurcation. Tracking the critical points of the total potential landscape, \(\mathcal{V}_{\text{total}} = V(C) - \Phi(C)\), quantifies this change, revealing where new minima appear or existing ones merge or vanish.
     \item \textbf{Effective Dimensionality:} Changes in the manifold's effective dimensionality can signal a profound structural change. Monitoring the rank of the metric tensor, \(g_{ij}(t)\), detects this. A sudden change in rank, identified via spectral analysis of the metric's eigenvalues, signals a new semantic axis becoming relevant or an old one has collapsed.
@@ -36,11 +36,11 @@ Observable changes in the manifold's structure characterize bifurcation events. 
 
 \section{Entangled Transitions and Synchronization}
 
-In a complex, highly interconnected manifold, bifurcations often constitute non-local events manifesting as spontaneous synchronization of previously independent regions. The emergence of such a global, coordinated state from local dynamics represents a hallmark of complex systems.
+In a complex, highly interconnected manifold, bifurcations often constitute non-local events manifesting as spontaneous synchronization of previously independent regions. The emergence of such a global, coordinated state from local dynamics represents a hallmark of complex systems. This phenomenon, the spontaneous phase-locking of a large population of coupled oscillators, has been studied extensively, its canonical theoretical framework developed in the Kuramoto model \autocite{Kuramoto1975}.
 
 \subsection{Measuring Synchronization}
 
-A functional measuring the phase alignment of the coherence field \(C_i\) across two regions, \(\Omega_i\) and \(\Omega_j\), quantifies their degree of synchronization. A common method employs a normalized inner product, weighted by the phase of the recursive coupling tensor \(R_{ijk}\) mediating their interaction:
+We quantify the degree of synchronization between two regions, \(\Omega_i\) and \(\Omega_j\), with a functional that measures the phase alignment of the coherence field \(C_i\). A common method employs a normalized inner product, weighted by the phase of the recursive coupling tensor \(R_{ijk}\) mediating their interaction:
 \begin{equation}
 \Psi_{ij}(t) = \frac{\left|\int_{\Omega_i \times \Omega_j} C(p,t)C(q,t)e^{i\phi(p,q,t)} \, dp \, dq\right|}{\sqrt{\int_{\Omega_i} |C(p,t)|^2 \, dp \cdot \int_{\Omega_j} |C(q,t)|^2 \, dq}}
 \end{equation}

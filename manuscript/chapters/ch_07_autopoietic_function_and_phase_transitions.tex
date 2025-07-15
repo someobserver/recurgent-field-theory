@@ -1,4 +1,4 @@
-\chapter{Autopoietic Function \\ and Phase Transitions}
+\chapter{Autopoietic Function and Phase Transitions}
 
 \section{Overview}
 
@@ -6,7 +6,7 @@ Semantic systems are bistable. Below a critical coherence threshold, ideas requi
 
 \section{Definition and Lagrangian Integration}
 
-The autopoietic potential \(\Phi\) is a scalar function on the manifold that depends on local coherence magnitude, \(C_{\mathrm{mag}}\). Its definition is:
+We define the autopoietic potential \(\Phi\) as a scalar function on the manifold that depends on local coherence magnitude, \(C_{\mathrm{mag}}\):
 \begin{equation}
 \Phi(C_{\mathrm{mag}}) =
 \begin{cases}
@@ -24,7 +24,7 @@ This term establishes a feedback loop in which sufficient coherence generates th
 
 \section{The Recurgence Phase Transition}
 
-Recurgence separates two distinct regimes of semantic organization, analogous to phase transitions in statistical mechanics \autocite{Landau1937, Stanley1971, Goldenfeld1992}. A dimensionless order parameter, the Recurgence Stability Parameter \(S_R\), characterizes the transition by comparing the generative autopoietic potential to the stabilizing and regulatory potentials:
+Recurgence separates two distinct regimes of semantic organization, analogous to phase transitions in statistical mechanics \autocite{Landau1937, Stanley1971, Goldenfeld1992}. We characterize the transition with a dimensionless order parameter, the Recurgence Stability Parameter \(S_R\), by comparing the generative autopoietic potential to the stabilizing and regulatory potentials:
 \begin{equation}
 S_R(p,t) = \frac{\Phi(C_{\mathrm{mag}})}{V(C_{\mathrm{mag}}) + \lambda \mathcal{H}[R]}
 \end{equation}
@@ -36,14 +36,14 @@ When the system enters the inflationary regime (\(S_R > 1\)), several key phenom
 \begin{equation}
 \frac{dR_{ijk}(p,q,t)}{dt} = \Phi(C_{\mathrm{mag}}) \cdot \chi_{ijk}(p,q,t)
 \end{equation}
-where \(\chi_{ijk}\) is the latent recursive channel tensor. In a complex field formulation, the balance between kinetic energy and the nonlinear potential \(\Phi\) also supports localized wave-packets or solitons, which are self-reinforcing units of meaning:
+where \(\chi_{ijk}\) is the latent recursive channel tensor. In a complex field formulation, the balance between kinetic energy and the nonlinear potential \(\Phi\) also supports localized wave-packets or solitons, which are self-reinforcing units of meaning. These have a long history, from their first systematic observation \autocite{Russell1845} to their first mathematical description \autocite{KortewegdeVries1895} to their modern rediscovery and naming \autocite{ZabuskyKruskal1965}. Their canonical form is:
 \begin{equation}
 C_i(p,t) = A_i \cdot \text{sech}\left(\frac{|p-vt|}{\sigma}\right) e^{i(\omega t - kx)}
 \end{equation}
 
 \section{Regulatory Mechanisms and Stability}
 
-Unchecked, the positive feedback from \(\Phi(C_{\mathrm{mag}})\) could lead to pathological, runaway expansion. To address this, we include several regulatory mechanisms. First, the potential saturates at high coherence levels, preventing unbounded growth. A Michaelis-Menten form \autocite{MichaelisMenten1913} models this phenomenologically:
+Unchecked, the positive feedback from \(\Phi(C_{\mathrm{mag}})\) could lead to pathological, runaway expansion. To address this, we include several regulatory mechanisms. First, the potential saturates at high coherence levels, preventing unbounded growth. Phenomenologically, we model this with the Michaelis-Menten form \autocite{MichaelisMenten1913}:
 \begin{equation}
 \Phi_{\text{sat}}(C_{\mathrm{mag}}) = \Phi_{\text{max}} \cdot \frac{\Phi(C_{\mathrm{mag}})}{\Phi(C_{\mathrm{mag}}) + \kappa}
 \end{equation}
@@ -51,7 +51,7 @@ Second, near criticality (\(S_R \approx 1\)), the system exhibits chaotic dynami
 
 \section{Coupled Systems and Mutual Resonance}
 
-The interaction between distinct semantic systems (\(\mathcal{M}_1, \mathcal{M}_2\)) allows for the emergence of intersubjective meaning, a concept central to general and sociological systems theory \autocite{vonBertalanffy1968, Luhmann1995}. This coupling is mediated by a cross-system recursive tensor and quantified by a Mutual Resonance Parameter, \(S_R^{(12)}\), which measures the systems' joint autopoietic potential relative to their individual stabilizing capacities:
+The interaction between distinct semantic systems (\(\mathcal{M}_1, \mathcal{M}_2\)) allows for the emergence of intersubjective meaning, a concept central to general and sociological systems theory \autocite{vonBertalanffy1968, Luhmann1995}. We mediate this coupling with a cross-system recursive tensor and quantify it with a Mutual Resonance Parameter, \(S_R^{(12)}\), which measures the systems' joint autopoietic potential relative to their individual stabilizing capacities:
 \begin{equation}
 S_R^{(12)} = \frac{\bar{\Phi}^{(1)} \cdot \bar{\Phi}^{(2)}}{[\bar{V}^{(1)} + \lambda^{(1)} \bar{\mathcal{H}}^{(1)}] \cdot [\bar{V}^{(2)} + \lambda^{(2)} \bar{\mathcal{H}}^{(2)}]}
 \end{equation}

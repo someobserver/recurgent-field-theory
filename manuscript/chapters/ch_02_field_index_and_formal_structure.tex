@@ -2,7 +2,7 @@
 
 \section{Overview}
 
-The theory is expressed in tensor calculus, with each mathematical object corresponding to a geometric component of semantic reality. The fields, tensors, and notations are drawn from differential geometry \autocite{Riemann1868, Lee2003}.
+We express the theory in tensor calculus, with each mathematical object corresponding to a geometric component of semantic reality. The fields, tensors, and notations are drawn from differential geometry \autocite{Riemann1868, Lee2003}.
 
 \section{Tensor Ranks and Properties}
 
@@ -37,13 +37,13 @@ Each field's tensor rank and symmetry properties encode its geometric informatio
 \hline
 \(M(p,t)\) & Semantic mass & 0 & - & \(\mathcal{M} \times \mathbb{R}\) & \(\mathbb{R}^+\) & 1 \\
 \hline
-\(A(p,t)\) & Attractor stability & 0 & - & \(\mathcal{M} \times \mathbb{R}\) & \([0,1]\) & 1 \\
+\(A(p,t)\) & Attractor stability\footnotemark[1] & 0 & - & \(\mathcal{M} \times \mathbb{R}\) & \([0,1]\) & 1 \\
 \hline
 \(\rho(p,t)\) & Constraint density & 0 & - & \(\mathcal{M} \times \mathbb{R}\) & \(\mathbb{R}^+\) & 1 \\
 \hline
 \(\Phi(C)\) & Autopoietic potential & 0 & - & \(\mathbb{R}^n\) & \(\mathbb{R}^+\) & 1 \\
 \hline
-\(V(C)\) & Attractor potential & 0 & - & \(\mathbb{R}^n\) & \(\mathbb{R}^+\) & 1 \\
+\(V(C)\) & Attractor potential\footnotemark[1] & 0 & - & \(\mathbb{R}^n\) & \(\mathbb{R}^+\) & 1 \\
 \hline
 \(W(p,t)\) & Wisdom field & 0 & - & \(\mathcal{M} \times \mathbb{R}\) & \(\mathbb{R}^+\) & 1 \\
 \hline
@@ -55,11 +55,11 @@ Each field's tensor rank and symmetry properties encode its geometric informatio
 \hline
 \(\chi_{ijk}(p,q,t)\) & Latent recursive channel tensor & 3 & - & \(\mathcal{M}^2 \times \mathbb{R}\) & \(\mathbb{R}\) & \(n^3\) \\
 \hline
-\(S_{ij}(p,q)\) & Semantic similarity tensor & 2 & Sym & \(\mathcal{M}^2\) & \(\mathbb{R}\) & \(n^2\) \\
+\(S_{ij}(p,q)\) & Semantic similarity tensor\footnotemark[2] & 2 & Sym & \(\mathcal{M}^2\) & \(\mathbb{R}\) & \(n^2\) \\
 \hline
 \(N_k\) & Basis projection vector & 1 & - & - & \(\mathbb{R}^n\) & \(n\) \\
 \hline
-\(H(p,q,t)\) & Historical co-activation & 0 & - & \(\mathcal{M}^2 \times \mathbb{R}\) & \(\mathbb{R}^+\) & 1 \\
+\(H(p,q,t)\) & Historical co-activation\footnotemark[3] & 0 & - & \(\mathcal{M}^2 \times \mathbb{R}\) & \(\mathbb{R}^+\) & 1 \\
 \hline
 \(G_{ijk}\) & Geometric structure tensor & 3 & Sym(i,j) & - & \(\mathbb{R}\) & \(n^3\) \\
 \hline
@@ -68,6 +68,9 @@ Each field's tensor rank and symmetry properties encode its geometric informatio
 \caption{Tensor Ranks and Properties}
 \end{longtable}
 }
+\footnotetext[1]{The use of attractor stability metrics and potential energy landscapes in characterizing the states of a system are drawn from the field of nonlinear dynamics \autocite{Strogatz2014}}
+\footnotetext[2]{This tensor formalizes the \textit{distributional hypothesis} in linguistics, which posits that words with similar distributions have similar meanings \autocite{Harris1954}. Modern vector-space models of semantics, such as the Word2Vec framework, are built on this principle \autocite{Mikolov2013}.}
+\footnotetext[3]{This function serves as an implementation of the principle of Hebbian learning, which states that repeated, persistent co-activation of connected elements leads to an increase in the strength of their connection \autocite{Hebb1949}.}
 
 Notes:
 \begin{itemize}
@@ -86,7 +89,7 @@ Once coherence surpasses a critical threshold, a secondary generative cycle acti
 
 \section{Tensor Conventions and Notation}
 
-The tensor conventions follow modern standards for differential geometry and tensor calculus on smooth manifolds \autocite{Lee2003, MisnerThorneWheeler1973}.
+The tensor conventions follow modern standards for differential geometry and tensor calculus on smooth manifolds \autocite{Lee2003, MisnerThorneWheeler1973}. The tensor calculus framework from which this originates is the pioneering work of Gregorio Ricci Curbastro and Tullio Levi-Civita \autocite{RicciLeviCivita1901}.
 
 \subsection{Index Notation and Einstein Summation}
 

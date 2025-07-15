@@ -22,15 +22,15 @@ where \(R_{ij}\) is the Ricci curvature tensor, \(R\) is the scalar curvature, \
 
 \section{Attractor Potential}
 
-High-mass regions generate an attractor potential, \(V(p,t)\), which shapes the flow of coherence across the manifold. The attractor potential is the integral of semantic mass over the manifold, weighted by the geodesic distance, \(d(p,q)\):
+High-mass regions generate an attractor potential, \(V(p,t)\), which shapes the flow of coherence across the manifold. We define the attractor potential as the integral of semantic mass over the manifold, weighted by the geodesic distance, \(d(p, q)\):
 \begin{equation}
 V(p, t) = -G_s \int_{\mathcal{M}} \frac{M(q, t)}{d(p, q)} \, dV_q
 \end{equation}
-The gradient of this potential defines a recursive force field, \(F_i = -\nabla_i V(p,t)\), which directs the evolution of semantic structures toward existing high-mass attractor basins.
+From the gradient of this potential, we define a recursive force field, \(F_i = -\nabla_i V(p,t)\), which directs the evolution of semantic structures toward existing high-mass attractor basins.
 
 \section{Potential Energy of Coherence}
 
-Within an attractor basin, a harmonic oscillator models the local potential energy as a function of the coherence magnitude, \(C_{\text{mag}}\):
+Within an attractor basin, we model the local potential energy as a function of the coherence magnitude, \(C_{\text{mag}}\), using a harmonic oscillator. This method of employing a potential function to analyze how the stable states of a system shift and transform as its underlying parameters change is the central technique of catastrophe theory \autocite{Thom1975}. The potential is given by:
 \begin{equation}
 V(C_{\text{mag}}) = \frac{1}{2}k(C_{\text{mag}} - C_0)^2
 \end{equation}

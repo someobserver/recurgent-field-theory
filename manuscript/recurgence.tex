@@ -1,0 +1,170 @@
+% ==============================================================================
+% Recurgent Field Theory: The Dynamics of Coherent Geometry
+% Updated: 2025-07-13
+% ==============================================================================
+
+\documentclass[11pt, a4paper]{report}
+
+% --- Main Packages ---
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{setspace}
+
+% --- Font + Typesetting ---
+\usepackage{fontspec}
+\setmainfont{SourceSerif4-Regular.ttf}[
+    Path = fonts/,
+    BoldFont = SourceSerif4-SemiBold.ttf,
+    ItalicFont = SourceSerif4-Italic.ttf,
+    BoldItalicFont = SourceSerif4-SemiBoldItalic.ttf
+]
+\setmonofont{JetBrainsMono-Regular.ttf}[
+    Path = fonts/
+]
+
+\usepackage{unicode-math}
+\setmathfont{latinmodern-math.otf}
+
+\usepackage{microtype}
+
+% --- Page Geometry ---
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+% --- Chapter Titles ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\raggedright\hyphenpenalty=10000}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
+
+% --- Paragraphs ---
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+% --- Bibliography Config ---
+\usepackage[backend=bibtex, style=authoryear, sorting=nty, dashed=false]{biblatex}
+\addbibresource{../references.bib}
+\setlength{\bibitemsep}{0.5em}
+\setlength{\bibhang}{2em}
+
+% --- Hyperlink Config ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black!70,
+    filecolor=black!70,
+    urlcolor=black!70,
+    citecolor=black!70,
+    pdftitle={Recurgence},
+    pdfpagemode=FullScreen,
+}
+
+% ==============================================================================
+% Manuscript Metadata
+% ==============================================================================
+
+\title{{\Huge Recurgence}: \\ The Dynamics of Coherent Geometry \\ \vspace{1em} \small{(Incomplete Draft State)}}
+\author{Diesel Black}
+\date{\today}
+
+
+% ==============================================================================
+% Document Body
+% ==============================================================================
+
+\begin{document}
+\setstretch{1.25}
+
+\maketitle
+
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+Forming the basis of our model, we consider \textit{meaning} as a measurable field on a dynamic, semantic manifold. On this manifold, concentrations of semantic mass exert gravitational-like forces that shape the formation and propagation of subsequent structure. Conscious agents are bounded, geometric subregions within this manifold, interpreting and reshaping the attractor landscape. We present a mathematical description of an observer-dependent reality in which conscious agents: (1) emerge naturally, (2) experience forward temporal flow, and (3) exert causal influence on their environment.
+
+\vspace{1em}
+
+Within our framework, temporal flow is bidirectional. We model this as a proposition-validation mechanism: existing semantic structures propose their relevance to future states, while anticipated wisdom validates or rejects these propositions. This mechanism allows us to retroactively reshape past interpretations and drive phase transitions in the structure of meaning. When a system surpasses a critical threshold, it achieves autopoietic self-maintenance. We then employ emergent wisdom fields and humility operators to regulate the system and constrain pathological amplification.
+
+\vspace{1em}
+
+Pathologies manifest as orthogonal geometric signatures, which we classify into four categories of three distinct types. Rigidity pathologies emerge from over-constraint, fragmentation from under-constraint. Runaway autopoietic states lead to malignant semantic inflation, while deteriorations in observer-field coupling result in various degrees of detachment from shared reality.
+
+\vspace{1em}
+
+We find that differential equations govern these configurations, permitting their algorithmic detection. Stable numerical solutions on high-dimensional manifolds establish the theory's computational realizability. This provides a basis for modeling coordinated behavior at both individual and collective scales.
+
+\vspace{1em}
+
+The mathematical foundations of this theory connect to consciousness studies, Integrated Information Theory, AI safety, and collective coordination dynamics. In this theory, we address the explanatory gap between physical processes and subjective experience by proposing a candidate for the "psychophysical laws" sought by contemporary philosophy of mind \autocite{Chalmers1996}.
+
+\tableofcontents
+\input{chapters/ch_01_axiomatic_foundation.tex}
+\input{chapters/ch_02_field_index_and_formal_structure.tex}
+\input{chapters/ch_03_semantic_manifold_and_metric_geometry.tex}
+\input{chapters/ch_04_recursive_coupling_and_depth_fields.tex}
+\input{chapters/ch_05_semantic_mass_and_attractor_dynamics.tex}
+\input{chapters/ch_06_recurgent_field_equation_and_lagrangian_mechanics.tex}
+\input{chapters/ch_07_autopoietic_function_and_phase_transitions.tex}
+\input{chapters/ch_08_wisdom_function_and_humility_constraint.tex}
+\input{chapters/ch_09_temporal_architectures_and_bidirectional_flow.tex}
+\input{chapters/ch_10_the_coupled_system_of_field_equations.tex}
+\input{chapters/ch_11_global_attractors_and_bifurcation_geometry.tex}
+\input{chapters/ch_12_metric_singularities_and_recursive_collapse.tex}
+\input{chapters/ch_13_agents_and_semantic_particles.tex}
+\input{chapters/ch_14_formalisms_of_agent_communication.tex}
+\input{chapters/ch_15_symbolic_compression_and_renormalization.tex}
+\input{chapters/ch_16_pathologies_and_healing.tex}
+\input{chapters/ch_17_computation_and_meta_recursion.tex}
+
+\appendix
+\chapter{Implementation Repository}
+\label{appendix:implementation}
+
+We demonstrate the computational realizability of Recurgent Field Theory in an expositive vector application, PRISM (Pathology Recognition In Semantic Manifolds), as described in Chapter 16. It is available at:
+
+\begin{center}
+\url{https://github.com/someobserver/prism}
+\end{center}
+
+The repository contains:
+\begin{itemize}
+\item PostgreSQL schema definitions of all geometric structures
+\item Detection and prediction algorithms for twelve pathology classes
+\item Real-time analysis for ≤2000-dimensional semantic manifolds
+\item Curvature tensor computations and recursive coupling analysis
+\item Operational monitoring and therapeutic intervention protocols
+\end{itemize}
+
+% ==============================================================================
+% Bibliography
+% ==============================================================================
+
+\defbibheading{smaller_title}
+  {\chapter*{\Large#1}}
+
+\printbibheading[heading=smaller_title, title={References by Thematic Contribution}]
+
+\printbibliography[keyword=math-logic, heading=subbibliography, title={Mathematics and Foundational Logic}]
+\printbibliography[keyword=physics-field-theory, heading=subbibliography, title={Physics and Field Theory}]
+\printbibliography[keyword=dynamical-systems, heading=subbibliography, title={Dynamic Systems and Chaos and Complexity}]
+\printbibliography[keyword=stat-mech, heading=subbibliography, title={Statistical Mechanics and Phase Transitions}]
+\printbibliography[keyword=info-computation, heading=subbibliography, title={Information and Computation and Algorithms}]
+\printbibliography[keyword=cybernetics-systems, heading=subbibliography, title={Cybernetics and Systems Theory}]
+\printbibliography[keyword=cog-sci-phil, heading=subbibliography, title={Cognitive Science and Philosophy of Mind}]
+\printbibliography[keyword=neuro-psych, heading=subbibliography, title={Neuroscience and Psychology}]
+\printbibliography[keyword=numerical-methods, heading=subbibliography, title={Numerical Methods and Computational Science}]
+\printbibliography[keyword=linguistics, heading=subbibliography, title={Linguistics and Semantics}]
+\printbibliography[keyword=interdisciplinary, heading=subbibliography, title={Interdisciplinary and Cultural Works}]
+
+\end{document} 
