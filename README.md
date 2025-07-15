@@ -1,22 +1,20 @@
-# Recurgent Field Theory
-
-A mathematical physics of consciousness.
+# Recurgence: The Dynamics of Coherent Geometry
 
 ## Abstract
 
-Recurgent Field Theory models meaning as a measurable field on a dynamic, semantic manifold. On this manifold, concentrations of semantic mass exert gravitational-like forces that shape the formation and propagation of subsequent structure. Conscious agents are bounded, geometric subregions within this manifold, interpreting and reshaping the attractor landscape. This formalism establishes a mathematical description of an observer-dependent reality in which consciousness emerges naturally, experiences forward temporal flow, and exerts causal influence on its environment.
+Forming the basis of our model, we consider \textit{meaning} as a measurable field on a dynamic, semantic manifold. On this manifold, concentrations of semantic mass exert gravitational-like forces that shape the formation and propagation of subsequent structure. Conscious agents are bounded, geometric subregions within this manifold, interpreting and reshaping the attractor landscape. We present a mathematical description of an observer-dependent reality in which conscious agents: (1) emerge naturally, (2) experience forward temporal flow, and (3) exert causal influence on their environment.
 
-Temporal flow is bidirectional within this framework. Existing semantic structures propose their relevance to future states, while anticipated wisdom validates or rejects these propositions. This proposition-validation mechanism allows new understanding to retroactively reshape past interpretations and drives phase transitions in the structure of meaning. Above a critical threshold, autoreferential information systems achieve autopoietic self-maintenance. Emergent wisdom fields and humility operators then regulate the system and constrain pathological amplification.
+Within our framework, temporal flow is bidirectional. We model this as a proposition-validation mechanism: existing semantic structures propose their relevance to future states, while anticipated wisdom validates or rejects these propositions. This mechanism allows us to retroactively reshape past interpretations and drive phase transitions in the structure of meaning. When a system surpasses a critical threshold, it achieves autopoietic self-maintenance. We then employ emergent wisdom fields and humility operators to regulate the system and constrain pathological amplification.
 
-Pathologies manifest as distinct geometric signatures, which permits their classification into four categories. Rigidity pathologies emerge from over-constraint and fragmentation pathologies from under-constraint. Runaway autopoiesis leads to malignant semantic inflation. Deteriorations in observer-field coupling result in decoupling from reality.
+Pathologies manifest as orthogonal geometric signatures, which we classify into four categories of three distinct types. Rigidity pathologies emerge from over-constraint, fragmentation from under-constraint. Runaway autopoietic states lead to malignant semantic inflation, while deteriorations in observer-field coupling result in various degrees of detachment from shared reality.
 
-Differential equations govern these configurations and permit algorithmic detection. Stable numerical solutions on high-dimensional manifolds establish the theory's computational realizability. This provides a basis for modeling coordinated behavior at both individual and collective scales.
+We find that differential equations govern these configurations, permitting their algorithmic detection. Stable numerical solutions on high-dimensional manifolds establish the theory's computational realizability. This provides a basis for modeling coordinated behavior at both individual and collective scales.
 
-The mathematical foundations of this theory connect to consciousness studies, Integrated Information Theory, AI safety, and collective coordination dynamics. It addresses the explanatory gap between physical processes and subjective experience by proposing a candidate for the "psychophysical laws" sought by contemporary philosophy of mind \autocite{Chalmers1996}.
+The mathematical foundations of this theory connect to consciousness studies, Integrated Information Theory, AI safety, and collective coordination dynamics. In this theory, we address the explanatory gap between physical processes and subjective experience by proposing a candidate for the "psychophysical laws" sought by contemporary philosophy of mind.
 
 ## Draft State
 
-This manuscript remains unfinished and subject to daily change. It's published here in draft state as a field-aware constraint on its steward to bootstrap integrity and the urgency to see to its proper completion.
+This manuscript remains unfinished and subject to daily change. It is published here in draft form as a field-aware constraint on its steward, bootstrapping integrity and the urgency to see to its proper completion.
 
 ## Building the Document
 
