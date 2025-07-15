@@ -1,4 +1,4 @@
-\chapter{Semantic Manifold and Metric Geometry}
+\chapter{Semantic Manifold and Metric Geometry}\label{ch:semantic_manifold_geometry}
 
 \section{Overview}
 
@@ -14,10 +14,10 @@ ds^2 = g_{ij}(p, t) \, dp^i \, dp^j
 \end{equation}
 where \(dp^i\) represents an infinitesimal displacement. The metric \(g_{ij}\) encodes the local constraint structure of meaning and modulates the cost of semantic displacement. High values of its components correspond to regions where semantic distinctions are rigid; low values mark regions of semantic fluidity.
 
-\section{Evolution Equation for the Semantic Metric}
+\section{Evolution Equation for the Semantic Metric}\label{sec:metric_evolution}
 
 A flow equation analogous to Ricci flow \autocite{Hamilton1982, Perelman2002, RicciLeviCivita1901} governs the metric tensor's evolution, but with added forcing terms reflecting the influence of recursive structure. This equation specifies the deformation of semantic geometry under both its intrinsic curvature and feedback from nonlocal processes.
-\begin{equation}
+\begin{equation}\label{eq:metric_evolution}
 \frac{\partial g_{ij}}{\partial t} = -2 R_{ij} + F_{ij}(R, D, A)
 \end{equation}
 where \(R_{ij}\) is the Ricci curvature tensor of \(g_{ij}\). The forcing term \(F_{ij}\) is a symmetric tensor-valued functional of the recursive coupling tensor \(R\), the recursive depth field \(D\), and the attractor stability field \(A\).

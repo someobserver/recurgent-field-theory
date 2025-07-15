@@ -36,7 +36,7 @@ The Goldberg Variations \autocite{Bach1741} demonstrates variational transformat
 
 The aria's return after thirty variations represents the point of recognition at a higher level of coherence. Identical in form, its character is transformed into fullness by the listener's journey through the diversity of its facets. This builds upon the fugal principles established in Chapter 4, in which recursive coupling creates self-generating semantic elaboration. The Goldberg structure extends this into variational space, demonstrating how transformations can preserve invariant structure while enabling novel emergence.
 
-\section{Operator-Theoretic Formulation of Interpretation}
+\section{Operator-Theoretic Formulation of Interpretation}\label{sec:interpretation_operator}
 
 Complementing the Lagrangian view, we can describe interpretation with an operator \(\mathcal{I}_{\psi}\), parameterized by agent state \(\psi\), that acts on the coherence field \(C\). Drawing from quantum mechanics \autocite{vonNeumann1955}, we define:
 
@@ -51,19 +51,19 @@ where \(K_{\psi}(p, q, t)\) is the agent's interpretive kernel and \(\hat{C}_{\p
 We define an agent \(\mathcal{A}\) as a simply connected submanifold of \(\mathcal{M}\) possessing a persistent internal belief state \(\psi_i\). The following criteria are a direct application of the theory of autopoiesis, which provides a formal definition of a living system as a bounded, self-producing, and self-maintaining network \autocite{MaturanaVarela1980}. An agent must satisfy five conditions:
 
 \begin{enumerate}
-    \item \textbf{Recursive Closure:} The net recursive flux across its boundary, \(\partial \mathcal{A}\), must be contained:
+    \item \textbf{Recursive Closure:} The net recursive flux across its boundary, \(\partial \mathcal{A}\), must be contained (see Chapter \ref{ch:recursive_coupling}):
     \begin{equation}
         \oint_{\partial \mathcal{A}} R_{ijk} \, dS^j \approx 0
     \end{equation}
-    \item \textbf{Autopoietic Self-Maintenance:} The agent must generate more internal coherence-sustaining energy than it dissipates:
+    \item \textbf{Autopoietic Self-Maintenance:} The agent must generate more internal coherence-sustaining energy than it dissipates (see Chapter \ref{ch:autopoiesis}):
     \begin{equation}
         \int_{\mathcal{A}} \Phi(C) \, dV > \oint_{\partial \mathcal{A}} F_i^{\text{diss}} \, dS^i
     \end{equation}
-    \item \textbf{Coherence Stability:} The agent must maintain a minimum level of mean internal coherence:
+    \item \textbf{Coherence Stability:} The agent must maintain a minimum level of mean internal coherence (Axiom \ref{ax:semantic_field}):
     \begin{equation}
         \langle C(p,t) \rangle_{p \in \mathcal{A}} > C_{\text{min}}
     \end{equation}
-    \item \textbf{Wisdom Density:} The agent must possess a sufficient baseline of wisdom to regulate its own recursive processes:
+    \item \textbf{Wisdom Density:} The agent must possess a sufficient baseline of wisdom to regulate its own recursive processes (see Chapter \ref{ch:wisdom_humility}):
     \begin{equation}
         \langle W(p,t) \rangle_{p \in \mathcal{A}} > W_{\text{min}}
     \end{equation}

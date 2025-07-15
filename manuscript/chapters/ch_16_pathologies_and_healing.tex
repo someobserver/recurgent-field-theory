@@ -15,7 +15,7 @@ Each of the following 12 pathologies represents a distinct failure mode with a u
 Rigidity pathologies arise from over-constraint, where the semantic manifold becomes too inflexible to adapt to new information.
 
 \begin{itemize}
-    \item \textbf{Attractor Dogmatism (AD):} The over-stabilization of a semantic attractor impedes adaptive flow. This occurs when the attractor stability \(A(p,t)\) and the potential \(V(C)\) overwhelm the generative autopoietic potential \(\Phi(C)\) from Chapter 7.
+    \item \textbf{Attractor Dogmatism (AD):} The over-stabilization of a semantic attractor impedes adaptive flow. This occurs when the attractor stability \(A(p,t)\) and the potential \(V(C)\) (Eq. \ref{eq:attractor_potential}) overwhelm the generative autopoietic potential \(\Phi(C)\), which is defined in Eq. \ref{eq:autopoietic_potential}.
     \begin{equation}
     A(p,t) > A_{\text{crit}}, \quad \|\nabla V(C)\| \gg \Phi(C)
     \end{equation}
@@ -25,7 +25,7 @@ Rigidity pathologies arise from over-constraint, where the semantic manifold bec
     \lim_{\epsilon \to 0} \frac{dC}{dt}\bigg|_{C+\epsilon} \approx 0
     \end{equation}
 
-    \item \textbf{Metric Crystallization (MC):} The evolution of the semantic metric \(g_{ij}\) is arrested despite the presence of non-zero curvature \(R_{ij}\); the geometry of meaning itself ceases to evolve.
+    \item \textbf{Metric Crystallization (MC):} The evolution of the semantic metric \(g_{ij}\) is arrested despite the presence of non-zero curvature \(R_{ij}\); the geometry of meaning itself ceases to evolve, violating its core evolution equation (Eq. \ref{eq:metric_evolution}).
     \begin{equation}
     \frac{\partial g_{ij}}{\partial t} \to 0, \quad R_{ij} \neq 0
     \end{equation}
@@ -57,7 +57,7 @@ Fragmentation pathologies arise from under-constraint, leading to breakdown in s
 Inflation pathologies result from runaway autopoiesis, where generative processes overwhelm regulatory constraints.
 
 \begin{itemize}
-    \item \textbf{Delusional Expansion (DE):} Unconstrained semantic inflation is induced by the autopoietic potential \(\Phi(C)\) overwhelming all stabilizing forces, with the humility operator \(\mathcal{H}[R]\) and wisdom field \(W\) failing.
+    \item \textbf{Delusional Expansion (DE):} Unconstrained semantic inflation is induced by the autopoietic potential \(\Phi(C)\) overwhelming all stabilizing forces, with the regulatory mechanisms of the Humility Operator (\S\ref{sec:humility_operator}) and Wisdom Field (\S\ref{sec:wisdom_field}) failing.
     \begin{equation}
     \Phi(C) \gg V(C), \quad \mathcal{H}[R] \approx 0, \quad W(p,t) < W_{\text{min}}
     \end{equation}
@@ -75,7 +75,7 @@ Inflation pathologies result from runaway autopoiesis, where generative processe
 
 \subsection{Observer-Coupling Pathologies}
 
-These pathologies arise from breakdown in the agent's interpretation operator \(\mathcal{I}_{\psi}\) (Chapter 13). The fundamental challenge of connecting subjective experience to objective semantic structures echoes the hard problem of consciousness \autocite{Chalmers1996}.
+These pathologies arise from breakdown in the agent's interpretation operator \(\mathcal{I}_{\psi}\) (defined in \S\ref{sec:interpretation_operator}). The fundamental challenge of connecting subjective experience to objective semantic structures echoes the hard problem of consciousness \autocite{Chalmers1996}.
 
 \begin{itemize}
     \item \textbf{Paranoid Interpretation (PI):} A systematic negative bias in the agent's expectation of the field, \(\hat{C}_{\psi}\), leads to misinterpretation of neutral or positive semantic content.

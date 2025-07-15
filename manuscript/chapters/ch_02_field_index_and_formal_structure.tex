@@ -6,7 +6,7 @@ We express the theory in tensor calculus, with each mathematical object correspo
 
 \section{Tensor Ranks and Properties}
 
-Each field's tensor rank and symmetry properties encode its geometric information, while its domain and range encode its semantic content. The metric tensor \(g_{ij}\) establishes the foundational structure. The coherence fields \(C_i\) and \(\psi_i\) provide dynamic content. Higher-rank tensors mediate recursive feedback loops driving manifold evolution.
+The theory is constructed on an \(n\)-dimensional pseudo-Riemannian manifold \(\mathcal{M}\), referred to as the semantic manifold. Each field's tensor rank and symmetry properties encode its geometric information, while its domain and range encode its semantic content. The metric tensor \(g_{ij}\) establishes the foundational structure, as laid out in the Axiom of the Semantic Manifold (\S\ref{ax:semantic_manifold}). The semantic and coherence fields, \(\psi_i\) and \(C_i\), provide the dynamic content (Axiom \ref{ax:semantic_field}), while higher-rank tensors such as the recursive coupling tensor \(R_{ijk}\) mediate the feedback loops that drive the manifold's evolution (Axiom \ref{ax:recursive_coupling}). All tensor expressions employ the Einstein summation convention, detailed in Section \ref{sec:tensor_conventions}.
 
 {\small
 \renewcommand{\arraystretch}{1.1}
@@ -72,12 +72,6 @@ Each field's tensor rank and symmetry properties encode its geometric informatio
 \footnotetext[2]{This tensor formalizes the \textit{distributional hypothesis} in linguistics, which posits that words with similar distributions have similar meanings \autocite{Harris1954}. Modern vector-space models of semantics, such as the Word2Vec framework, are built on this principle \autocite{Mikolov2013}.}
 \footnotetext[3]{This function serves as an implementation of the principle of Hebbian learning, which states that repeated, persistent co-activation of connected elements leads to an increase in the strength of their connection \autocite{Hebb1949}.}
 
-Notes:
-\begin{itemize}
-    \item \(n\) is the dimensionality of the semantic manifold \(\mathcal{M}\).
-    \item The coherence field \(C_i\) is an \(n\)-dimensional vector field; each component represents coherence along one semantic axis.
-    \item Tensor contractions follow the Einstein summation convention.
-\end{itemize}
 
 \section{System Architecture}
 
@@ -88,6 +82,7 @@ The subsystems are deeply integrated and form two primary, coupled cycles. In th
 Once coherence surpasses a critical threshold, a secondary generative cycle activates. This cycle uses the autopoietic potential to form new recursive pathways, thereby driving genuine structural innovation. The entire system is modulated by the regulatory subsystem, which employs the wisdom field and humility operator to prevent pathological amplification and maintain dynamic equilibrium.
 
 \section{Tensor Conventions and Notation}
+\label{sec:tensor_conventions}
 
 The tensor conventions follow modern standards for differential geometry and tensor calculus on smooth manifolds \autocite{Lee2003, MisnerThorneWheeler1973}. The tensor calculus framework from which this originates is the pioneering work of Gregorio Ricci Curbastro and Tullio Levi-Civita \autocite{RicciLeviCivita1901}.
 
@@ -126,7 +121,7 @@ Integrals over the manifold use the invariant volume element, \(dV = \sqrt{|\det
 We distinguish between the fundamental state of the system and its measured coherence:
 \begin{itemize}
     \item The \textbf{semantic field} \(\psi_i(p,t)\) represents the raw, underlying semantic content at each point. It is the fundamental dynamical variable.
-    \item The \textbf{coherence field} \(C_i(p,t)\) is a derived, observable quantity that measures the self-consistency and alignment of the underlying semantic field. It is a functional of \(\psi_i\):
+    \item The \textbf{coherence field} \(C_i(p,t)\) is a derived, observable quantity that measures the self-consistency and alignment of the underlying semantic field. As an \(n\)-dimensional vector field, each of its components represents coherence along a principal semantic axis. It is a functional of \(\psi_i\):
 \end{itemize}
 \begin{equation}
 C_i(p,t) = \mathcal{F}_i[\psi](p,t) = \int_{\mathcal{N}(p)} K_{ij}(p,q) \psi_j(q,t) \, dq
