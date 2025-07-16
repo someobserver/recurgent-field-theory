@@ -1,10 +1,14 @@
-\chapter{Recurgent Field Equation and Lagrangian Mechanics}\label{ch:lagrangian_mechanics}
+\chapter{Recurgent Field Equation and Lagrangian Mechanics}\label{ch:recurgent_field_equation_and_lagrangian_mechanics}
+
+% ------------------------------------------------------------------------------------------------
 
 \section{Overview}
 
 The dynamics of semantic structures are governed by the principle of stationary action, a cornerstone of modern field theory \autocite{GoldsteinPooleSafko2002, Arnold1989} that we establish as a core tenet of this framework (Axiom \ref{ax:variational_evolution}). A single scalar function, the Lagrangian, encodes the interplay of competing semantic forces, and the equations of motion derive from it. In this section, we specify the Lagrangian for Recurgent Field Theory and derive the Euler-Lagrange field equation for the evolution of coherence across the manifold.
 
-\section{Lagrangian Density}
+% ------------------------------------------------------------------------------------------------
+
+\section{Lagrangian Density}\label{sec:lagrangian_density}
 
 Semantic dynamics arise from a tension between coherence-seeking flow, the stabilizing influence of attractors, generative autopoietic potential, and regulatory constraints against pathological recursion. The Lagrangian density \(\mathcal{L}\) for a real coherence field \(C_i\) encodes these competing influences:
 \begin{equation}
@@ -21,28 +25,39 @@ The potential, autopoietic, and humility terms, which encode these dynamics, are
 
 With this formulation, the resulting field equations are covariant. Any continuous symmetry in the Lagrangian gives rise to a corresponding conservation law, in accordance with Noether's theorem and the fundamental symmetries of theoretical physics \autocite{Noether1918, Lagrange1788, Euler1744, LandauLifshitz1975, PeskinSchroeder1995, Weinberg1995}.
 
-\subsection{Complex Field Formulation}
+% ------------------------------------------------------------------------------------------------
+
+\subsection{Complex Field Formulation}\label{sec:complex_field_formulation}
 For systems with wave-like phenomena or phase dynamics, the coherence field must be complex-valued, requiring an extended Lagrangian:
 \begin{equation}
 \mathcal{L}_{\mathbb{C}} = g^{ij} (\nabla_i C_k)(\nabla_j C^{k*}) - V(|C|) + \Phi(|C|) - \lambda \mathcal{H}[R]
 \end{equation}
 where \(C^{k*}\) is the complex conjugate of \(C^k\) and \(|C| = \sqrt{g^{ij} C_i C_j^*}\). This formulation, analogous to that of Schrödinger or Dirac fields, models propagating semantic waves and interference effects.
 
-\section{The Principle of Stationary Action}
+% ------------------------------------------------------------------------------------------------
+
+\section{The Principle of Stationary Action}\label{sec:the_principle_of_stationary_action}
 
 The action functional, \(S\), is the integral of the Lagrangian density over the Semantic Manifold \(\mathcal{M}\):
+
 \begin{equation}
 S[C_i] = \int_{\mathcal{M}} \mathcal{L}(C_i, \nabla_j C_i, R) \, dV
 \end{equation}
+
 where \(dV = \sqrt{|g|} \, d^n p\) is the invariant volume element. The principle of stationary action, \(\delta S = 0\), requires that the physical evolution of the field follow a path that extremizes this functional.
 
-\section{Euler–Lagrange Field Equation}
+% ------------------------------------------------------------------------------------------------
+
+\section{Euler–Lagrange Field Equation}\label{sec:euler_lagrange_field_equation}
 
 The variational principle, applied to the action \(S\), yields the Euler–Lagrange equations for the coherence field \(C_i\) \autocite{Euler1744, Lagrange1788}:
+
 \begin{equation}
 \frac{\partial \mathcal{L}}{\partial C_i} - \nabla_j \left( \frac{\partial \mathcal{L}}{\partial (\nabla_j C_i)} \right) = 0
 \end{equation}
+
 Substituting the components of \(\mathcal{L}\) yields the explicit equation of motion:
+
 \begin{equation}
 \Box C^i + \frac{\partial V(C_{\mathrm{mag}})}{\partial C_i} - \frac{\partial \Phi(C_{\mathrm{mag}})}{\partial C_i} + \lambda \frac{\partial \mathcal{H}[R]}{\partial C_i} = 0
 \end{equation}
@@ -56,11 +71,15 @@ The humility term requires a functional derivative, since \(\mathcal{H}\) depend
 \end{equation}
 This term represents a nonlocal feedback loop in which the global recursive structure influences local coherence dynamics.
 
-\section{Microscopic Dynamics and Field Coupling}
+% ------------------------------------------------------------------------------------------------
+
+\section{Microscopic Dynamics and Field Coupling}\label{sec:microscopic_dynamics_and_field_coupling}
 
 The Euler-Lagrange equation for \(C_i\) provides the effective dynamics of coherence. However, the axiomatic foundation (Chapter 1) posits a more fundamental semantic field, \(\psi_i\), from which coherence emerges (\(C_i = \mathcal{F}_i[\psi]\)). A full description of the system requires that we specify the dynamics of \(\psi_i\) and its coupling to \(C_i\).
 
-\subsection{Semantic Field Evolution}
+% ------------------------------------------------------------------------------------------------
+
+\subsection{Semantic Field Evolution}\label{sec:semantic_field_evolution}
 
 We describe the evolution of the microscopic field \(\psi_i\) with a flow equation:
 \begin{equation}
@@ -77,7 +96,9 @@ where:
 \end{itemize}
 This establishes a bidirectional, multi-scale coupling: microscopic variations in \(\psi_i\) determine the structure of the macroscopic coherence field \(C_i\), which in turn guides the evolution of \(\psi_i\).
 
-\subsection{The Coupled Dynamical System}
+% ------------------------------------------------------------------------------------------------
+
+\subsection{The Coupled Dynamical System}\label{sec:the_coupled_dynamical_system}
 
 The complete theoretical structure comprises a coupled system of partial differential equations:
 \begin{enumerate}

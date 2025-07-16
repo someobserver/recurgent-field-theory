@@ -1,10 +1,14 @@
-\chapter{Autopoietic Function and Phase Transitions}\label{ch:autopoiesis}
+\chapter{Autopoietic Function and Phase Transitions}\label{ch:autopoietic_function_and_phase_transitions}
+
+% ------------------------------------------------------------------------------------------------
 
 \section{Overview}
 
 Semantic systems are bistable. Below a critical coherence threshold, ideas require constant external reinforcement to persist. Above this threshold, an autopoietic potential, \(\Phi(C)\), activates within the system's Lagrangian. This potential functions as a self-sustaining generative engine for paradigmatic reorganization and the formation of novel semantic structures. The process is analogous to stellar nucleosynthesis, where sufficient mass accumulation triggers an irreversible, structure-generating cascade. The autopoietic potential converts semantic potential into emergent, self-organizing complexity, a principle central to the study of synergetics in complex systems \autocite{Haken1983}.
 
-\section{Definition and Lagrangian Integration}
+% ------------------------------------------------------------------------------------------------
+
+\section{Definition and Lagrangian Integration}\label{sec:definition_and_lagrangian_integration}
 
 We define the autopoietic potential \(\Phi\) as a scalar function that gives substance to the principle established in Axiom \ref{ax:autopoietic_threshold}. It depends on local coherence magnitude, \(C_{\mathrm{mag}}\):
 \begin{equation}\label{eq:autopoietic_potential}
@@ -22,6 +26,8 @@ This potential enters the system Lagrangian (from Chapter 6) as a negative poten
 \end{equation}
 This term establishes a feedback loop in which sufficient coherence generates the potential for greater coherence, leading to the phase transition formally designated as \textit{Recurgence}.
 
+% ------------------------------------------------------------------------------------------------
+
 \section{The Recurgence Phase Transition}
 
 Recurgence separates two distinct regimes of semantic organization, analogous to phase transitions in statistical mechanics \autocite{Landau1937, Stanley1971, Goldenfeld1992}. We characterize the transition with a dimensionless order parameter, the Recurgence Stability Parameter \(S_R\), by comparing the generative autopoietic potential to the stabilizing and regulatory potentials:
@@ -29,6 +35,8 @@ Recurgence separates two distinct regimes of semantic organization, analogous to
 S_R(p,t) = \frac{\Phi(C_{\mathrm{mag}})}{V(C_{\mathrm{mag}}) + \lambda \mathcal{H}[R]}
 \end{equation}
 The value of \(S_R\) delineates three stability regimes: a stable regime (\(S_R < 1\)) where attractors dominate, a critical "edge-of-chaos" regime (\(S_R \approx 1\)), and an inflationary regime (\(S_R > 1\)) where the autopoietic potential drives exponential growth.
+
+% ------------------------------------------------------------------------------------------------
 
 \subsection{Dynamical Consequences}
 
@@ -41,6 +49,8 @@ where \(\chi_{ijk}\) is the latent recursive channel tensor. In a complex field 
 C_i(p,t) = A_i \cdot \text{sech}\left(\frac{|p-vt|}{\sigma}\right) e^{i(\omega t - kx)}
 \end{equation}
 
+% ------------------------------------------------------------------------------------------------
+
 \section{Regulatory Mechanisms and Stability}
 
 Unchecked, the positive feedback from \(\Phi(C_{\mathrm{mag}})\) could lead to pathological, runaway expansion. To address this, we include several regulatory mechanisms. First, the potential saturates at high coherence levels, preventing unbounded growth. Phenomenologically, we model this with the Michaelis-Menten form \autocite{MichaelisMenten1913}:
@@ -48,6 +58,8 @@ Unchecked, the positive feedback from \(\Phi(C_{\mathrm{mag}})\) could lead to p
 \Phi_{\text{sat}}(C_{\mathrm{mag}}) = \Phi_{\text{max}} \cdot \frac{\Phi(C_{\mathrm{mag}})}{\Phi(C_{\mathrm{mag}}) + \kappa}
 \end{equation}
 Second, near criticality (\(S_R \approx 1\)), the system exhibits chaotic dynamics (indicated by a positive maximal Lyapunov exponent, \(\lambda_{\text{max}} > 0\)). The wisdom and humility functions (Chapter 8) can channel these dynamics into stable, far-from-equilibrium dissipative structures \autocite{PrigogineStengers1984}. Regulatory failures lead to distinct pathologies such as semantic fragmentation, noise collapse, or recurgent fixation (Chapter 15).
+
+% ------------------------------------------------------------------------------------------------
 
 \section{Coupled Systems and Mutual Resonance}
 

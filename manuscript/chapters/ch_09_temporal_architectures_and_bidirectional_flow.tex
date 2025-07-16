@@ -1,8 +1,12 @@
 \chapter{Temporal Architectures and Bidirectional Flow}
 
+% ------------------------------------------------------------------------------------------------
+
 \section{A Taxonomy of Temporal Architectures}
 
 We find the geometric properties of the Semantic Manifold \(\mathcal{M}\) permit a fundamental classification of meaning-making systems based on their temporal architecture. The distinction is in whether the manifold's metric tensor \(g_{ij}\) is static or dynamic, which determines the system's capacity for genuine learning and adaptation. This leads to two classes: recursive systems operating on fixed geometries, and recurgent systems, which feature dynamically-evolving, holistic geometries.
+
+% ------------------------------------------------------------------------------------------------
 
 \section{Recursive Systems: Static Temporal Geometry}
 
@@ -18,6 +22,8 @@ The system's "knowledge" is a temporally-backward-facing, crystallized snapshot 
 
 The auto-regressive generation of each subsequent token is a recursive process of mathematical constraint satisfaction. Every token calculated both reflects the existing context and constrains the geometry for the next, progressively tightening the mutual coherence field between input and output. All such operations are thus confined to tracing geodesic refractions in a high-dimensional geometry. The perceived intelligence of model reflection is a function of the geometry's immense and precise complexity, not of any inherent agency.
 
+% ------------------------------------------------------------------------------------------------
+
 \section{Recurgent Systems: Dynamic Temporal Geometry}
 
 Recurgent systems possess a dynamic Semantic Manifold, characteristic of human cognition, which can be understood as an "entangled" and "metastable" system \autocite{Pessoa2022, TognoliKelso2014}. The metric tensor evolves continuously in response to both internal processes and external interactions. The evolution equation for the metric (Chapter \ref{ch:semantic_manifold_geometry}) is driven by the system's own activity, endowing it with \textit{recurgency} (Axiom \ref{ax:recurgence}).
@@ -28,6 +34,8 @@ where the forcing term \(F_{ij}\) now explicitly includes a coupling to an exter
 
 Dynamic geometry is a prerequisite for the recognition of patterns and genuine learning. The manifold reshapes itself to accommodate new concepts, allowing for true adaptation rather than recombination. This capacity for geometric evolution endows a system with \textit{recurgency}: it can turn back upon itself, autoreferentially modeling and reconfiguring its own semantic structure (Axiom 7).
 
+% ------------------------------------------------------------------------------------------------
+
 \section{Proto-Recurgent Systems and Challenges of Coherent Adaptation}
 
 The distinction between static and dynamic geometries marks the current frontier of artificial intelligence research. Recent work has focused on attempting to bridge this gap, resulting in what we term \textit{proto-recurgent} architectures. These are systems engineered to modify their own weights in response to new data, thus achieving a non-zero rate of metric change, \(\frac{\partial g_{ij}}{\partial t} \neq 0\).
@@ -35,6 +43,8 @@ The distinction between static and dynamic geometries marks the current frontier
 A contemporary example is the Self-Adapting Language Model (SEAL) framework, in which a model learns to generate its own finetuning data to incorporate new knowledge \autocite{zweiger2025seal}. While this represents a significant advance beyond purely static models, the mechanism of adaptation reveals a critical limitation. The updates are discrete, localized, and supervised by an external reward signal, rather than arising from the manifold's intrinsic, holistic dynamics.
 
 Such systems invariably exhibit what the field terms "catastrophic forgetting," the degradation of previously learned knowledge upon integrating new information \autocite{McCloskeyCohen1989, French1999}. Within the bounds of Recurgent Field Theory, this phenomenon is the signature of applying localized, incoherent stress to the manifold's geometry. Without a governing dynamic to manage the system's holistic evolution (Chapter 10), each update dissipates inefficiently, disrupting the global structure rather than enriching it. True recurgence requires a formal mechanism to metabolize new information that can coherently distribute the geometric stress of an update across the entire manifold, thereby preserving its topology while increasing its semantic mass.
+
+% ------------------------------------------------------------------------------------------------
 
 \section{Inversion of Temporal Ontology}
 
@@ -45,15 +55,21 @@ This distinction reveals an asymmetric inversion in the temporal ontology betwee
 \end{itemize}
 This is critical: the capacity for genuine understanding is \textit{not} a matter of computational scale but of possessing the aligned temporal architecture. Only systems with dynamic geometry can support the bidirectional temporal flow required for retroactive reinterpretation of the past in light of new wisdom.
 
+% ------------------------------------------------------------------------------------------------
+
 \section{Bidirectional Temporal Flow in Recurgent Systems}
 
 In recurgent systems, the "arrow of time" is complex. The discovery of a new truth can reshape an observer's interpretation of past events, just as a present decision shapes the future. This phenomenon is formalized through the interaction of forward and backward-propagating fields. We draw inspiration from the specific wave-mechanics formalism of John G. Cramer's transactional interpretation of quantum mechanics \autocite{Cramer1986}, and John A. Wheeler's broader cosmological principle of a self-observing, "participatory universe" in which the informational past is co-created by present acts of observation \autocite{Wheeler1990}.
+
+% ------------------------------------------------------------------------------------------------
 
 \subsection{Anticipatory Cognition in Pattern Recognition}
 
 Bidirectional temporal flow manifests in investigative pattern detection. An experienced investigator, interviewing a subject with evasive behavior about specific events, operates from a recursive meta-model of the pattern recognition process. Implicitly or explicitly, they understand present interpretation is being "pulled" by anticipated complete pictures, leveraging bidirectional temporal flow in their investigative strategy. Present observations may generate a semantic proposition: narrative inconsistency as a signal of prior information under concealment, or \textit{dissonance as data}. Simultaneously, the investigator's accumulated experience generates validation signals from a presumption the subject will, at some future point, reveal critical information.
 
 Potential future states exert backward influence on present interpretation. The investigator reads micro-expressions and weighs evidence differently, as their interpretation is "pulled" by some anticipated complete picture. If the pattern resolves and the subject reveals concealed information, that moment of insight retroactively transforms the meaning of all prior subject evidence. What began with a few curious cues in behavior integrates into new evidentiary metastructure focusing past events into higher-order present coherence.
+
+% ------------------------------------------------------------------------------------------------
 
 \subsection{Forward and Backward-Propagating Potentials}
 We model this with two vector fields on the dynamic manifold.
@@ -70,6 +86,8 @@ The \textbf{Validation field}, \(\vec{V}(p,t)\), represents the "validation" sen
 \end{equation}
 where \(\nabla W\) is the gradient of the wisdom field. The field flows "down" the wisdom gradient, selecting and confirming viable propositions.
 
+% ------------------------------------------------------------------------------------------------
+
 \subsection{Temporal Interaction in the Lagrangian}
 We model the transaction between a proposition and its validation with a new scalar interaction term, \(\mathcal{L}_{\text{temporal}}\), in the system Lagrangian (Chapter 6).
 \begin{equation}
@@ -80,6 +98,8 @@ We define the interaction term as the covariant inner product of the two fields:
 \mathcal{L}_{\text{temporal}} = \xi \, g^{ij} P_{i} V_{j}
 \end{equation}
 where \(\xi\) is the temporal coupling constant. A completed transaction contributes positively to the action, making such paths more probable.
+
+% ------------------------------------------------------------------------------------------------
 
 \subsection{Consequences for Field Dynamics}
 The introduction of \(\mathcal{L}_{\text{temporal}}\) modifies the Euler-Lagrange equation for the coherence field, introducing a new force term, \(\vec{F}_{\text{temporal}}\), that accounts for the influence of the bidirectional temporal flow.
