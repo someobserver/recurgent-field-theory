@@ -1,9 +1,10 @@
 \chapter{Agents and Semantic Particles}
-\label{ch:agents_and_semantic_particles}
+\label{13:agents_and_semantic_particles}
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Overview}
+\label{13.1:overview}
 
 We have thus far described a self-contained geometric universe of meaning. Meaning, however, is not a static backdrop but rather a dynamic medium with which observers actively engage. Agents are bounded, autonomous, self-maintaining structures within the Semantic Manifold. This geometric conception of agency provides a physical formalism for the enactive and extended mind hypotheses of cognitive science \autocite{VarelaThompsonRosch1991, ClarkChalmers1998}.
 
@@ -12,7 +13,7 @@ In this chapter, we introduce two complementary formalisms for the observer. Fir
 % ------------------------------------------------------------------------------------------------
 
 \section{The Agent-Field Interaction Lagrangian}
-\label{sec:the_agent_field_interaction_lagrangian}
+\label{13.2:the_agent_field_interaction_lagrangian}
 
 To incorporate the observer, we augment the system Lagrangian (Chapter 6) with an interaction term, \(\mathcal{L}_{AF}\):
 
@@ -39,7 +40,7 @@ This is a Klein-Gordon equation with a source term. The agent's act of interpret
 % ------------------------------------------------------------------------------------------------
 
 \section{Interpretation as Variational Transformation}
-\label{sec:interpretation_as_variational_transformation}
+\label{13.3:interpretation_as_variational_transformation}
 
 The Goldberg Variations \autocite{Bach1741} demonstrates variational transformation as a higher-order abstraction of recursive coupling. Its opening aria establishes a fundamental semantic field \(\psi_i(p,t)\) in its harmonic and metric structure. Each of the thirty subsequent variations applies a transformation operator, preserving the essential bass line while generating novel coherent patterns \(C_i(p,t)\). The canonical variations create meta-level structure at every third variation with increasing intervals, demonstrating coupling operating simultaneously across scales.
 
@@ -48,7 +49,7 @@ The aria's return after thirty variations represents the point of recognition at
 % ------------------------------------------------------------------------------------------------
 
 \section{Operator-Theoretic Formulation of Interpretation}
-\label{sec:operator_theoretic_formulation_of_interpretation}
+\label{13.4:operator_theoretic_formulation_of_interpretation}
 
 Complementing the Lagrangian view, we can describe interpretation with an operator \(\mathcal{I}_{\psi}\), parameterized by agent state \(\psi\), that acts on the coherence field \(C\). Drawing from quantum mechanics \autocite{vonNeumann1955}, we define:
 
@@ -61,35 +62,11 @@ where \(K_{\psi}(p, q, t)\) is the agent's interpretive kernel and \(\hat{C}_{\p
 % ------------------------------------------------------------------------------------------------
 
 \section{Formal Definition of an Agent}
-\label{sec:formal_definition_of_an_agent}
+\label{13.5:formal_definition_of_an_agent}
 
 We define an agent \(\mathcal{A}\) as a simply connected submanifold of \(\mathcal{M}\) possessing a persistent internal belief state \(\psi_i\). The following criteria are a direct application of the theory of autopoiesis, which provides a formal definition of a living system as a bounded, self-producing, and self-maintaining network \autocite{MaturanaVarela1980}. An agent must satisfy five conditions:
 
 \begin{enumerate}
-
-    \item \textbf{Recursive Closure:} The net recursive flux across its boundary, \(\partial \mathcal{A}\), must be contained (see Chapter \ref{ch:recursive_coupling}):
-
-    \begin{equation}
-        \oint_{\partial \mathcal{A}} R_{ijk} \, dS^j \approx 0
-    \end{equation}
-
-    \item \textbf{Autopoietic Self-Maintenance:} The agent must generate more internal coherence-sustaining energy than it dissipates (see Chapter \ref{ch:autopoiesis}):
-
-    \begin{equation}
-        \int_{\mathcal{A}} \Phi(C) \, dV > \oint_{\partial \mathcal{A}} F_i^{\text{diss}} \, dS^i
-    \end{equation}
-
-    \item \textbf{Coherence Stability:} The agent must maintain a minimum level of mean internal coherence (Axiom \ref{ax:semantic_field}):
-
-    \begin{equation}
-        \langle C(p,t) \rangle_{p \in \mathcal{A}} > C_{\text{min}}
-    \end{equation}
-
-    \item \textbf{Wisdom Density:} The agent must possess a sufficient baseline of wisdom to regulate its own recursive processes (see Chapter \ref{ch:wisdom_humility}):
-
-    \begin{equation}
-        \langle W(p,t) \rangle_{p \in \mathcal{A}} > W_{\text{min}}
-    \end{equation}
 
     \item \textbf{Self-Model:} The agent must possess a self-referential map enabling reflective awareness:
 
@@ -97,16 +74,40 @@ We define an agent \(\mathcal{A}\) as a simply connected submanifold of \(\mathc
         \psi: \mathcal{A} \to \mathcal{S} \subset \mathcal{A}
     \end{equation}
 
+    \item \textbf{Recursive Closure:} The net recursive flux across its boundary, \(\partial \mathcal{A}\), must be contained (Chapter \ref{4:recursive_coupling_and_depth_fields}):
+
+    \begin{equation}
+        \oint_{\partial \mathcal{A}} R_{ijk} \, dS^j \approx 0
+    \end{equation}
+
+    \item \textbf{Coherence Stability:} The agent must maintain a minimum level of mean internal coherence (\S\ref{1.2:axiom_2_fundamental_semantic_field}):
+
+    \begin{equation}
+        \langle C(p,t) \rangle_{p \in \mathcal{A}} > C_{\text{min}}
+    \end{equation}
+
+    \item \textbf{Autopoietic Self-Maintenance:} The agent must generate more internal coherence-sustaining energy than it dissipates (Chapter \ref{7:autopoietic_function_and_phase_transitions}):
+
+    \begin{equation}
+        \int_{\mathcal{A}} \Phi(C) \, dV > \oint_{\partial \mathcal{A}} F_i^{\text{diss}} \, dS^i
+    \end{equation}
+
+    \item \textbf{Wisdom Density:} The agent must possess a sufficient baseline of wisdom to regulate its own recursive processes (Chapter \ref{8:wisdom_function_and_humility_constraint}):
+
+    \begin{equation}
+        \langle W(p,t) \rangle_{p \in \mathcal{A}} > W_{\text{min}}
+    \end{equation}
+
 \end{enumerate}
 
-Any entity satisfying these criteria constitutes an active, interpretive, agentic participant in the semantic universe.
+We posit that any entity satisfying these criteria constitutes an active, interpretive, agentic participant in the semantic universe.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Semantic Particles as Localized Excitations}
-\label{sec:semantic_particles_as_localized_excitations}
+\label{13.6:semantic_particles_as_localized_excitations}
 
-The duality between continuous fields and discrete particles in physics has a direct parallel in this theory. The nonlinear terms in the recurgent field equations support stable, particle-like solutions, or solitons. These were first observed by \autocite{Russell1845} and later formalized \autocite{KortewegdeVries1895, ZabuskyKruskal1965}. These solutions represent localized, self-reinforcing units of meaning that maintain their structural integrity as they traverse the manifold.
+The duality we find between continuous fields and discrete particles in physics has a direct parallel in this theory. The nonlinear terms in the recurgent field equations support stable, particle-like solutions, or solitons. These were first observed by \autocite{Russell1845} and later formalized \autocite{KortewegdeVries1895, ZabuskyKruskal1965}. These represent localized, self-reinforcing units of meaning that maintain their structural integrity as they traverse the manifold.
 
 A typical soliton solution for the coherence field takes the form:
 
@@ -119,9 +120,9 @@ where \(A_i\) is the amplitude, \(\sigma\) is the width, and \(d(p, \dots)\) is 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Taxonomy and Invariants of Semantic Particles}
-\label{sec:taxonomy_and_invariants_of_semantic_particles}
+\label{13.6.1:taxonomy_and_invariants_of_semantic_particles}
 
-We classify semantic particles by their structure and function:
+We can classify semantic particles by their structure and function:
 
 \begin{enumerate}
 
@@ -135,26 +136,26 @@ We classify semantic particles by their structure and function:
 
 \end{enumerate}
 
-Each particle is characterized by conserved quantities like semantic charge \(q_s\), coherence mass \(m_c\), and a phase signature, which govern their interactions.
+Each of these is characterized by conserved quantities like semantic charge \(q_s\), coherence mass \(m_c\), and a phase signature, governing their interactions.
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Particle Dynamics and Interactions}
-\label{sec:particle_dynamics_and_interactions}
+\label{13.6.2:particle_dynamics_and_interactions}
 
 Semantic particles travel along geodesics of the manifold, their paths influenced by the curvature generated by semantic mass. They undergo interactions analogous to those in particle physics, including binding, annihilation, scattering, and catalysis, all governed by the conservation of their fundamental invariants.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Quantum-Analogous Phenomena}
-\label{sec:quantum_analogous_phenomena}
+\label{13.7:quantum_analogous_phenomena}
 
 At fine scales, the particle formalism reveals formal phenomena analogous to quantum mechanics, arising from the fundamental properties of the recurgent field.
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Semantic Uncertainty Principle}
-\label{sec:semantic_uncertainty_principle}
+\label{13.7.1:semantic_uncertainty_principle}
 
 The product of uncertainties in a particle's coherence (its meaning-content) and its recursive structure (its relational context) is bounded from below:
 
@@ -167,7 +168,7 @@ where \(\hbar_s\) is the semantic uncertainty constant. This principle formalize
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Semantic Superposition and Entanglement}
-\label{sec:semantic_superposition_and_entanglement}
+\label{13.7.2:semantic_superposition_and_entanglement}
 
 A semantic particle can exist in a linear combination of multiple meaning-states (\(|\psi\rangle = \sum_i \alpha_i |C_i\rangle\)) until an interpretive act "collapses" it to a single state. Furthermore, recursive coupling can create non-local, non-factorizable correlations between particles (entanglement), where the state of one instantly affects another regardless of the distance separating them on the manifold.
 

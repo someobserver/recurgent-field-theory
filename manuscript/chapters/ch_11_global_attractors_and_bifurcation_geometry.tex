@@ -1,16 +1,17 @@
 \chapter{Global Attractors and Bifurcation Geometry}
-\label{ch:global_attractors_and_bifurcation_geometry}
+\label{11:global_attractors_and_bifurcation_geometry}
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Overview}
+\label{11.1:overview}
 
 The field equations determine the evolution of semantic structures, but not long-term system behavior. The Semantic Manifold is a dynamical system whose global state is a position in a phase space defined by the principal fields. We assume the long-term statistical properties of trajectories within the space to be ergodic, meaning: time averages along a trajectory equal phase-space averages \autocite{Birkhoff1931}. The geometry of this phase space reveals critical transitions that \textit{bifurcations} induce, which cause qualitative shifts in the manifold's topology. These transitions represent the emergence of new paradigms, the collapse of old ones, and the spontaneous generation of novel modes of meaning.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Phase Space and Stability Regimes}
-\label{sec:phase_space_and_stability_regimes}
+\label{11.2:phase_space_and_stability_regimes}
 
 A point in the abstract phase space, whose axes correspond to the global properties of the primary fields, characterizes the state of the RFT system at any moment. The Recurgence Stability Parameter, \(S_R\) (Chapter 7), serves as the primary organizing principle of this space:
 
@@ -33,14 +34,14 @@ This dimensionless order parameter compares the generative autopoietic potential
 % ------------------------------------------------------------------------------------------------
 
 \section{Bifurcation Transformations}
-\label{sec:bifurcation_transformations}
+\label{11.3:bifurcation_transformations}
 
 Bifurcations represent qualitative changes in the topological structure of the system's attractor landscape, occurring as the system passes through the critical regime. These constitute fundamental reconfigurations of the pathways of meaning, not just changes in field values. From modern dynamical systems theory \autocite{Poincare1892, Lorenz1963, Smale1967, RuelleTakens1971, GuckenheimerHolmes1983, Kuznetsov2004, Strogatz2014}, several indicators derived from RFT fields signal such transitions. The study of such period-doubling routes to chaos have revealed universal quantitative laws governing these transitions, independent of the particular system's details \autocite{Feigenbaum1978}.
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Indicators of Topological Change}
-\label{sec:indicators_of_topological_change}
+\label{11.3.1:indicators_of_topological_change}
 
 Observable changes in the manifold's structure characterize bifurcation events. We use the following metrics as the formal criteria for detecting these transitions, grounded in fundamental objects:
 
@@ -63,14 +64,14 @@ Observable changes in the manifold's structure characterize bifurcation events. 
 % ------------------------------------------------------------------------------------------------
 
 \section{Entangled Transitions and Synchronization}
-\label{sec:entangled_transitions_and_synchronization}
+\label{11.4:entangled_transitions_and_synchronization}
 
 In a complex, highly interconnected manifold, bifurcations often constitute non-local events manifesting as spontaneous synchronization of previously independent regions. The emergence of such a global, coordinated state from local dynamics represents a hallmark of complex systems. This phenomenon, the spontaneous phase-locking of a large population of coupled oscillators, has been studied extensively, its canonical theoretical framework developed in the Kuramoto model \autocite{Kuramoto1975}.
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Measuring Synchronization}
-\label{sec:measuring_synchronization}
+\label{11.4.1:measuring_synchronization}
 
 We quantify the degree of synchronization between two regions, \(\Omega_i\) and \(\Omega_j\), with a functional that measures the phase alignment of the coherence field \(C_i\). A common method employs a normalized inner product, weighted by the phase of the recursive coupling tensor \(R_{ijk}\) mediating their interaction:
 
@@ -83,6 +84,6 @@ where \(\phi(p,q,t) = \arg(R_{ijk}(p,q,t))\). A value of \(\Psi_{ij}(t) \approx 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Spectral Analysis of Global Coherence}
-\label{sec:spectral_analysis_of_global_coherence}
+\label{11.4.2:spectral_analysis_of_global_coherence}
 
 Computing \(\Psi_{ij}(t)\) for all pairs of regions yields a time-dependent synchronization matrix, \(\mathbf{S}(t)\). The matrix's spectral properties, particularly the behavior of its largest eigenvalues, reveals principal modes of collective behavior in the manifold. A sudden collapse of the spectral gap (the distance between the first and second eigenvalues) indicates that the entire system is locking into a single, dominant mode of behavior, signifying a global, entangled phase transition. 

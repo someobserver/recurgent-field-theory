@@ -1,21 +1,22 @@
 \chapter{Computation and Meta-Recursion}
-\label{ch:computation_and_meta_recursion}
+\label{17:computation_and_meta_recursion}
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Overview}
+\label{17.1:overview}
 
 In this chapter, we establish the computational bridge between the abstract theory and its practical application. The goal is an algorithm capable of analyzing semantic field data, identifying the geometric signatures of the pathologies from Chapter 16, and forecasting their evolution. This requires discretizing the continuous manifold \(\mathcal{M}\) and its associated fields, and solving the core differential equations with stable numerical methods. We choose the methods employed for their proven convergence properties and their standardization within the theory of computation \autocite{Sipser2012}.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Algorithmic Foundation}
-\label{sec:algorithmic_foundation}
+\label{17.2:algorithmic_foundation}
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Semantic Manifold Discretization}
-\label{sec:semantic_manifold_discretization}
+\label{17.2.1:semantic_manifold_discretization}
 
 We represent the continuous Semantic Manifold \(\mathcal{M}\) as a discrete set of points, or a lattice, where each point \(p_i\) holds a vector of field values.
 
@@ -28,7 +29,7 @@ The components are core fields: the fundamental semantic field \(\psi\), coheren
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Metric and Curvature Tensors}
-\label{sec:metric_and_curvature_tensors}
+\label{17.2.2:metric_and_curvature_tensors}
 
 The metric tensor \(g_{ij}\) is fundamental; it defines the geometry from which all other properties derive. We compute it from the semantic field's gradients with a second-order finite difference approximation, a standard technique in numerical analysis \autocite{BurdenFairesBurden2015}.
 
@@ -41,7 +42,7 @@ The Christoffel symbols \(\Gamma^k_{ij}\) and the full Riemann curvature tensor 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Recursive Coupling Tensor}
-\label{sec:recursive_coupling_tensor}
+\label{17.2.3:recursive_coupling_tensor}
 
 The recursive coupling tensor \(R_{ijk}\) has a theoretical definition as a second derivative. Its numerical implementation must accurately reflect this. A direct, second-order finite difference approximation replaces the previous heuristic:
 
@@ -54,12 +55,12 @@ where \(C_k(p)_{\psi_i^+,\psi_j^+}\) denotes the coherence field at \(p\) evalua
 % ------------------------------------------------------------------------------------------------
 
 \section{Dynamical Evolution and Analysis}
-\label{sec:dynamical_evolution_and_analysis}
+\label{17.3:dynamical_evolution_and_analysis}
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Geodesics and Field Trajectories}
-\label{sec:geodesics_and_field_trajectories}
+\label{17.3.1:geodesics_and_field_trajectories}
 
 Solving the geodesic equation traces the paths of semantic concepts, which identifies, for instance, when a pathological attractor captures a thought process.
 
@@ -72,7 +73,7 @@ A fourth-order Runge-Kutta integrator, a classic method for accuracy and stabili
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Stability Analysis via Lyapunov Exponents}
-\label{sec:stability_analysis_via_lyapunov_exponents}
+\label{17.3.2:stability_analysis_via_lyapunov_exponents}
 
 The maximal Lyapunov exponent, \(\lambda_{\max}\), introduced in Lyapunov's seminal work on the stability of dynamical systems and later generalized by the multiplicative ergodic theorem \autocite{Lyapunov1907, Oseledets1968}, determines whether a semantic region is stable, chaotic, or pathologically rigid. It quantifies the divergence rate of nearby trajectories in phase space. A positive \(\lambda_{\max}\) represents a hallmark of chaos (often seen in Fragmentation pathologies), while \(\lambda_{\max} \approx 0\) can indicate the rigidity of Belief Calcification.
 
@@ -85,7 +86,7 @@ The calculation requires integrating the linearized equations of motion for a pe
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Spectral Analysis of Geometric Operators}
-\label{sec:spectral_analysis_of_geometric_operators}
+\label{17.3.3:spectral_analysis_of_geometric_operators}
 
 The spectral properties of a semantic structure's geometric operators reveal its underlying "resonant frequencies." We compute the eigenvalues of the Laplace-Beltrami operator, \(\Delta_g\); its spectrum encodes the manifold's intrinsic scale and connectivity, analogous to the vibrational modes of a drumhead \autocite{Chung1997}.
 
@@ -98,28 +99,28 @@ A sparse spectrum with a large gap after the first few eigenvalues indicates a w
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Topological Data Analysis}
-\label{sec:topological_
+\label{17.3.4:topological_data_analysis}
 
 Beyond spectral methods, computational topology tools offer a means to quantify the shape of the Semantic Manifold. Persistent homology, a technique in topological data analysis (TDA) \autocite{EdelsbrunnerHarer2010}, can track the birth and death of topological features (connected components, loops, voids) in the field data across different scales. The resulting "barcode" provides a unique signature for different pathological states. For example, Attractor Splintering would manifest as a proliferation of short-lived components, while the rigid structure of a Dogmatic Attractor would correspond to a single, highly persistent one.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Advanced Formalisms: Meta-Recursion}
-\label{sec:advanced_formalisms_meta_recursion}
+\label{17.4:advanced_formalisms_meta_recursion}
 
 To model recursion acting upon recursion, itself a hallmark of self-modifying architectures and adaptive meta-learning, we require higher-order computational structures.
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Meta-Recursive Coupling Tensors}
-\label{sec:meta_recursive_coupling_tensors}
+\label{17.4.1:meta_recursive_coupling_tensors}
 
 We formalize higher-order recursion via meta-recursive coupling tensors, \(R^{(n)}\), which encode the \(n\)-fold recursive evolution of the field structure. As these objects grow exponentially in dimensionality (\(O(d^{3n})\)), they require specialized computational representations to maintain tractability.
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Computational Representations for Meta-Tensors}
-\label{sec:computational_representations_for_meta_tensors}
+\label{17.4.2:computational_representations_for_meta_tensors}
 
 For practical implementation, we realize meta-recursive tensors using structures from modern mathematics and computer science:
 
@@ -140,7 +141,7 @@ For practical implementation, we realize meta-recursive tensors using structures
 % ------------------------------------------------------------------------------------------------
 
 \section{Computational Realizability Theorem}
-\label{sec:computational_realizability_theorem}
+\label{17.5:computational_realizability_theorem}
 
 \paragraph{Statement}
 
