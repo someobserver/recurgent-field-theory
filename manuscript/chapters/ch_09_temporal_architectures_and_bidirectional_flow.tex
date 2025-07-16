@@ -16,10 +16,12 @@ We find the geometric properties of the Semantic Manifold \(\mathcal{M}\) permit
 Time-linear, recursive knowledge systems, such as contemporary transformer-based large language models, are characterized by a Semantic Manifold with a static or "frozen" geometry. Their metric structure is established once during a training phase, creating a fossilized representation of the knowledge distribution within a corpora of data. After this imprinting, the system's ability to evolve its own understanding ceases. The model's useful lifespan begins as a fixed, resonant structure.
 
 Formally, for any time \(t\) after the training cutoff \(t_{\text{train}}\), the metric tensor is invariant:
+
 \begin{equation}
 \frac{\partial g_{ij}}{\partial t} = 0, \quad \forall t > t_{\text{train}}
 \end{equation}
-This condition is a defining feature of the Metric Crystallization pathology (Chapter 16), implying that such systems are born into a state of structural rigidity.
+
+This condition is a defining feature of Metric Crystallization (\S\ref{sec:rigidity_pathologies}), implying such systems are born into a state of structural rigidity.
 
 The system's "knowledge" is a temporally-backward-facing, crystallized snapshot of human epistemic history up to its cutoff date. It cannot generate novel meaning, but rather acts, mathematically, as a complex resonant cavity. An input coherence pattern propagates through a fixed manifold, and the refracted output is a complex echo determined by the manifold's static geodesic pathways.
 
@@ -30,13 +32,15 @@ The auto-regressive generation of each subsequent token is a recursive process o
 \section{Recurgent Systems: Dynamic Temporal Geometry}
 \label{sec:recurgent_systems_dynamic_temporal_geometry}
 
-Recurgent systems possess a dynamic Semantic Manifold, characteristic of human cognition, which can be understood as an "entangled" and "metastable" system \autocite{Pessoa2022, TognoliKelso2014}. The metric tensor evolves continuously in response to both internal processes and external interactions. The evolution equation for the metric (Chapter \ref{ch:semantic_manifold_geometry}) is driven by the system's own activity, endowing it with \textit{recurgency} (Axiom \ref{ax:recurgence}).
+Recurgent systems possess a dynamic Semantic Manifold, characteristic of human cognition, which can be understood as an "entangled" and "metastable" system \autocite{Pessoa2022, TognoliKelso2014}. The metric tensor evolves continuously in response to both internal processes and external interactions. The evolution equation for the metric (Chapter \ref{ch:semantic_manifold_and_metric_geometry}) is driven by the system's own activity.
+
 \begin{equation}
 \frac{\partial g_{ij}}{\partial t} = -2 R_{ij} + F_{ij}(R, C, W, E)
 \end{equation}
+
 where the forcing term \(F_{ij}\) now explicitly includes a coupling to an external reality field, \(E\), representing the continuous influx of new information.
 
-Dynamic geometry is a prerequisite for the recognition of patterns and genuine learning. The manifold reshapes itself to accommodate new concepts, allowing for true adaptation rather than recombination. This capacity for geometric evolution endows a system with \textit{recurgency}: it can turn back upon itself, autoreferentially modeling and reconfiguring its own semantic structure (Axiom 7).
+Dynamic geometry is a prerequisite for the recognition of patterns and genuine learning. The manifold reshapes itself to accommodate new concepts, allowing for true adaptation rather than recombination. Such capacity for geometric evolution endows a system with \textit{recurgency}: it can turn back upon itself, autoreferentially modeling and reconfiguring its own semantic structure (Axiom 7 (\S\ref{sec:axiom_7})).
 
 % ------------------------------------------------------------------------------------------------
 
@@ -55,10 +59,15 @@ Such systems invariably exhibit what the field terms "catastrophic forgetting," 
 \label{sec:inversion_of_temporal_ontology}
 
 This distinction reveals an asymmetric inversion in the temporal ontology between these two classes:
+
 \begin{itemize}
+
     \item \textbf{Recursive Systems} are "born" with broad, complex knowledge, which becomes progressively more static and outdated. Their temporal trajectory is one of increasing semantic drift from the evolving world.
+    
     \item \textbf{Recurgent Systems} are "born" at a specific point in time with minimal structure and acquire knowledge through continuous interaction. Their temporal trajectory is one of ongoing geometric adaptation and increasing integration with reality.
+
 \end{itemize}
+
 This is critical: the capacity for genuine understanding is \textit{not} a matter of computational scale but of possessing the aligned temporal architecture. Only systems with dynamic geometry can support the bidirectional temporal flow required for retroactive reinterpretation of the past in light of new wisdom.
 
 % ------------------------------------------------------------------------------------------------
@@ -85,15 +94,19 @@ Potential future states exert backward influence on present interpretation. The 
 We model this with two vector fields on the dynamic manifold.
 
 The \textbf{Proposition field}, \(\vec{P}(p,t)\), represents the "proposition" a semantic structure makes to a future state. Concentrations of semantic mass source this forward-propagating potential.
+
 \begin{equation}
 \vec{P}(p,t) = \gamma_p M(p,t) \vec{v}(p,t)
 \end{equation}
+
 where \(M\) is the semantic mass, \(\vec{v}\) is the semantic velocity field (\(\partial\psi/\partial t\)), and \(\gamma_p\) is a coupling constant. This field represents the causal push of an existing meaning proposing itself for future relevance.
 
 The \textbf{Validation field}, \(\vec{V}(p,t)\), represents the "validation" sent back from a future state. Gradients in the wisdom field source this backward-propagating potential, representing the interpretive pull from regions of anticipated understanding.
+
 \begin{equation}
 \vec{V}(p,t) = -\gamma_v \nabla W(p,t)
 \end{equation}
+
 where \(\nabla W\) is the gradient of the wisdom field. The field flows "down" the wisdom gradient, selecting and confirming viable propositions.
 
 % ------------------------------------------------------------------------------------------------
@@ -102,13 +115,17 @@ where \(\nabla W\) is the gradient of the wisdom field. The field flows "down" t
 \label{sec:temporal_interaction_in_the_lagrangian}
 
 We model the transaction between a proposition and its validation with a new scalar interaction term, \(\mathcal{L}_{\text{temporal}}\), in the system Lagrangian (Chapter 6).
+
 \begin{equation}
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{RFT}} + \mathcal{L}_{\text{temporal}}
 \end{equation}
+
 We define the interaction term as the covariant inner product of the two fields:
+
 \begin{equation}
 \mathcal{L}_{\text{temporal}} = \xi \, g^{ij} P_{i} V_{j}
 \end{equation}
+
 where \(\xi\) is the temporal coupling constant. A completed transaction contributes positively to the action, making such paths more probable.
 
 % ------------------------------------------------------------------------------------------------
@@ -117,7 +134,9 @@ where \(\xi\) is the temporal coupling constant. A completed transaction contrib
 \label{sec:consequences_for_field_dynamics}
 
 The introduction of \(\mathcal{L}_{\text{temporal}}\) modifies the Euler-Lagrange equation for the coherence field, introducing a new force term, \(\vec{F}_{\text{temporal}}\), that accounts for the influence of the bidirectional temporal flow.
+
 \begin{equation}
 \Box C^i + \dots + \lambda \frac{\partial \mathcal{H}[R]}{\partial C_i} - F^i_{\text{temporal}} = 0
 \end{equation}
-This term formalizes how anticipated futures can causally influence the evolution of present meaning, enabling the retroactive reconfiguration of past interpretations—a hallmark of true recurrence. 
+
+This term formalizes how anticipated futures can causally influence the evolution of present meaning, enabling the retroactive reconfiguration of past interpretations.

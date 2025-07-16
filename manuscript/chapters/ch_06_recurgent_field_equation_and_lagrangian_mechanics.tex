@@ -13,17 +13,26 @@ Semantic structures evolve according to the principle of stationary action, serv
 \label{sec:lagrangian_density}
 
 Semantic dynamics arise from a tension between coherence-seeking flow, the stabilizing influence of attractors, generative autopoietic potential, and regulatory constraints against pathological recursion. The Lagrangian density \(\mathcal{L}\) for a real coherence field \(C_i\) encodes these competing influences:
+
 \begin{equation}
 \mathcal{L} = \underbrace{\frac{1}{2} g^{ij} (\nabla_i C_k)(\nabla_j C^k)}_{\text{Kinetic Term}} - \underbrace{V(C_{\text{mag}})}_{\text{Potential}} + \underbrace{\Phi(C_{\text{mag}})}_{\text{Autopoiesis}} - \underbrace{\lambda \mathcal{H}[R]}_{\text{Constraint}}
 \end{equation}
+
 where summation over repeated indices is implied. In this manner, a macroscopic field (an order parameter, analogous to the coherence field \(C_i\)) is governed by a phenomenological Lagrangian whose potential landscape is engineered to produce a phase transition. Its origins lie in the theory of superconductivity, where it was used to describe the transition from a normal to a superconducting state \autocite{GinzburgLandau1950}. The components are:
+
 \begin{itemize}
+
     \item \textbf{Kinetic Term:} The standard kinetic energy for a multicomponent field, which penalizes non-uniform coherence gradients.
+
     \item \textbf{Potential Term \(V(C_{\text{mag}})\):} A potential function that encodes the influence of stable semantic attractors, driving the system toward states of established meaning.
+
     \item \textbf{Autopoietic Term \(\Phi(C_{\text{mag}})\):} A generative potential that becomes active above a critical coherence threshold, driving the formation of novel semantic structures.
+
     \item \textbf{Humility Constraint \(\mathcal{H}[R]\):} A functional of the recursive coupling tensor \(R\) that provides a regulatory mechanism to penalize excessive or unstable recursive amplification. The parameter \(\lambda\) modulates its strength.
+
 \end{itemize}
-The potential, autopoietic, and humility terms, which encode these dynamics, are detailed in Chapters \ref{ch:attractor_dynamics}, \ref{ch:autopoiesis}, and \ref{ch:wisdom_humility}, respectively.
+
+The potential, autopoietic, and humility terms, which encode these dynamics, are detailed in Chapters \ref{ch:semantic_mass_and_attractor_dynamics}, \ref{ch:autopoietic_function_and_phase_transitions}, and \ref{ch:wisdom_function_and_humility_constraint}, respectively.
 
 With this formulation, the resulting field equations are covariant. Any continuous symmetry in the Lagrangian gives rise to a corresponding conservation law, in accordance with Noether's theorem and the fundamental symmetries of theoretical physics \autocite{Noether1918, Lagrange1788, Euler1744, LandauLifshitz1975, PeskinSchroeder1995, Weinberg1995}.
 
@@ -31,10 +40,13 @@ With this formulation, the resulting field equations are covariant. Any continuo
 
 \subsection{Complex Field Formulation}
 \label{sec:complex_field_formulation}
+
 For systems with wave-like phenomena or phase dynamics, the coherence field must be complex-valued, requiring an extended Lagrangian:
+
 \begin{equation}
 \mathcal{L}_{\mathbb{C}} = g^{ij} (\nabla_i C_k)(\nabla_j C^{k*}) - V(|C|) + \Phi(|C|) - \lambda \mathcal{H}[R]
 \end{equation}
+
 where \(C^{k*}\) is the complex conjugate of \(C^k\) and \(|C| = \sqrt{g^{ij} C_i C_j^*}\). This formulation, analogous to that of Schrödinger or Dirac fields, models propagating semantic waves and interference effects.
 
 % ------------------------------------------------------------------------------------------------
@@ -66,14 +78,19 @@ Substituting the components of \(\mathcal{L}\) yields the explicit equation of m
 \begin{equation}
 \Box C^i + \frac{\partial V(C_{\mathrm{mag}})}{\partial C_i} - \frac{\partial \Phi(C_{\mathrm{mag}})}{\partial C_i} + \lambda \frac{\partial \mathcal{H}[R]}{\partial C_i} = 0
 \end{equation}
-where \(\Box \equiv g^{jk}\nabla_j \nabla_k\) is the covariant d'Alembertian operator. The potential terms are functions of the coherence magnitude, \(C_{\text{mag}} = \sqrt{g^{ij} C_i C_j}\), and their derivatives are found via the chain rule:
+
+where \(\Box \equiv g^{jk}\nabla_j \nabla_k\) is the covariant d'Alembertian operator. The potential terms are functions of the coherence magnitude, \(C_{\text{mag}} = \sqrt{g^{ij} C_i C_j}\), and we find their derivatives via the chain rule:
+
 \begin{equation}
 \frac{\partial V(C_{\mathrm{mag}})}{\partial C_i} = \frac{dV}{dC_{\mathrm{mag}}} \frac{\partial C_{\mathrm{mag}}}{\partial C_i} = \frac{dV}{dC_{\mathrm{mag}}} \frac{g^{ij} C_j}{C_{\mathrm{mag}}}
 \end{equation}
-The humility term requires a functional derivative, since \(\mathcal{H}\) depends on the recursive coupling tensor \(R\), which is itself a functional of the underlying semantic field \(\psi\) that generates \(C\):
+
+The humility term requires a functional derivative, since \(\mathcal{H}\) depends on the recursive coupling tensor \(R\), which is itself a functional of the underlying semantic field \(\psi\) generating \(C\):
+
 \begin{equation}
 \frac{\partial \mathcal{H}[R]}{\partial C_i(p)} = \int_{\mathcal{M}} \frac{\delta \mathcal{H}[R]}{\delta R_{jkl}(s)} \frac{\delta R_{jkl}(s)}{\delta C_i(p)} \, dV_s
 \end{equation}
+
 This term represents a nonlocal feedback loop in which the global recursive structure influences local coherence dynamics.
 
 % ------------------------------------------------------------------------------------------------
@@ -81,7 +98,7 @@ This term represents a nonlocal feedback loop in which the global recursive stru
 \section{Microscopic Dynamics and Field Coupling}
 \label{sec:microscopic_dynamics_and_field_coupling}
 
-The Euler-Lagrange equation for \(C_i\) provides the effective dynamics of coherence. However, the axiomatic foundation (Chapter 1) posits a more fundamental semantic field, \(\psi_i\), from which coherence emerges (\(C_i = \mathcal{F}_i[\psi]\)). A full description of the system requires that we specify the dynamics of \(\psi_i\) and its coupling to \(C_i\).
+The Euler-Lagrange equation for \(C_i\) provides the effective dynamics of coherence. However, Axiom 2 (\S\ref{sec:axiom_2}) posits a more fundamental semantic field, \(\psi_i\), from which coherence emerges (\(C_i = \mathcal{F}_i[\psi]\)). A full description of the system requires that we specify the dynamics of \(\psi_i\) and its coupling to \(C_i\).
 
 % ------------------------------------------------------------------------------------------------
 
@@ -89,18 +106,27 @@ The Euler-Lagrange equation for \(C_i\) provides the effective dynamics of coher
 \label{sec:semantic_field_evolution}
 
 We describe the evolution of the microscopic field \(\psi_i\) with a flow equation:
+
 \begin{equation}
 \frac{\partial \psi_i(p, t)}{\partial t} = v_i[\psi, C](p, t)
 \end{equation}
+
 The semantic velocity \(v_i\) is driven by gradients in the effective coherence landscape and other recursive forces. A general form for this velocity is:
+
 \begin{equation}
 v_i(p, t) = \alpha \cdot \nabla_i C_{\mathrm{mag}}(p, t) + \mathcal{G}_i[\psi](p, t)
 \end{equation}
+
 where:
+
 \begin{itemize}
+
     \item The first term is gradient flow, in which \(\psi_i\) evolves to increase local coherence. \(\alpha\) is a coupling constant.
+    
     \item The second term, \(\mathcal{G}_i[\psi]\), includes all other direct recursive forces and influences not mediated by the mean coherence field \(C\). Its specific form depends on the system being modeled.
+
 \end{itemize}
+
 This establishes a bidirectional, multi-scale coupling: microscopic variations in \(\psi_i\) determine the structure of the macroscopic coherence field \(C_i\), which in turn guides the evolution of \(\psi_i\).
 
 % ------------------------------------------------------------------------------------------------
@@ -109,13 +135,21 @@ This establishes a bidirectional, multi-scale coupling: microscopic variations i
 \label{sec:the_coupled_dynamical_system}
 
 The complete theoretical structure comprises a coupled system of partial differential equations:
+
 \begin{enumerate}
+
     \item \textbf{Microscopic Evolution:} \(\displaystyle \frac{\partial \psi_i}{\partial t} = v_i[\psi, C]\)
+    
     \item \textbf{Macroscopic Definition:} \(C_i = \mathcal{F}_i[\psi]\)
+    
     \item \textbf{Effective Field Equation:} \(\Box C^i + \frac{\partial V}{\partial C_i} - \frac{\partial \Phi}{\partial C_i} + \lambda \frac{\partial \mathcal{H}}{\partial C_i} = 0\)
+
 \end{enumerate}
+
 We may solve the system numerically by iterating between the levels: \(\psi_i\) is updated via its evolution equation, the resulting \(C_i\) is calculated, and \(C_i\) must satisfy the Euler-Lagrange equation. The underlying action principle guarantees the consistency of this procedure, provided the variation \(\delta C_i\) is constrained by admissible variations in \(\psi_i\):
+
 \begin{equation}
 \delta C_i(p) = \int_{\mathcal{M}} \frac{\delta C_i(p)}{\delta \psi_j(q)} \, \delta \psi_j(q) \, dV_q
 \end{equation}
+
 The dynamics derived from the effective Lagrangian for \(C_i\) therefore remain consistent with the evolution of the fundamental field \(\psi_i\).

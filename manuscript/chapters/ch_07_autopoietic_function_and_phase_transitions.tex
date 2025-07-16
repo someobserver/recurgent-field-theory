@@ -12,7 +12,8 @@ Semantic systems are bistable. Below a critical coherence threshold, ideas requi
 \section{Definition and Lagrangian Integration}
 \label{sec:definition_and_lagrangian_integration}
 
-We define the autopoietic potential \(\Phi\) as a scalar function that gives substance to the principle established in Axiom \ref{ax:autopoietic_threshold}. It depends on local coherence magnitude, \(C_{\mathrm{mag}}\):
+We define the autopoietic potential \(\Phi\) as a scalar function that gives substance to the principle established in Axiom 6 (\S\ref{sec:axiom_6}). It depends on local coherence magnitude, \(C_{\mathrm{mag}}\):
+
 \begin{equation}\label{eq:autopoietic_potential}
 \Phi(C_{\mathrm{mag}}) =
 \begin{cases}
@@ -20,12 +21,15 @@ We define the autopoietic potential \(\Phi\) as a scalar function that gives sub
 0 & \text{otherwise}
 \end{cases}
 \end{equation}
+
 where \(\alpha\) is a coupling constant, \(\beta\) is a critical exponent that determines the transition's sharpness, and \(C_{\text{threshold}}\) is the activation coherence value. The concept of autopoiesis as a self-organizing principle is drawn from foundational work in theoretical biology \autocite{MaturanaVarela1980}.
 
 This potential enters the system Lagrangian (from Chapter 6) as a negative potential that contributes energy to the field when active:
+
 \begin{equation}
 \mathcal{L} = \frac{1}{2} g^{ij} (\nabla_i C_k)(\nabla_j C^k) - V(C_{\mathrm{mag}}) + \Phi(C_{\mathrm{mag}}) - \lambda \mathcal{H}[R]
 \end{equation}
+
 This term establishes a feedback loop in which sufficient coherence generates the potential for greater coherence, leading to the phase transition formally designated as \textit{Recurgence}.
 
 % ------------------------------------------------------------------------------------------------
@@ -34,9 +38,11 @@ This term establishes a feedback loop in which sufficient coherence generates th
 \label{sec:the_recurgence_phase_transition}
 
 Recurgence separates two distinct regimes of semantic organization, analogous to phase transitions in statistical mechanics \autocite{Landau1937, Stanley1971, Goldenfeld1992}. We characterize the transition with a dimensionless order parameter, the Recurgence Stability Parameter \(S_R\), by comparing the generative autopoietic potential to the stabilizing and regulatory potentials:
+
 \begin{equation}
 S_R(p,t) = \frac{\Phi(C_{\mathrm{mag}})}{V(C_{\mathrm{mag}}) + \lambda \mathcal{H}[R]}
 \end{equation}
+
 The value of \(S_R\) delineates three stability regimes: a stable regime (\(S_R < 1\)) where attractors dominate, a critical "edge-of-chaos" regime (\(S_R \approx 1\)), and an inflationary regime (\(S_R > 1\)) where the autopoietic potential drives exponential growth.
 
 % ------------------------------------------------------------------------------------------------
@@ -45,10 +51,13 @@ The value of \(S_R\) delineates three stability regimes: a stable regime (\(S_R 
 \label{sec:dynamical_consequences}
 
 When the system enters the inflationary regime (\(S_R > 1\)), several key phenomena occur. The autopoietic potential directly drives the growth of new recursive pathways and modulates the evolution of the recursion tensor:
+
 \begin{equation}
 \frac{dR_{ijk}(p,q,t)}{dt} = \Phi(C_{\mathrm{mag}}) \cdot \chi_{ijk}(p,q,t)
 \end{equation}
+
 where \(\chi_{ijk}\) is the latent recursive channel tensor. In a complex field formulation, the balance between kinetic energy and the nonlinear potential \(\Phi\) also supports localized wave-packets or solitons, which are self-reinforcing units of meaning. These have a long history, from their first systematic observation \autocite{Russell1845} to their first mathematical description \autocite{KortewegdeVries1895} to their modern rediscovery and naming \autocite{ZabuskyKruskal1965}. Their canonical form is:
+
 \begin{equation}
 C_i(p,t) = A_i \cdot \text{sech}\left(\frac{|p-vt|}{\sigma}\right) e^{i(\omega t - kx)}
 \end{equation}
@@ -59,9 +68,11 @@ C_i(p,t) = A_i \cdot \text{sech}\left(\frac{|p-vt|}{\sigma}\right) e^{i(\omega t
 \label{sec:regulatory_mechanisms_and_stability}
 
 Unchecked, the positive feedback from \(\Phi(C_{\mathrm{mag}})\) could lead to pathological, runaway expansion. To address this, we include several regulatory mechanisms. First, the potential saturates at high coherence levels, preventing unbounded growth. Phenomenologically, we model this with the Michaelis-Menten form \autocite{MichaelisMenten1913}:
+
 \begin{equation}
 \Phi_{\text{sat}}(C_{\mathrm{mag}}) = \Phi_{\text{max}} \cdot \frac{\Phi(C_{\mathrm{mag}})}{\Phi(C_{\mathrm{mag}}) + \kappa}
 \end{equation}
+
 Second, near criticality (\(S_R \approx 1\)), the system exhibits chaotic dynamics (indicated by a positive maximal Lyapunov exponent, \(\lambda_{\text{max}} > 0\)). The wisdom and humility functions (Chapter 8) can channel these dynamics into stable, far-from-equilibrium dissipative structures \autocite{PrigogineStengers1984}. Regulatory failures lead to distinct pathologies such as semantic fragmentation, noise collapse, or recurgent fixation (Chapter 15).
 
 % ------------------------------------------------------------------------------------------------
@@ -70,7 +81,9 @@ Second, near criticality (\(S_R \approx 1\)), the system exhibits chaotic dynami
 \label{sec:coupled_systems_and_mutual_resonance}
 
 The interaction between distinct semantic systems (\(\mathcal{M}_1, \mathcal{M}_2\)) allows for the emergence of intersubjective meaning, a concept central to general and sociological systems theory \autocite{vonBertalanffy1968, Luhmann1995}. We mediate this coupling with a cross-system recursive tensor and quantify it with a Mutual Resonance Parameter, \(S_R^{(12)}\), which measures the systems' joint autopoietic potential relative to their individual stabilizing capacities:
+
 \begin{equation}
 S_R^{(12)} = \frac{\bar{\Phi}^{(1)} \cdot \bar{\Phi}^{(2)}}{[\bar{V}^{(1)} + \lambda^{(1)} \bar{\mathcal{H}}^{(1)}] \cdot [\bar{V}^{(2)} + \lambda^{(2)} \bar{\mathcal{H}}^{(2)}]}
 \end{equation}
+
 where \(\bar{\Phi}\), \(\bar{V}\), and \(\bar{\mathcal{H}}\) represent the total integrated potentials for each system. When \(S_R^{(12)} \approx 1\), the systems achieve an optimal state of \textit{resonant coupling}, characterized by mutual coherence enhancement, identity preservation, and emergent wisdom (\(W^{(12)} > W^{(1)} + W^{(2)}\)). This provides a formal mechanism for the emergence of stable, intersubjective meaning.
