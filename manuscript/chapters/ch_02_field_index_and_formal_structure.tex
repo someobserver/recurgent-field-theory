@@ -74,6 +74,7 @@ The framework is constructed on an \(n\)-dimensional pseudo-Riemannian manifold 
 \caption{Tensor Ranks and Properties}
 \end{longtable}
 }
+
 \footnotetext[1]{The use of attractor stability metrics and potential energy landscapes for system characterization is drawn from nonlinear dynamics \autocite{Strogatz2014}.}
 \footnotetext[2]{A formalization of the \textit{distributional hypothesis} in linguistics, which posits that words with similar distributions have similar meanings \autocite{Harris1954}. Other modern vector-space models of semantics, such as the Word2Vec framework, are built on this principle \autocite{Mikolov2013}.}
 \footnotetext[3]{This serves as an implementation of Hebbian learning, which states that repeated, persistent co-activation of connected elements leads to an increase in the strength of their connection \autocite{Hebb1949}.}
@@ -84,6 +85,7 @@ The framework is constructed on an \(n\)-dimensional pseudo-Riemannian manifold 
 \label{sec:system_architecture}
 
 Coherence dynamics emerge from the interplay of four conceptual subsystems:
+
 \begin{itemize}
     \item A geometric engine governs the evolution of the manifold's metric and curvature.
     \item A coherence processor handles the evolution of the primary fields.
@@ -108,6 +110,7 @@ The tensor conventions follow modern standards for differential geometry and ten
 \label{sec:index_notation_and_einstein_summation}
 
 The Einstein summation convention \autocite{Einstein1916} applies, where repeated indices (one upper, one lower) imply summation:
+
 \begin{equation}
 A_i B^i = \sum_{i=1}^n A_i B^i
 \end{equation}
@@ -126,6 +129,7 @@ The metric tensor \(g_{ij}\) and its inverse \(g^{ij}\) raise and lower indices 
 \label{sec:covariant_derivatives}
 
 The covariant derivative \(\nabla_i\), defined via the Christoffel symbols \(\Gamma^k_{ij}\) \autocite{Christoffel1869}, accommodates the curved geometry of \(\mathcal{M}\):
+
 \begin{equation}
 \nabla_i C_j = \partial_i C_j - \Gamma^k_{ij} C_k \quad \text{and} \quad \Gamma^k_{ij} = \frac{1}{2} g^{kl} ( \partial_i g_{jl} + \partial_j g_{il} - \partial_l g_{ij} )
 \end{equation}
@@ -136,6 +140,7 @@ The covariant derivative \(\nabla_i\), defined via the Christoffel symbols \(\Ga
 \label{sec:functional_and_variational_derivatives}
 
 The dynamics derive from an action principle, \(S = \int \mathcal{L} \, dV\), requiring variational derivatives. The Euler-Lagrange equations take the form:
+
 \begin{equation}
 \frac{\delta \mathcal{L}}{\delta C_i} = \frac{\partial \mathcal{L}}{\partial C_i} - \sum_j \nabla_j \left( \frac{\partial \mathcal{L}}{\partial (\nabla_j C_i)} \right)
 \end{equation}
@@ -153,13 +158,16 @@ Integrals over the manifold use the invariant volume element, \(dV = \sqrt{|\det
 \label{sec:fundamental_versus_derived_fields}
 
 We distinguish between the fundamental state of the system and its measured coherence:
+
 \begin{itemize}
     \item The \textbf{semantic field} \(\psi_i(p,t)\) represents the raw, underlying semantic content at each point. It is the fundamental dynamical variable.
     \item The \textbf{coherence field} \(C_i(p,t)\) is a derived, observable quantity that measures the self-consistency and alignment of the underlying semantic field. As an \(n\)-dimensional vector field, each of its components represents coherence along a principal semantic axis. It is a functional of \(\psi_i\):
 \end{itemize}
+
 \begin{equation}
 C_i(p,t) = \mathcal{F}_i[\psi](p,t) = \int_{\mathcal{N}(p)} K_{ij}(p,q) \psi_j(q,t) \, dq
 \end{equation}
+
 where \(K_{ij}(p,q)\) is a non-local kernel. While the dynamics could be expressed in terms of \(\psi_i\), the Lagrangian is formulated using \(C_i\) to maintain a direct connection to semantic coherence, the central observable of interest.
 
 % ------------------------------------------------------------------------------------------------
@@ -168,6 +176,7 @@ where \(K_{ij}(p,q)\) is a non-local kernel. While the dynamics could be express
 \label{sec:on_the_status_of_the_recursive_coupling_tensor}
 
 The recursive coupling tensor \(R_{ijk}\) possesses a dual nature:
+
 \begin{enumerate}
     \item \textbf{As a Measurement:} It measures the coherence field's response to variations in the underlying semantic field:
     \begin{equation}
@@ -178,6 +187,7 @@ The recursive coupling tensor \(R_{ijk}\) possesses a dual nature:
     \frac{dR_{ijk}(p,q,t)}{dt} = \Phi(C_{\mathrm{mag}}(p,t)) \cdot \chi_{ijk}(p,q,t)
     \end{equation}
 \end{enumerate}
+
 A consistency condition resolves this duality: the dynamics of \(\psi_i\) and \(C_k\) must evolve such that the time derivative of the measurement definition (2.7) equals the dynamical evolution equation (2.8).
 
 % ------------------------------------------------------------------------------------------------
@@ -186,7 +196,9 @@ A consistency condition resolves this duality: the dynamics of \(\psi_i\) and \(
 \label{sec:scalar_measures_from_vector_fields}
 
 Functions requiring scalar inputs derive them from vector fields using the metric. The primary example is the coherence magnitude:
+
 \begin{equation}
 C_{\mathrm{mag}}(p,t) = \sqrt{g^{ij}(p,t) C_i(p,t) C_j(p,t)}
 \end{equation}
+
 Potentials are functions of this scalar magnitude (e.g., \(V(C) := V(C_{\mathrm{mag}})\)). When a scalar potential influences vector dynamics, its gradient is taken with respect to the vector components via the chain rule; this preserves coordinate independence. 
