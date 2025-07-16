@@ -15,9 +15,11 @@ We establish the geometric foundation of Recurgent Field Theory as a differentia
 The intrinsic curvature of semantic space cannot be captured by static Euclidean geometry. The cognitive effort required to move between ideas varies systematically. We formalize this variance through Riemannian geometry \autocite{Riemann1868, doCarmo1992}, employing a dynamic metric tensor, \(g_{ij}(p,t)\), which evolves as semantic structures form and decay. The idea that psychological or conceptual similarity can be represented by a distance in a metric space has a strong precedent in mathematical psychology; here, we adopt that principle, proposing that the metric tensor provides the structure for such a space \autocite{Shepard1987}.
 
 The infinitesimal squared distance \(ds^2\) between two neighboring points in semantic space is given by:
+
 \begin{equation}
 ds^2 = g_{ij}(p, t) \, dp^i \, dp^j
 \end{equation}
+
 where \(dp^i\) represents an infinitesimal displacement. The metric \(g_{ij}\) encodes the local constraint structure of meaning and modulates the cost of semantic displacement. High values of its components correspond to regions where semantic distinctions are rigid; low values mark regions of semantic fluidity.
 
 % ------------------------------------------------------------------------------------------------
@@ -26,9 +28,11 @@ where \(dp^i\) represents an infinitesimal displacement. The metric \(g_{ij}\) e
 \label{sec:evolution_equation_for_the_semantic_metric}
 
 A flow equation analogous to Ricci flow \autocite{Hamilton1982, Perelman2002, RicciLeviCivita1901} governs the metric tensor's evolution, but with added forcing terms reflecting the influence of recursive structure. This equation specifies the deformation of semantic geometry under both its intrinsic curvature and feedback from nonlocal processes.
+
 \begin{equation}\label{eq:metric_evolution}
 \frac{\partial g_{ij}}{\partial t} = -2 R_{ij} + F_{ij}(R, D, A)
 \end{equation}
+
 where \(R_{ij}\) is the Ricci curvature tensor of \(g_{ij}\). The forcing term \(F_{ij}\) is a symmetric tensor-valued functional of the recursive coupling tensor \(R\), the recursive depth field \(D\), and the attractor stability field \(A\).
 
 % ------------------------------------------------------------------------------------------------
@@ -37,9 +41,11 @@ where \(R_{ij}\) is the Ricci curvature tensor of \(g_{ij}\). The forcing term \
 \label{sec:constraint_density}
 
 The metric tensor determines the constraint density \(\rho(p, t)\) at each point on the manifold:
+
 \begin{equation}
 \rho(p, t) = \frac{1}{\det(g_{ij}(p, t))}
 \end{equation}
+
 High constraint density (\(\rho \gg 1\)) corresponds to tightly packed semantic states where transitions are suppressed. Conversely, low-density regions (\(\rho \ll 1\)) mark areas of semantic flexibility where innovation is energetically favorable.
 
 % ------------------------------------------------------------------------------------------------
@@ -48,9 +54,11 @@ High constraint density (\(\rho \gg 1\)) corresponds to tightly packed semantic 
 \label{sec:the_coherence_field}
 
 The coherence field \(C_i(p, t)\) is a vector field on \(\mathcal{M}\) that represents the local alignment and self-consistency of semantic structures. The metric defines the field's scalar magnitude, quantifying the total strength of coherence at a point, independent of direction:
+
 \begin{equation}
 C_{\mathrm{mag}}(p, t) = \sqrt{g^{ij}(p, t) C_i(p, t) C_j(p, t)}
 \end{equation}
+
 where \(g^{ij}\) is the inverse metric. This scalar measure provides the basis for defining the attractor and autopoietic potentials in subsequent chapters.
 
 % ------------------------------------------------------------------------------------------------
@@ -59,7 +67,9 @@ where \(g^{ij}\) is the inverse metric. This scalar measure provides the basis f
 \label{sec:recursive_depth_attractor_stability_and_semantic_mass}
 
 Scalar fields for recursive depth, \(D(p, t)\), and attractor stability, \(A(p, t)\), modulate the manifold's geometry. The depth \(D\) quantifies the maximal recursion a structure at \(p\) can sustain before its coherence degrades, while stability \(A\) measures its resilience to perturbation. Together with the constraint density \(\rho\), these fields compose the semantic mass:
+
 \begin{equation}
 M(p, t) = D(p, t) \cdot \rho(p, t) \cdot A(p, t)
 \end{equation}
+
 Semantic mass \(M(p,t)\) curves the manifold, generating attractor basins and shaping the flow of coherence. High-mass regions are strong attractors that anchor interpretation, while low-mass regions are more amenable to recursive innovation. 

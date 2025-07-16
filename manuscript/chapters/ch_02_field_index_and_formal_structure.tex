@@ -76,7 +76,9 @@ The framework is constructed on an \(n\)-dimensional pseudo-Riemannian manifold 
 }
 
 \footnotetext[1]{The use of attractor stability metrics and potential energy landscapes for system characterization is drawn from nonlinear dynamics \autocite{Strogatz2014}.}
+
 \footnotetext[2]{A formalization of the \textit{distributional hypothesis} in linguistics, which posits that words with similar distributions have similar meanings \autocite{Harris1954}. Other modern vector-space models of semantics, such as the Word2Vec framework, are built on this principle \autocite{Mikolov2013}.}
+
 \footnotetext[3]{This serves as an implementation of Hebbian learning, which states that repeated, persistent co-activation of connected elements leads to an increase in the strength of their connection \autocite{Hebb1949}.}
 
 % ------------------------------------------------------------------------------------------------
@@ -87,10 +89,15 @@ The framework is constructed on an \(n\)-dimensional pseudo-Riemannian manifold 
 Coherence dynamics emerge from the interplay of four conceptual subsystems:
 
 \begin{itemize}
+
     \item A geometric engine governs the evolution of the manifold's metric and curvature.
+
     \item A coherence processor handles the evolution of the primary fields.
+
     \item A recursive controller manages the coupling dynamics that link different regions of the manifold.
+
     \item A regulatory system provides wisdom and humility constraints.
+
 \end{itemize}
 
 The subsystems are deeply integrated and form two primary, coupled cycles. In the main causal loop, the coherence field determines a recursive stress-energy tensor, which in turn induces curvature in the metric. The deformed metric then governs the subsequent evolution of coherence, closing the primary feedback loop. 
@@ -114,6 +121,7 @@ The Einstein summation convention \autocite{Einstein1916} applies, where repeate
 \begin{equation}
 A_i B^i = \sum_{i=1}^n A_i B^i
 \end{equation}
+
 Latin indices \((i,j,k,...)\) range from \(1\) to \(n\), the dimension of the Semantic Manifold.
 
 % ------------------------------------------------------------------------------------------------
@@ -160,8 +168,11 @@ Integrals over the manifold use the invariant volume element, \(dV = \sqrt{|\det
 We distinguish between the fundamental state of the system and its measured coherence:
 
 \begin{itemize}
+
     \item The \textbf{semantic field} \(\psi_i(p,t)\) represents the raw, underlying semantic content at each point. It is the fundamental dynamical variable.
+
     \item The \textbf{coherence field} \(C_i(p,t)\) is a derived, observable quantity that measures the self-consistency and alignment of the underlying semantic field. As an \(n\)-dimensional vector field, each of its components represents coherence along a principal semantic axis. It is a functional of \(\psi_i\):
+
 \end{itemize}
 
 \begin{equation}
@@ -178,14 +189,19 @@ where \(K_{ij}(p,q)\) is a non-local kernel. While the dynamics could be express
 The recursive coupling tensor \(R_{ijk}\) possesses a dual nature:
 
 \begin{enumerate}
+
     \item \textbf{As a Measurement:} It measures the coherence field's response to variations in the underlying semantic field:
+
     \begin{equation}
     R_{ijk}(p, q, t) = \frac{\partial^2 C_k(p,t)}{\partial \psi_i(p) \partial \psi_j(q)}
     \end{equation}
+
     \item \textbf{As a Dynamical Field:} It is an independent field whose evolution follows its own equation of motion, driven by the autopoietic potential:
+
     \begin{equation}
     \frac{dR_{ijk}(p,q,t)}{dt} = \Phi(C_{\mathrm{mag}}(p,t)) \cdot \chi_{ijk}(p,q,t)
     \end{equation}
+
 \end{enumerate}
 
 A consistency condition resolves this duality: the dynamics of \(\psi_i\) and \(C_k\) must evolve such that the time derivative of the measurement definition (2.7) equals the dynamical evolution equation (2.8).

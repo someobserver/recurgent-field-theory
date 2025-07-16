@@ -66,26 +66,37 @@ where \(K_{\psi}(p, q, t)\) is the agent's interpretive kernel and \(\hat{C}_{\p
 We define an agent \(\mathcal{A}\) as a simply connected submanifold of \(\mathcal{M}\) possessing a persistent internal belief state \(\psi_i\). The following criteria are a direct application of the theory of autopoiesis, which provides a formal definition of a living system as a bounded, self-producing, and self-maintaining network \autocite{MaturanaVarela1980}. An agent must satisfy five conditions:
 
 \begin{enumerate}
+
     \item \textbf{Recursive Closure:} The net recursive flux across its boundary, \(\partial \mathcal{A}\), must be contained (see Chapter \ref{ch:recursive_coupling}):
+
     \begin{equation}
         \oint_{\partial \mathcal{A}} R_{ijk} \, dS^j \approx 0
     \end{equation}
+
     \item \textbf{Autopoietic Self-Maintenance:} The agent must generate more internal coherence-sustaining energy than it dissipates (see Chapter \ref{ch:autopoiesis}):
+
     \begin{equation}
         \int_{\mathcal{A}} \Phi(C) \, dV > \oint_{\partial \mathcal{A}} F_i^{\text{diss}} \, dS^i
     \end{equation}
+
     \item \textbf{Coherence Stability:} The agent must maintain a minimum level of mean internal coherence (Axiom \ref{ax:semantic_field}):
+
     \begin{equation}
         \langle C(p,t) \rangle_{p \in \mathcal{A}} > C_{\text{min}}
     \end{equation}
+
     \item \textbf{Wisdom Density:} The agent must possess a sufficient baseline of wisdom to regulate its own recursive processes (see Chapter \ref{ch:wisdom_humility}):
+
     \begin{equation}
         \langle W(p,t) \rangle_{p \in \mathcal{A}} > W_{\text{min}}
     \end{equation}
+
     \item \textbf{Self-Model:} The agent must possess a self-referential map enabling reflective awareness:
+
     \begin{equation}
         \psi: \mathcal{A} \to \mathcal{S} \subset \mathcal{A}
     \end{equation}
+
 \end{enumerate}
 
 Any entity satisfying these criteria constitutes an active, interpretive, agentic participant in the semantic universe.
@@ -98,9 +109,11 @@ Any entity satisfying these criteria constitutes an active, interpretive, agenti
 The duality between continuous fields and discrete particles in physics has a direct parallel in this theory. The nonlinear terms in the recurgent field equations support stable, particle-like solutions, or solitons. These were first observed by \autocite{Russell1845} and later formalized \autocite{KortewegdeVries1895, ZabuskyKruskal1965}. These solutions represent localized, self-reinforcing units of meaning that maintain their structural integrity as they traverse the manifold.
 
 A typical soliton solution for the coherence field takes the form:
+
 \begin{equation}
 C_i^{\mathrm{sol}}(p, t) = A_i\, \mathrm{sech}^2\left(\frac{d(p, p_0 + vt)}{\sigma}\right) e^{i\phi_i(p, t)}
 \end{equation}
+
 where \(A_i\) is the amplitude, \(\sigma\) is the width, and \(d(p, \dots)\) is the geodesic distance. These \textit{semantic particles} are the fundamental quanta of meaning exchanged and interpreted by agents.
 
 % ------------------------------------------------------------------------------------------------
@@ -109,12 +122,19 @@ where \(A_i\) is the amplitude, \(\sigma\) is the width, and \(d(p, \dots)\) is 
 \label{sec:taxonomy_and_invariants_of_semantic_particles}
 
 We classify semantic particles by their structure and function:
+
 \begin{enumerate}
+
     \item \textbf{Concept Solitons (\(\mathcal{C}\)-particles):} Stable, elementary coherence structures.
+
     \item \textbf{Proposition Dyads (\(\mathcal{P}\)-particles):} Bound states of multiple concept solitons (e.g., subject-predicate).
+
     \item \textbf{Query Antisolitons (\(\mathcal{Q}\)-particles):} Localized coherence deficits that propagate until resolved.
+
     \item \textbf{Metaphoric Resonances (\(\mathcal{M}\)-particles):} Cross-domain bound states stabilized by hetero-recursive coupling.
+
 \end{enumerate}
+
 Each particle is characterized by conserved quantities like semantic charge \(q_s\), coherence mass \(m_c\), and a phase signature, which govern their interactions.
 
 % ------------------------------------------------------------------------------------------------
@@ -137,9 +157,11 @@ At fine scales, the particle formalism reveals formal phenomena analogous to qua
 \label{sec:semantic_uncertainty_principle}
 
 The product of uncertainties in a particle's coherence (its meaning-content) and its recursive structure (its relational context) is bounded from below:
+
 \begin{equation}
 \Delta C \cdot \Delta R \geq \hbar_s
 \end{equation}
+
 where \(\hbar_s\) is the semantic uncertainty constant. This principle formalizes the tradeoff between a concept's clarity and its relational flexibility. It is inspired by the foundational uncertainty principle of quantum theory \autocite{Heisenberg1927, WheelerZurek1983}.
 
 % ------------------------------------------------------------------------------------------------

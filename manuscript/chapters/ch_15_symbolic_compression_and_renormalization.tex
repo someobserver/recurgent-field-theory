@@ -17,18 +17,26 @@ The resulting formalism aligns with algorithmic information theory's principle t
 We define abstraction as an operator, \(\mathcal{C}\), that maps a submanifold of meaning, \(\Omega \subset \mathcal{M}\), to a new, lower-dimensional submanifold, \(\Omega' \subset \mathcal{M}'\), where \(\dim(\mathcal{M}') < \dim(\mathcal{M})\). For an abstraction to be valid, this operator must preserve the core essence of the original structure by satisfying four invariants:
 
 \begin{enumerate}
+
     \item \textbf{Coherence Preservation:} The total "amount" of meaning must be conserved.
+
     \begin{equation}
+
     \int_{\Omega} C_{\text{mag}}(p) \, dV_p \approx \int_{\Omega'} C'_{\text{mag}}(p') \, dV'_{p'}
     \end{equation}
+
     \item \textbf{Recursive Integrity:} The net recursive flux across the boundary must be preserved, assuring the abstracted concept has the same net relationship with its environment.
+
     \begin{equation}
     \oint_{\partial \Omega} F_i \, dS^i \approx \oint_{\partial \Omega'} F'_i \, dS'^i
     \end{equation}
+
     \item \textbf{Wisdom Concentration:} The mean wisdom density must not decrease, preventing the formation of "foolish" or brittle abstractions.
+
     \begin{equation}
     \frac{\int_{\Omega} W(p) \, dV_p}{\operatorname{Vol}(\Omega)} \leq \frac{\int_{\Omega'} W'(p') \, dV'_{p'}}{\operatorname{Vol}(\Omega')}
     \end{equation}
+
     \item \textbf{Metric Congruence:} The geometry of the abstracted space must be consistent with the original, preserving the relationships and distances between concepts.
 \end{enumerate}
 
@@ -42,9 +50,11 @@ The repeated application of these operators generates a hierarchy of nested Sema
 We formally describe the process of moving between levels in this hierarchy with the semantic renormalization group (RG), a framework adapted from its powerful use in statistical physics and quantum field theory \autocite{Wilson1971, Cardy1996}. The RG describes how the effective parameters and laws of the system change as we change the scale at which we view it.
 
 The scale dependence of the theory's coupling parameters \(\alpha_i(\lambda)\) (e.g., recursion strength, coherence thresholds) is governed by the RG flow equations:
+
 \begin{equation}
 \frac{d\alpha_i(\lambda)}{d\log\lambda} = \beta_i(\{\alpha_j(\lambda)\})
 \end{equation}
+
 where \(\lambda\) is the scale parameter and \(\beta_i\) are the beta functions. The solutions to these equations trace out trajectories in the space of all possible theories.
 
 % ------------------------------------------------------------------------------------------------
@@ -55,10 +65,15 @@ where \(\lambda\) is the scale parameter and \(\beta_i\) are the beta functions.
 Fixed points of the RG flow (\(\beta_i = 0\)) represent scale-invariant semantic structures—concepts or paradigms that look the same at any level of abstraction. These fixed points organize the entire space of semantic theories into universality classes. The behavior of any specific, complex semantic model near a fixed point is governed by the universal properties of that point, regardless of the model's microscopic details. This explains why very different underlying belief systems can give rise to structurally similar emergent phenomena (e.g., dogmatism, innovation).
 
 We classify operators in the theory by their behavior under the RG flow:
+
 \begin{itemize}
+
     \item \textbf{Relevant Operators} grow under flow, dominating macro-scale behavior (e.g., core axioms, foundational principles).
+
     \item \textbf{Irrelevant Operators} diminish under flow, representing micro-scale details that are "washed out" by abstraction (e.g., specific examples, implementation details).
+
     \item \textbf{Marginal Operators} remain invariant, often tied to fundamental symmetries of the system.
+
 \end{itemize}
 
 % ------------------------------------------------------------------------------------------------
@@ -67,7 +82,9 @@ We classify operators in the theory by their behavior under the RG flow:
 \label{sec:effective_field_theories_and_multi_scale_modeling}
 
 The RG framework allows for the construction of \textit{effective field theories} at any given scale \(\lambda\). By systematically integrating out the irrelevant, high-frequency details, we can formulate a simpler, more computationally tractable Lagrangian that still faithfully represents the essential semantic dynamics at the chosen level of resolution.
+
 \begin{equation}
 \mathcal{L}_{\mathrm{eff}}^{(\lambda)} = \sum_{i} C_{i}^{(\lambda)} \mathcal{O}_{i}^{(\lambda)}
 \end{equation}
+
 where \(\mathcal{O}_{i}^{(\lambda)}\) are the operators relevant at scale \(\lambda\). This provides a rigorous basis for multi-scale modeling, understanding the emergence of higher-order semantic entities, and analyzing "downward causation," where macroscopic patterns impose constraints on microscopic dynamics. This mathematically precise correspondence between microsemantic and macrosemantic domains is a cornerstone of the theory's explanatory power. 

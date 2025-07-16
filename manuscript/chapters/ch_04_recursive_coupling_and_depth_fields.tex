@@ -13,9 +13,11 @@ Self-reference is integral to the structure of meaning. The act of thinking abou
 \label{sec:the_recursive_coupling_tensor}
 
 The recursive coupling tensor, \(R_{ijk}(p, q, t)\), captures the non-local, bidirectional influence that semantic activity at one point exerts on another. It is the second-order variation of the coherence field with respect to the underlying semantic field, \(\psi\):
+
 \begin{equation}
 R_{ijk}(p, q, t) = \frac{\partial^2 C_k(p,t)}{\partial \psi_i(p) \partial \psi_j(q)}
 \end{equation}
+
 This tensor quantifies how a change in the semantic field component \(\psi_j\) at point \(q\) affects the sensitivity of the coherence component \(C_k\) at point \(p\) to changes in its own local semantic field, \(\psi_i\). Per Chapter 2, it possesses a dual character: both a measurement of the field's response properties and a dynamical field in its own right.
 
 % ------------------------------------------------------------------------------------------------
@@ -33,9 +35,11 @@ Bach's strictest mathematical rules enabled vast interpretive variance within bo
 \label{sec:recursive_depth}
 
 The tensor \(R_{ijk}\) defines the mechanism of recursion; the depth field, \(D(p, t)\), quantifies its local sustainability. We define the scalar function \(D(p,t)\) as the maximal number of recursive layers a structure at point \(p\) can support before its coherence degrades below a functional threshold, \(\epsilon\):
+
 \begin{equation}
 D(p, t) = \max \left\{ d \in \mathbb{N} : \left\| \frac{\partial^d C(p,t)}{\partial \psi^d} \right\| \geq \epsilon \right\}
 \end{equation}
+
 where the norm is taken over the tensor indices of the higher-order derivative. Structures with high depth (e.g., persistent personal narratives) maintain coherence across many layers of self-reference, whereas those with low depth (e.g., simple arithmetic) have a shallow recursive structure.
 
 This measure distinguishes meaningful, structured complexity from both trivial simplicity and incompressible randomness. A crystal is simple, a gas is random, but a living organism is deep. This is a direct implementation of "logical depth," which defines complexity not by the length of a description but by the computational time required to generate an object from its most compressed representation \autocite{Bennett1988}.
@@ -46,16 +50,25 @@ This measure distinguishes meaningful, structured complexity from both trivial s
 \label{sec:the_recursive_stress_energy_tensor}
 
 The recursive stress-energy tensor, \(T_{ij}^{\text{rec}}\), quantifies the contribution of recursive activity to the curvature of the Semantic Manifold, analogous to the stress-energy tensor in general relativity \autocite{Einstein1915}. It captures the momentum and pressure of recursive processes.
+
 \begin{equation}
 T_{ij}^{\text{rec}} = \rho(p,t) v_i(p,t) v_j(p,t) + P_{ij}(p,t)
 \end{equation}
+
 where:
+
 \begin{itemize}
+
     \item \(\rho(p,t)\) is the constraint density from the metric.
+    
     \item \(v_i(p,t) = \frac{d\psi_i(p,t)}{dt}\) is the semantic velocity, the rate of change in the underlying semantic field.
+    
     \item The recursive pressure tensor, \(P_{ij}(p,t)\), accounts for internal stresses within the semantic fluid caused by recursive flows. It takes the form:
+    
 \end{itemize}
+
 \begin{equation}
 P_{ij} = \gamma(\nabla_i v_j + \nabla_j v_i) - \eta g_{ij} (\nabla_k v^k)
 \end{equation}
+
 where \(\gamma\) is a shear viscosity (the elasticity of recursive loops) and \(\eta\) is a bulk viscosity (the resistance to isotropic recursive compression or expansion). The mathematical structure of this viscous pressure tensor is adopted directly from the classical theory of fluid mechanics \autocite{LandauLifshitz1987}.
