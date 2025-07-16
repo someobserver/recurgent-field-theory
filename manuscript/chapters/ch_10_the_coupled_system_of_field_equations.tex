@@ -1,4 +1,5 @@
 \chapter{The Coupled System of Field Equations}
+\label{ch:the_coupled_system_of_field_equations}
 
 % ------------------------------------------------------------------------------------------------
 
@@ -9,6 +10,7 @@ We have defined the Semantic Manifold, the coherence and recursion fields, and t
 % ------------------------------------------------------------------------------------------------
 
 \section{Coherence Field Dynamics}
+\label{sec:coherence_field_dynamics}
 
 The Euler-Lagrange equation, derived in Chapter 6 from the principle of stationary action, governs the evolution of the coherence field \(C_i\). It provides the primary expression of how semantic content propagates and transforms.
 \begin{equation}
@@ -19,14 +21,16 @@ Here, the d'Alembertian operator (\(\Box\)) defines the natural propagation of c
 % ------------------------------------------------------------------------------------------------
 
 \section{Geometric Dynamics}
+\label{sec:geometric_dynamics}
 
 The geometry of the Semantic Manifold, defined by the metric tensor \(g_{ij}\), is a dynamic entity. Two coupled equations govern its evolution.
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{The Recurgent Field Equation: Curvature from Stress-Energy}
+\subsection{The Recurgent Field Equation}
+\label{sec:the_recurgent_field_equation}
 
-The Recurgent Field Equation (Axiom 4), analogous to the Einstein field equations of general relativity \autocite{Einstein1915}, defines the fundamental relationship between the manifold's curvature and its semantic content.
+We formulate the Recurgent Field Equation (Axiom 4), analogous to the Einstein field equations of general relativity \autocite{Einstein1915}, as a fundamental relationship between the manifold's curvature and its semantic content.
 \begin{equation}
 R_{ij} - \frac{1}{2}g_{ij}R = 8\pi G_s T^{\text{rec}}_{ij}
 \end{equation}
@@ -34,7 +38,8 @@ The recursive stress-energy tensor, \(T^{\text{rec}}_{ij}\), sourced by the cohe
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Metric Evolution: Ricci Flow}
+\subsection{Metric Evolution}
+\label{sec:metric_evolution}
 
 While the Recurgent Field Equation is a constraint, a flow equation analogous to Hamilton's Ricci flow (Chapter 3) \autocite{Hamilton1982} governs the metric's explicit time-evolution.
 \begin{equation}
@@ -45,10 +50,11 @@ The metric deforms over time in response to its own intrinsic curvature (\(R_{ij
 % ------------------------------------------------------------------------------------------------
 
 \section{The Closed Feedback System}
+\label{sec:the_closed_feedback_system}
 
 These equations form a tightly coupled and self-regulating system. The coherence field \(C_i\) evolves on the manifold according to the Euler-Lagrange equation, through which the geometry enters via the metric-dependent \(\Box\) operator. The resulting field dynamics generate the recursive stress-energy tensor \(T^{\text{rec}}_{ij}\). This, in turn, sources the manifold's curvature via the Recurgent Field Equation. Finally, the metric evolves explicitly through the Ricci flow, altering the geometry and thereby influencing the future evolution of the coherence field. The feedback loop closes.
 
-Within this geometry, the natural paths of semantic structures, or test particles, are described by the geodesic equation, which defines the straightest possible lines on a curved surface:
+The natural paths of semantic structures, or test particles, in this geometry are described by the geodesic equation, which defines the straightest possible lines on a curved surface:
 \begin{equation}
 \frac{d^2 p^i}{ds^2} + \Gamma^i_{jk} \frac{dp^j}{ds} \frac{dp^k}{ds} = 0
 \end{equation}
@@ -57,6 +63,7 @@ Derived from a diffeomorphism-invariant action, the system's architecture guaran
 % ------------------------------------------------------------------------------------------------
 
 \section{Temporal Dynamics and Conservation}
+\label{sec:temporal_dynamics_and_conservation}
 
 The bidirectional temporal flow mechanism from Chapter 9 introduces its own dynamics and conservation principles into the coupled system. The temporal force term, \(F^i_{\text{temporal}}\), modifies the coherence field's evolution:
 \begin{equation}
@@ -67,6 +74,8 @@ This term introduces the causal influence of anticipated future states into the 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Conservation of Temporal Flow}
+\label{sec:conservation_of_temporal_flow}
+
 The flow of propositions and validations is balanced and preserved by a continuity equation:
 \begin{equation}
 \nabla_i P^i + \frac{\partial \rho_V}{\partial t} = 0
@@ -76,6 +85,8 @@ where \(\rho_V = \sqrt{g^{ij} V_{i} V_{j}}\) is the scalar validation density. T
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Temporal Curvature}
+\label{sec:temporal_curvature}
+
 We define the local temporal curvature, \(\kappa_t\), as the relative strength of the forward and backward fields at a point, which measures the perceived rate of temporal flow:
 \begin{equation}
 \kappa_t(p) = \frac{\|\vec{P}(p)\|}{\|\vec{V}(p)\|}

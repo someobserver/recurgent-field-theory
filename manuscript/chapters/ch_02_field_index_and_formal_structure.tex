@@ -1,4 +1,5 @@
-\chapter{Field Index and Formal Architecture}\label{ch:field_index_and_formal_architecture}
+\chapter{Field Index and Formal Architecture}
+\label{ch:field_index_and_formal_architecture}
 
 % ------------------------------------------------------------------------------------------------
 
@@ -8,11 +9,10 @@ We express the theory in tensor calculus. As such, each mathematical object corr
 
 % ------------------------------------------------------------------------------------------------
 
-\section{Tensor Ranks and Properties}\label{sec:tensor_ranks_and_properties}
+\section{Tensor Ranks and Properties}
+\label{sec:tensor_ranks_and_properties}
 
-The framework is constructed on an \(n\)-dimensional pseudo-Riemannian manifold \(\mathcal{M}\), referred to as the \textit{Semantic Manifold}. Each field's tensor rank and symmetry properties encode its geometric information, while its domain and range encode its semantic content. The metric tensor \(g_{ij}\) establishes the foundational structure (\S\ref{axiom_1}). The semantic and coherence fields, \(\psi_i\) and \(C_i\), provide the dynamic content (\S\ref{axiom_2}), while higher-rank tensors such as the recursive coupling tensor \(R_{ijk}\) mediate the feedback loops that drive the manifold's evolution (\S\ref{axiom_3}). All tensor expressions employ the Einstein summation convention, detailed in Section \ref{sec:tensor_conventions}.
-
-% ------------------------------------------------------------------------------------------------
+The framework is constructed on an \(n\)-dimensional pseudo-Riemannian manifold \(\mathcal{M}\), referred to as the \textit{Semantic Manifold}. Each field's tensor rank and symmetry properties encode its geometric information, while its domain and range encode its semantic content. The metric tensor \(g_{ij}\) establishes the foundational structure (\S\ref{sec:axiom_1}). The semantic and coherence fields, \(\psi_i\) and \(C_i\), provide the dynamic content (\S\ref{sec:axiom_2}), while higher-rank tensors such as the recursive coupling tensor \(R_{ijk}\) mediate the feedback loops that drive the manifold's evolution (\S\ref{sec:axiom_3}). All tensor expressions employ the Einstein summation convention, detailed in Section \ref{sec:tensor_conventions}.
 
 {\small
 \renewcommand{\arraystretch}{1.1}
@@ -80,7 +80,8 @@ The framework is constructed on an \(n\)-dimensional pseudo-Riemannian manifold 
 
 % ------------------------------------------------------------------------------------------------
 
-\section{System Architecture}\label{sec:system_architecture}
+\section{System Architecture}
+\label{sec:system_architecture}
 
 Coherence dynamics emerge from the interplay of four conceptual subsystems:
 \begin{itemize}
@@ -96,13 +97,15 @@ Once coherence surpasses a critical threshold, a secondary generative cycle acti
 
 % ------------------------------------------------------------------------------------------------
 
-\section{Tensor Conventions and Notation}\label{sec:tensor_conventions_and_notation}
+\section{Tensor Conventions and Notation}
+\label{sec:tensor_conventions_and_notation}
 
 The tensor conventions follow modern standards for differential geometry and tensor calculus on smooth manifolds \autocite{Lee2003, MisnerThorneWheeler1973}. The tensor calculus framework from which this originates is the pioneering work of Gregorio Ricci Curbastro and Tullio Levi-Civita \autocite{RicciLeviCivita1901}.
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Index Notation and Einstein Summation}\label{sec:index_notation_and_einstein_summation}
+\subsection{Index Notation and Einstein Summation}
+\label{sec:index_notation_and_einstein_summation}
 
 The Einstein summation convention \autocite{Einstein1916} applies, where repeated indices (one upper, one lower) imply summation:
 \begin{equation}
@@ -112,13 +115,15 @@ Latin indices \((i,j,k,...)\) range from \(1\) to \(n\), the dimension of the Se
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Metric and Index Raising/Lowering}\label{sec:metric_and_index_raising_lowering}
+\subsection{Metric and Index Raising/Lowering}
+\label{sec:metric_and_index_raising_lowering}
 
 The metric tensor \(g_{ij}\) and its inverse \(g^{ij}\) raise and lower indices (\(C^i = g^{ij} C_j\), \(C_i = g_{ij} C^j\)), satisfying \(g_{ik} g^{kj} = \delta_i^j\).
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Covariant Derivatives}\label{sec:covariant_derivatives}
+\subsection{Covariant Derivatives}
+\label{sec:covariant_derivatives}
 
 The covariant derivative \(\nabla_i\), defined via the Christoffel symbols \(\Gamma^k_{ij}\) \autocite{Christoffel1869}, accommodates the curved geometry of \(\mathcal{M}\):
 \begin{equation}
@@ -127,7 +132,8 @@ The covariant derivative \(\nabla_i\), defined via the Christoffel symbols \(\Ga
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Functional and Variational Derivatives}\label{sec:functional_and_variational_derivatives}
+\subsection{Functional and Variational Derivatives}
+\label{sec:functional_and_variational_derivatives}
 
 The dynamics derive from an action principle, \(S = \int \mathcal{L} \, dV\), requiring variational derivatives. The Euler-Lagrange equations take the form:
 \begin{equation}
@@ -136,13 +142,15 @@ The dynamics derive from an action principle, \(S = \int \mathcal{L} \, dV\), re
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Integration and Symmetries}\label{sec:integration_and_symmetries}
+\subsection{Integration and Symmetries}
+\label{sec:integration_and_symmetries}
 
 Integrals over the manifold use the invariant volume element, \(dV = \sqrt{|\det(g_{ij})|} \, d^n p\). Tensor symmetries (e.g., \(g_{ij} = g_{ji}\)) are assumed and exploited where appropriate.
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Fundamental vs. Derived Fields}\label{sec:fundamental_vs_derived_fields}
+\subsection{Fundamental versus Derived Fields}
+\label{sec:fundamental_versus_derived_fields}
 
 We distinguish between the fundamental state of the system and its measured coherence:
 \begin{itemize}
@@ -156,7 +164,8 @@ where \(K_{ij}(p,q)\) is a non-local kernel. While the dynamics could be express
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{On the Status of the Recursive Coupling Tensor}\label{sec:on_the_status_of_the_recursive_coupling_tensor}
+\subsection{On the Status of the Recursive Coupling Tensor}
+\label{sec:on_the_status_of_the_recursive_coupling_tensor}
 
 The recursive coupling tensor \(R_{ijk}\) possesses a dual nature:
 \begin{enumerate}
@@ -173,7 +182,8 @@ A consistency condition resolves this duality: the dynamics of \(\psi_i\) and \(
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Scalar Measures from Vector Fields}\label{sec:scalar_measures_from_vector_fields}
+\subsection{Scalar Measures from Vector Fields}
+\label{sec:scalar_measures_from_vector_fields}
 
 Functions requiring scalar inputs derive them from vector fields using the metric. The primary example is the coherence magnitude:
 \begin{equation}
