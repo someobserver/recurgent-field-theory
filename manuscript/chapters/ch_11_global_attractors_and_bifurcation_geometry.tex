@@ -13,14 +13,21 @@ The field equations determine the evolution of semantic structures, but not long
 \label{sec:phase_space_and_stability_regimes}
 
 A point in the abstract phase space, whose axes correspond to the global properties of the primary fields, characterizes the state of the RFT system at any moment. The Recurgence Stability Parameter, \(S_R\) (Chapter 7), serves as the primary organizing principle of this space:
+
 \begin{equation}
 S_R(p,t) = \frac{\Phi(C_{\mathrm{mag}})}{V(C_{\mathrm{mag}}) + \lambda \mathcal{H}[R]}
 \end{equation}
+
 This dimensionless order parameter compares the generative autopoietic potential to the stabilizing and regulatory potentials, and partitions the phase space into three distinct regimes:
+
 \begin{itemize}
+
     \item \textbf{The Conservative Regime (\(S_R < 1\)):} The stabilizing potential \(V(C)\) and humility constraint \(\mathcal{H}[R]\) dominate. The system preserves and reinforces existing semantic structures. Attractors are stable, and the manifold's geometry is relatively fixed.
+
     \item \textbf{The Critical Regime (\(S_R \approx 1\)):} The generative and conservative forces achieve a delicate balance. The system exists at an "edge-of-chaos" state, poised for transformation and highly sensitive to small fluctuations. This state represents a manifestation of self-organized criticality, wherein systems naturally evolve toward such transitional points without external tuning \autocite{BakTangWiesenfeld1987, Kauffman1993}.
+
     \item \textbf{The Generative Regime (\(S_R > 1\)):} The autopoietic potential \(\Phi(C)\) dominates and drives recurgent inflation. In this regime the system undergoes rapid, qualitative restructuring.
+
 \end{itemize}
 
 % ------------------------------------------------------------------------------------------------
@@ -36,14 +43,21 @@ Bifurcations represent qualitative changes in the topological structure of the s
 \label{sec:indicators_of_topological_change}
 
 Observable changes in the manifold's structure characterize bifurcation events. We use the following metrics as the formal criteria for detecting these transitions, grounded in fundamental objects:
+
 \begin{enumerate}
+
     \item \textbf{Attractor Basin Morphology:} Changes in the number and configuration of attractor basins constitute a direct indicator of bifurcation. Tracking the critical points of the total potential landscape, \(\mathcal{V}_{\text{total}} = V(C) - \Phi(C)\), quantifies this change, revealing where new minima appear or existing ones merge or vanish.
+    
     \item \textbf{Effective Dimensionality:} Changes in the manifold's effective dimensionality can signal a profound structural change. Monitoring the rank of the metric tensor, \(g_{ij}(t)\), detects this. A sudden change in rank, identified via spectral analysis of the metric's eigenvalues, signals a new semantic axis becoming relevant or an old one has collapsed.
+    
     \item \textbf{Recurgent Expansion Rate:} The second temporal derivative of the total semantic mass captures the generative nature of a bifurcation and quantifies the acceleration of meaning-generation in the system:
+
     \begin{equation}
     \mathcal{E}(t) = \frac{d^2}{dt^2}\int_{\mathcal{M}} M(p,t) \, dV_p
-    \end{equation}
-    A sharp, positive spike in \(\mathcal{E}(t)\) indicates that the system is growing \textit{and} in a state of explosive, transformative expansion characteristic of a bifurcation.
+    \end{equation} 
+    
+    A sharp and positive spike in \(\mathcal{E}(t)\) indicates that the system is growing \textit{and} in a state of explosive, transformative expansion characteristic of a bifurcation.
+    
 \end{enumerate}
 
 % ------------------------------------------------------------------------------------------------
@@ -59,9 +73,11 @@ In a complex, highly interconnected manifold, bifurcations often constitute non-
 \label{sec:measuring_synchronization}
 
 We quantify the degree of synchronization between two regions, \(\Omega_i\) and \(\Omega_j\), with a functional that measures the phase alignment of the coherence field \(C_i\). A common method employs a normalized inner product, weighted by the phase of the recursive coupling tensor \(R_{ijk}\) mediating their interaction:
+
 \begin{equation}
 \Psi_{ij}(t) = \frac{\left|\int_{\Omega_i \times \Omega_j} C(p,t)C(q,t)e^{i\phi(p,q,t)} \, dp \, dq\right|}{\sqrt{\int_{\Omega_i} |C(p,t)|^2 \, dp \cdot \int_{\Omega_j} |C(q,t)|^2 \, dq}}
 \end{equation}
+
 where \(\phi(p,q,t) = \arg(R_{ijk}(p,q,t))\). A value of \(\Psi_{ij}(t) \approx 1\) indicates the two regions are evolving in perfect synchrony.
 
 % ------------------------------------------------------------------------------------------------
