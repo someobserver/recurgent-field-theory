@@ -6,28 +6,28 @@
 \section{Overview}
 \label{13.1:overview}
 
-We have thus far described a self-contained geometric universe of meaning. Meaning, however, is not a static backdrop but rather a dynamic medium with which observers actively engage. Agents are bounded, autonomous, self-maintaining structures within the Semantic Manifold. This geometric conception of agency provides a physical formalism for the enactive and extended mind hypotheses of cognitive science \autocite{VarelaThompsonRosch1991, ClarkChalmers1998}.
+We have thus far described a self-contained geometric universe of meaning, however, meaning is a dynamic medium with which observers actively engage. We propose that agents may be understood as bounded, autonomous, self-maintaining structures within the Semantic Manifold. A geometric conception of agency suggests a potential physical formalism for the enactive and extended mind hypotheses of cognitive science \autocite{VarelaThompsonRosch1991, ClarkChalmers1998}.
 
-In this chapter, we introduce two complementary formalisms for the observer. First, we define the agent-field interaction via the principle of stationary action, deriving the equations of motion that couple an agent's interpretive process to the coherence field. Second, we show that the field equations support particle-like solitonic solutions—localized, self-reinforcing quanta of meaning. This particle description provides a framework for understanding how agents interact with and exchange discrete semantic structures.
+In this chapter, we explore two complementary formalisms for the observer. First, we propose defining the agent-field interaction via the principle of stationary action, deriving the equations of motion that couple an agent's interpretive process to the coherence field. Second, we investigate how the field equations might support particle-like solitonic solutions—localized, self-reinforcing quanta of meaning. This description offers a framework for understanding how agents might interact with and exchange discrete semantic structures.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{The Agent-Field Interaction Lagrangian}
 \label{13.2:the_agent_field_interaction_lagrangian}
 
-To incorporate the observer, we augment the system Lagrangian (Chapter 6) with an interaction term, \(\mathcal{L}_{AF}\):
+To incorporate the observer, we augment the system Lagrangian (Chapter \ref{6:recurgent_field_equation_and_lagrangian_mechanics}) with an interaction term, \(\mathcal{L}_{AF}\):
 
 \begin{equation}
 \mathcal{L}_{\text{Total}} = \mathcal{L}_{RFT} + \mathcal{L}_{AF}
 \end{equation}
 
-This interaction term captures the essential dynamic of interpretation: an agent's attempt to reconcile the external coherence field, \(C_i\), with its internal belief state, \(\psi_i\). An interpretive field, \(I_i\), representing the agent's active engagement with the manifold, mediates this interaction. The Lagrangian for this interaction takes the form:
+The interaction term captures the essential dynamic of interpretation, which is an agent's attempt to reconcile the external coherence field, \(C_i\), with its internal belief state, \(\psi_i\). An interpretive field, \(I_i\), representing the agent's active engagement with the manifold, mediates this interaction. The Lagrangian takes the form:
 
 \begin{equation}
 \mathcal{L}_{AF} = \frac{1}{2} \left( \partial_\mu I_i \partial^\mu I^i - m_I^2 I_i I^i \right) - \lambda I_i (C^i - \psi^i) S_A
 \end{equation}
 
-where \(m_I\) is the mass of the interpretive field, \(\lambda\) is the coupling strength, and \(S_A\) is the agent's scalar attention field, which localizes the interaction. The source of the interpretive field is the discrepancy \((C^i - \psi^i)\) between the external field and the agent's internal state.
+where \(m_I\) is the mass of the interpretive field, \(\lambda\) is the coupling strength, and \(S_A\) is the agent's scalar attention field to localize the interaction. The source of the interpretive field is the discrepancy \((C^i - \psi^i)\) between the external field and the agent's internal state.
 
 Applying the principle of stationary action, \(\delta \mathcal{S} = 0\), yields the equation of motion for \(I_i\):
 
@@ -42,16 +42,16 @@ This is a Klein-Gordon equation with a source term. The agent's act of interpret
 \section{Interpretation as Variational Transformation}
 \label{13.3:interpretation_as_variational_transformation}
 
-The Goldberg Variations \autocite{Bach1741} demonstrates variational transformation as a higher-order abstraction of recursive coupling. Its opening aria establishes a fundamental semantic field \(\psi_i(p,t)\) in its harmonic and metric structure. Each of the thirty subsequent variations applies a transformation operator, preserving the essential bass line while generating novel coherent patterns \(C_i(p,t)\). The canonical variations create meta-level structure at every third variation with increasing intervals, demonstrating coupling operating simultaneously across scales.
+We recognize the \textit{Goldberg Variations} \autocite{Bach1741} as a demonstration of variational transformation as a higher-order abstraction of recursive coupling. Its opening aria establishes a fundamental semantic field \(\psi_i(p,t)\) in its harmonic and metric structure. Each of its thirty subsequent variations applies a transformation operator, preserving the essential bass line while generating novel coherent patterns \(C_i(p,t)\). The canonical variations create meta-level structure at every third variation with increasing intervals, demonstrating coupling operating simultaneously across scales.
 
-The aria's return after thirty variations represents the point of recognition at a higher level of coherence. Identical in form, its character is transformed into fullness by the listener's journey through the diversity of its facets. This builds upon the fugal principles established in Chapter 4, in which recursive coupling creates self-generating semantic elaboration. The Goldberg structure extends this into variational space, demonstrating how transformations can preserve invariant structure while enabling novel emergence.
+The aria's return after thirty variations represents the point of recognition at a higher level of coherence. Identical in form, its character is transformed into fullness by the listener's journey through the diversity of its facets. This builds upon the fugal principles established in Chapter \ref{4:recursive_coupling_and_variational_transformation}, in which recursive coupling creates self-generating semantic elaboration. The Goldberg structure extends this into variational space, demonstrating how transformations preserve invariant structure while enabling novel emergence.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Operator-Theoretic Formulation of Interpretation}
 \label{13.4:operator_theoretic_formulation_of_interpretation}
 
-Complementing the Lagrangian view, we can describe interpretation with an operator \(\mathcal{I}_{\psi}\), parameterized by agent state \(\psi\), that acts on the coherence field \(C\). Drawing from quantum mechanics \autocite{vonNeumann1955}, we define:
+Complementing the Lagrangian view, we can describe interpretation with an operator \(\mathcal{I}_{\psi}\), parameterized by agent state \(\psi\), that acts on the coherence field \(C\). Drawing from quantum mechanics \autocite{vonNeumann1955}, we define the operator as:
 
 \begin{equation}
 \mathcal{I}_{\psi}[C](p, t) = C(p, t) + \int_{\mathcal{M}} K_{\psi}(p, q, t)\, [C(q, t) - \hat{C}_{\psi}(q, t)]\, dq
@@ -64,7 +64,7 @@ where \(K_{\psi}(p, q, t)\) is the agent's interpretive kernel and \(\hat{C}_{\p
 \section{Formal Definition of an Agent}
 \label{13.5:formal_definition_of_an_agent}
 
-We define an agent \(\mathcal{A}\) as a simply connected submanifold of \(\mathcal{M}\) possessing a persistent internal belief state \(\psi_i\). The following criteria are a direct application of the theory of autopoiesis, which provides a formal definition of a living system as a bounded, self-producing, and self-maintaining network \autocite{MaturanaVarela1980}. An agent must satisfy five conditions:
+We define an agent \(\mathcal{A}\) as a simply connected submanifold of \(\mathcal{M}\) possessing a persistent internal belief state \(\psi_i\). The following criteria are a direct application of the theory of autopoiesis, which provides a formal definition of a living system as a bounded, self-producing, and self-maintaining network \autocite{MaturanaVarela1980}. An agent must satisfy the following five conditions:
 
 \begin{enumerate}
 
@@ -100,14 +100,14 @@ We define an agent \(\mathcal{A}\) as a simply connected submanifold of \(\mathc
 
 \end{enumerate}
 
-We posit that any entity satisfying these criteria constitutes an active, interpretive, agentic participant in the semantic universe.
+We suggest that any entity satisfying these criteria constitutes an active, interpretive agentic participant in the semantic universe.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Semantic Particles as Localized Excitations}
 \label{13.6:semantic_particles_as_localized_excitations}
 
-The duality we find between continuous fields and discrete particles in physics has a direct parallel in this theory. The nonlinear terms in the recurgent field equations support stable, particle-like solutions, or solitons. These were first observed by \autocite{Russell1845} and later formalized \autocite{KortewegdeVries1895, ZabuskyKruskal1965}. These represent localized, self-reinforcing units of meaning that maintain their structural integrity as they traverse the manifold.
+The duality we observe between continuous fields and discrete particles in physics suggests a potential parallel in this theory. The nonlinear terms in the field equations may support stable, particle-like solutions, or solitons. These were first observed by John Scott Russell \autocite{Russell1845} and later formalized by D.J. Korteweg and G. de Vries \autocite{KortewegdeVries1895} and Norman Zabusky and Martin Kruskal \autocite{ZabuskyKruskal1965}. These might represent localized, self-reinforcing units of meaning that maintain their structural integrity as they traverse the manifold.
 
 A typical soliton solution for the coherence field takes the form:
 
@@ -115,7 +115,7 @@ A typical soliton solution for the coherence field takes the form:
 C_i^{\mathrm{sol}}(p, t) = A_i\, \mathrm{sech}^2\left(\frac{d(p, p_0 + vt)}{\sigma}\right) e^{i\phi_i(p, t)}
 \end{equation}
 
-where \(A_i\) is the amplitude, \(\sigma\) is the width, and \(d(p, \dots)\) is the geodesic distance. These \textit{semantic particles} are the fundamental quanta of meaning exchanged and interpreted by agents.
+where \(A_i\) is the amplitude, \(\sigma\) is the width, and \(d(p, \dots)\) is the geodesic distance. We propose that these \textit{semantic particles} might serve as fundamental quanta of meaning exchanged and interpreted by agents.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -136,7 +136,7 @@ We can classify semantic particles by their structure and function:
 
 \end{enumerate}
 
-Each of these is characterized by conserved quantities like semantic charge \(q_s\), coherence mass \(m_c\), and a phase signature, governing their interactions.
+Each of the four is characterized by conserved quantities like semantic charge \(q_s\), coherence mass \(m_c\), and a phase signature, governing their interactions.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -150,7 +150,7 @@ Semantic particles travel along geodesics of the manifold, their paths influence
 \section{Quantum-Analogous Phenomena}
 \label{13.7:quantum_analogous_phenomena}
 
-At fine scales, the particle formalism reveals formal phenomena analogous to quantum mechanics, arising from the fundamental properties of the recurgent field.
+At fine scales, the particle formalism suggests formal phenomena analogous to quantum mechanics, potentially arising from the fundamental properties of the coherence field.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -172,4 +172,4 @@ where \(\hbar_s\) is the semantic uncertainty constant. This principle formalize
 
 A semantic particle can exist in a linear combination of multiple meaning-states (\(|\psi\rangle = \sum_i \alpha_i |C_i\rangle\)) until an interpretive act "collapses" it to a single state. Furthermore, recursive coupling can create non-local, non-factorizable correlations between particles (entanglement), where the state of one instantly affects another regardless of the distance separating them on the manifold.
 
-These properties formalize the intrinsic indeterminacy, context-dependence, and non-locality of meaning within a mathematically precise framework. 
+These properties suggest a potential formalization of the intrinsic indeterminacy, context-dependence, and non-locality of meaning within a mathematically precise framework. 
