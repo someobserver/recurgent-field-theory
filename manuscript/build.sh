@@ -1,6 +1,6 @@
 #!/bin/sh
 cd $(dirname $0)
-xelatex -interaction=nonstopmode recurgent_field_theory.tex
-bibtex recurgent_field_theory
-xelatex -interaction=nonstopmode recurgent_field_theory.tex
-xelatex -interaction=nonstopmode recurgent_field_theory.tex
+xelatex -interaction=nonstopmode recurgence.tex
+bibtex recurgence
+xelatex -interaction=nonstopmode recurgence.tex
+xelatex -interaction=nonstopmode recurgence.tex
