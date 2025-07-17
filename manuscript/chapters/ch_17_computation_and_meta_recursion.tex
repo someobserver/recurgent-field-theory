@@ -142,8 +142,16 @@ For practical implementation, we realize meta-recursive tensors using structures
 
 % ------------------------------------------------------------------------------------------------
 
+\section{Convergence and Stability}
+\label{17.5:convergence_and_stability}
+
+For the hyperbolic components of the field equations, the time-step \(\Delta t\) and spatial discretization \(\Delta x\) must obey the Courant-Friedrichs-Lewy (CFL) condition to ensure convergence \autocite{CourantFriedrichsLewy1928}. For the potentially stiff terms arising from the recursive and potential components of the Lagrangian, implicit or semi-implicit time-stepping methods are required to avoid numerical instability.
+
+
+% ------------------------------------------------------------------------------------------------
+
 \section{Computational Realizability Theorem}
-\label{17.5:computational_realizability_theorem}
+\label{17.6:computational_realizability_theorem}
 
 \paragraph{Statement}
 
@@ -152,15 +160,10 @@ There exists a finite-dimensional discretization of Recurgent Field Theory, nume
 \paragraph{Justification}
 The algorithms we present demonstrate the theorem constructively. The argument rests on the use of well-understood, standard numerical methods (finite differences, Runge-Kutta integrators), for which stability and convergence have been proven. Advanced techniques analogous to those in numerical relativity \autocite{BaumgarteShapiro2010}, combined with adaptive mesh refinement and the efficient tensor representations described above, warrant Recurgent Field Theory as computationally realizable and admissive of physically meaningful predictions.
 
-\subsection{Convergence and Stability}
-\label{17.5.1:convergence_and_stability}
-
-For the hyperbolic components of the field equations, the time-step \(\Delta t\) and spatial discretization \(\Delta x\) must obey the Courant-Friedrichs-Lewy (CFL) condition to ensure convergence \autocite{CourantFriedrichsLewy1928}. For the potentially stiff terms arising from the recursive and potential components of the Lagrangian, implicit or semi-implicit time-stepping methods are required to avoid numerical instability.
-
 % ------------------------------------------------------------------------------------------------
 
 \section{Conclusion}
-\label{17.6:conclusion}
+\label{17.7:conclusion}
 
 In this work, we have constructed a self-consistent physical theory of meaning in tensorial form. From a set of seven axioms, we have derived a dynamical system describing the co-evolution of semantic content and the structure of the space it inhabits. We have shown how the interplay of coherence, recursion, and constraint gives rise to a geometric phenomenology to include phase transitions, attractor dynamics, mathematical emergence criteria, inter-agent communication, and a structural basis for autopoietic self-organization.
 
