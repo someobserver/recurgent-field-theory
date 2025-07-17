@@ -57,7 +57,7 @@ def main() -> None:
             print(f"  {key}")
     
     if not unused_keys and not missing_keys:
-        print("\nAll references are properly cited.")
+        print("\nAll bibliography references are cited in the manuscript.")
 
 if __name__ == "__main__":
     main() 
