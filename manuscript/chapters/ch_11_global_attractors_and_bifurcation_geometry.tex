@@ -16,7 +16,7 @@ The field equations determine the evolution of semantic structures, but not long
 A point in the abstract phase space, whose axes correspond to the global properties of the primary fields, characterizes the state of the RFT system at any moment. The Recurgence Stability Parameter, \(S_R\) (Chapter 7), serves as the primary organizing principle of this space:
 
 \begin{equation}
-S_R(p,t) = \frac{\Phi(C_{\mathrm{mag}})}{V(C_{\mathrm{mag}}) + \lambda \mathcal{H}[R]}
+S_R(p,t) = \frac{\Phi(C_{\mathrm{mag}})}{V(C_{\mathrm{mag}}) + \lambda_H \mathcal{H}[R]}
 \end{equation}
 
 This dimensionless order parameter compares the generative autopoietic potential to the stabilizing and regulatory potentials, and partitions the phase space into three distinct regimes:
@@ -49,7 +49,7 @@ Observable changes in the manifold's structure characterize bifurcation events. 
 
     \item \textbf{Attractor Basin Morphology:} Changes in the number and configuration of attractor basins constitute a direct indicator of bifurcation. Tracking the critical points of the total potential landscape, \(\mathcal{V}_{\text{total}} = V(C) - \Phi(C)\), quantifies this change, revealing where new minima appear or existing ones merge or vanish.
     
-    \item \textbf{Effective Dimensionality:} Changes in the manifold's effective dimensionality can signal a profound structural change. Monitoring the rank of the metric tensor, \(g_{ij}(t)\), detects this. A sudden change in rank, identified via spectral analysis of the metric's eigenvalues, signals a new semantic axis becoming relevant or an old one has collapsed.
+    \item \textbf{Effective Dimensionality:} Changes in the manifold's effective dimensionality can signal a profound structural change. Monitoring the rank of the metric tensor, \(g_{\mu\nu}(t)\), detects this. A sudden change in rank, identified via spectral analysis of the metric's eigenvalues, signals a new semantic axis becoming relevant or an old one has collapsed.
     
     \item \textbf{Recurgent Expansion Rate:} The second temporal derivative of the total semantic mass captures the generative nature of a bifurcation and quantifies the acceleration of meaning-generation in the system:
 
@@ -73,13 +73,13 @@ In a complex, highly interconnected manifold, bifurcations often constitute non-
 \subsection{Measuring Synchronization}
 \label{11.4.1:measuring_synchronization}
 
-We quantify the degree of synchronization between two regions, \(\Omega_i\) and \(\Omega_j\), with a functional that measures the phase alignment of the coherence field \(C_i\). A common method employs a normalized inner product, weighted by the phase of the recursive coupling tensor \(R_{ijk}\) mediating their interaction:
+We quantify the degree of synchronization between two regions, \(\Omega_i\) and \(\Omega_j\), with a functional that measures the phase alignment of the coherence field \(C^\mu\). A common method employs a normalized inner product, weighted by the phase of the recursive coupling tensor \(R^\rho_{\mu\nu}\) mediating their interaction:
 
 \begin{equation}
 \Psi_{ij}(t) = \frac{\left|\int_{\Omega_i \times \Omega_j} C(p,t)C(q,t)e^{i\phi(p,q,t)} \, dp \, dq\right|}{\sqrt{\int_{\Omega_i} |C(p,t)|^2 \, dp \cdot \int_{\Omega_j} |C(q,t)|^2 \, dq}}
 \end{equation}
 
-where \(\phi(p,q,t) = \arg(R_{ijk}(p,q,t))\). A value of \(\Psi_{ij}(t) \approx 1\) indicates the two regions are evolving in perfect synchrony.
+where \(\phi(p,q,t) = \arg(R^\rho_{\mu\nu}(p,q,t))\). A value of \(\Psi_{ij}(t) \approx 1\) indicates the two regions are evolving in perfect synchrony.
 
 % ------------------------------------------------------------------------------------------------
 

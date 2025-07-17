@@ -13,10 +13,10 @@ We have defined the Semantic Manifold, coherence and recursion fields, and the L
 \section{Coherence Field Dynamics}
 \label{10.2:coherence_field_dynamics}
 
-The Euler-Lagrange equation, derived in Chapter 6 from the principle of stationary action, governs the evolution of the coherence field \(C_i\). It provides the primary expression of how semantic content propagates and transforms.
+The Euler-Lagrange equation, derived in Chapter 6 from the principle of stationary action, governs the evolution of the coherence field \(C^\mu\). It provides the primary expression of how semantic content propagates and transforms.
 
 \begin{equation}
-\Box C^i + \frac{\partial V(C_{\mathrm{mag}})}{\partial C_i} - \frac{\partial \Phi(C_{\mathrm{mag}})}{\partial C_i} + \lambda \frac{\partial \mathcal{H}[R]}{\partial C_i} = 0
+\Box C^\mu + \frac{\partial V(C_{\mathrm{mag}})}{\partial C^\mu} - \frac{\partial \Phi(C_{\mathrm{mag}})}{\partial C^\mu} + \lambda_H \frac{\partial \mathcal{H}[R]}{\partial C^\mu} = 0
 \end{equation}
 
 Here, the d'Alembertian operator (\(\Box\)) defines the natural propagation of coherence. The subsequent terms define the influence of stabilizing attractor potentials (\(V\)), generative autopoietic potentials (\(\Phi\)), and the regulatory humility constraint (\(\mathcal{H}\)).
@@ -26,7 +26,7 @@ Here, the d'Alembertian operator (\(\Box\)) defines the natural propagation of c
 \section{Geometric Dynamics}
 \label{10.3:geometric_dynamics}
 
-The geometry of the Semantic Manifold, defined by the metric tensor \(g_{ij}\), is a dynamic entity. Two coupled equations govern its evolution.
+The geometry of the Semantic Manifold, defined by the metric tensor \(g_{\mu\nu}\), is a dynamic entity. Two coupled equations govern its evolution.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -36,48 +36,48 @@ The geometry of the Semantic Manifold, defined by the metric tensor \(g_{ij}\), 
 We formulate the Recurgent Field Equation (Axiom 4), analogous to the Einstein field equations of general relativity \autocite{Einstein1915}, as a fundamental relationship between the manifold's curvature and its semantic content.
 
 \begin{equation}
-R_{ij} - \frac{1}{2}g_{ij}R = 8\pi G_s T^{\text{rec}}_{ij}
+R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R = 8\pi G_s T^{\text{rec}}_{\mu\nu}
 \end{equation}
 
-The recursive stress-energy tensor, \(T^{\text{rec}}_{ij}\), sourced by the coherence field's activity, dictates the manifold's curvature, which is encoded in the Ricci tensor \(R_{ij}\) and scalar curvature \(R\).
+The recursive stress-energy tensor, \(T^{\text{rec}}_{\mu\nu}\), sourced by the coherence field's activity, dictates the manifold's curvature, which is encoded in the Ricci tensor \(R_{\mu\nu}\) and scalar curvature \(R\).
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Metric Evolution}
 \label{10.3.2:metric_evolution}
 
-While the Recurgent Field Equation is a constraint, a flow equation analogous to Hamilton's Ricci flow (Chapter 3) \autocite{Hamilton1982} governs the metric's explicit time-evolution.
+While the Recurgent Field Equation is a constraint, a flow equation analogous to Hamilton's Ricci flow (Chapter \ref{3:semantic_manifold_and_metric_geometry}) \autocite{Hamilton1982} governs the metric's explicit time-evolution.
 
 \begin{equation}
-\frac{\partial g_{ij}}{\partial t} = -2 R_{ij} + F_{ij}(R, D, A)
+\frac{\partial g_{\mu\nu}}{\partial t} = -2 R_{\mu\nu} + F_{\mu\nu}(R, D, A)
 \end{equation}
 
-The metric deforms over time in response to its own intrinsic curvature (\(R_{ij}\)) and to forcing from active recursive processes, captured by the functional \(F_{ij}\).
+The metric deforms over time in response to its own intrinsic curvature (\(R_{\mu\nu}\)) and to forcing from active recursive processes, captured by the functional \(F_{\mu\nu}\). Because \(g_{\mu\nu}\) is a function of time, the Christoffel symbols and the Riemann and Ricci curvature tensors are also time-dependent. All geometric calculations must therefore account for the state of the metric at a specific time.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{The Closed Feedback System}
 \label{10.4:the_closed_feedback_system}
 
-These equations form a tightly coupled and self-regulating system. The coherence field \(C_i\) evolves on the manifold according to the Euler-Lagrange equation, through which the geometry enters via the metric-dependent \(\Box\) operator. The resulting field dynamics generate the recursive stress-energy tensor \(T^{\text{rec}}_{ij}\). This, in turn, sources the manifold's curvature via the Recurgent Field Equation. Finally, the metric evolves explicitly through the Ricci flow, altering the geometry and thereby influencing the future evolution of the coherence field. The feedback loop closes.
+These equations form a tightly coupled and self-regulating system. The coherence field \(C^\mu\) evolves on the manifold according to the Euler-Lagrange equation, through which the geometry enters via the metric-dependent \(\Box\) operator. The resulting field dynamics generate the recursive stress-energy tensor \(T^{\text{rec}}_{\mu\nu}\). This, in turn, sources the manifold's curvature via the Recurgent Field Equation. Finally, the metric evolves explicitly through the Ricci flow, altering the geometry and thereby influencing the future evolution of the coherence field. The feedback loop closes.
 
 The natural paths of semantic structures, or test particles, in this geometry are described by the geodesic equation, which defines the straightest possible lines on a curved surface:
 
 \begin{equation}
-\frac{d^2 p^i}{ds^2} + \Gamma^i_{jk} \frac{dp^j}{ds} \frac{dp^k}{ds} = 0
+\frac{d^2 p^\mu}{ds^2} + \Gamma^\mu_{\nu\rho} \frac{dp^\nu}{ds} \frac{dp^\rho}{ds} = 0
 \end{equation}
 
-Derived from a diffeomorphism-invariant action, the system's architecture guarantees its self-consistency. The geometric construction of the field equations (9.2) automatically conserves the recursive stress-energy tensor ($\nabla_j T^{\text{rec}}_{ij} = 0$), a mathematical consequence of the Bianchi identities \autocite{Bianchi1902}.
+Derived from a diffeomorphism-invariant action, the system's architecture guarantees its self-consistency. The geometric construction of the field equations (9.2) automatically conserves the recursive stress-energy tensor ($\nabla_\nu T^{\text{rec},\mu\nu} = 0$), a mathematical consequence of the Bianchi identities \autocite{Bianchi1902}.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Temporal Dynamics and Conservation}
 \label{10.5:temporal_dynamics_and_conservation}
 
-The bidirectional temporal flow mechanism from Chapter 9 introduces its own dynamics and conservation principles into the coupled system. The temporal force term, \(F^i_{\text{temporal}}\), modifies the coherence field's evolution:
+The bidirectional temporal flow mechanism from Chapter 9 introduces its own dynamics and conservation principles into the coupled system. The temporal force term, \(F^\mu_{\text{temporal}}\), modifies the coherence field's evolution:
 
 \begin{equation}
-F^i_{\text{temporal}} = \frac{\delta(\int \mathcal{L}_{\text{temporal}} dV)}{\delta C_i}
+F^\mu_{\text{temporal}} = \frac{\delta(\int \mathcal{L}_{\text{temporal}} dV)}{\delta C_\mu}
 \end{equation}
 
 This term introduces the causal influence of anticipated future states into the present.
@@ -90,10 +90,10 @@ This term introduces the causal influence of anticipated future states into the 
 The flow of propositions and validations is balanced and preserved by a continuity equation:
 
 \begin{equation}
-\nabla_i P^i + \frac{\partial \rho_V}{\partial t} = 0
+\nabla_\mu P^\mu + \frac{\partial \rho_V}{\partial t} = 0
 \end{equation}
 
-where \(\rho_V = \sqrt{g^{ij} V_{i} V_{j}}\) is the scalar validation density. The divergence of the forward-propagating proposition field is balanced by the change in density of the backward-propagating validation field, ensuring no temporal charge is lost.
+where \(\rho_V = \sqrt{g_{\mu\nu} V^{\mu} V^{\nu}}\) is the scalar validation density. The divergence of the forward-propagating proposition field is balanced by the change in density of the backward-propagating validation field, ensuring no temporal charge is lost.
 
 % ------------------------------------------------------------------------------------------------
 

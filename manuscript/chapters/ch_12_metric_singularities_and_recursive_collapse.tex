@@ -18,7 +18,7 @@ The theory we've constructed predicts three distinct types of semantic singulari
 Attractor Collapse Singularities occur when recursive depth \(D(p, t)\) exceeds a critical threshold \(D_{\text{crit}}\) while the humility operator \(\mathcal{H}[R]\) falls below a minimal eigenvalue \(\lambda_{\text{min}}\):
 
 \begin{equation}
-\lim_{t \to t_c} \det(g_{ij}(p, t)) = 0 \quad \text{where} \quad D(p, t) > D_{\text{crit}},\ \mathcal{H}[R] < \lambda_{\text{min}}
+\lim_{t \to t_c} \det(g_{\mu\nu}(p, t)) = 0 \quad \text{where} \quad D(p, t) > D_{\text{crit}},\ \mathcal{H}[R] < \lambda_{\text{min}}
 \end{equation}
 
 These semantic attractors collapse under excessive recursive pressure.
@@ -26,7 +26,7 @@ These semantic attractors collapse under excessive recursive pressure.
 Bifurcation Singularities appear at topological transitions where the metric tensor rank changes discontinuously. This occurs when the system crosses a critical threshold in its phase space, as defined by the recursion-to-wisdom ratio, \(S_R\):
 
 \begin{equation}
-\operatorname{rank}(g_{ij}(p, t)) \ \text{changes at} \ t = t_c \quad \text{where} \quad S_R(p, t_c) = S_{R, \text{crit}}
+\operatorname{rank}(g_{\mu\nu}(p, t)) \ \text{changes at} \ t = t_c \quad \text{where} \quad S_R(p, t_c) = S_{R, \text{crit}}
 \end{equation}
 
 Here \(S_R\) is the order parameter from Chapter 7, and \(S_{R, \text{crit}}\) is the critical value where the manifold's attractor landscape undergoes a qualitative restructuring.
@@ -49,16 +49,16 @@ Several regularization mechanisms preserve field equation well-posedness and com
 Metric Renormalization introduces a local isotropic term:
 
 \begin{equation}
-g_{ij}^{\text{reg}}(p, t) = g_{ij}(p, t) + \epsilon(p, t) \cdot \delta_{ij}
+g_{\mu\nu}^{\text{reg}}(p, t) = g_{\mu\nu}(p, t) + \epsilon(p, t) \cdot \delta_{\mu\nu}
 \end{equation}
 
 where
 
 \begin{equation}
-\epsilon(p, t) = \epsilon_0 \exp\left[-\alpha \cdot \det(g_{ij}(p, t))\right]
+\epsilon(p, t) = \epsilon_0 \exp\left[-\alpha_{\epsilon} \cdot \det(g_{\mu\nu}(p, t))\right]
 \end{equation}
 
-As \(\det(g_{ij}) \to 0\), the regularization term increases to restore invertibility.
+As \(\det(g_{\mu\nu}) \to 0\), the regularization term increases to restore invertibility.
 
 Semantic Mass Limiting constrains mass via saturation:
 
@@ -71,7 +71,7 @@ This ensures \(M_{\text{reg}}(p, t)\) approaches \(M_{\text{max}}\) as \(M(p, t)
 Humility-Driven Dissipation incorporates a humility-modulated diffusion term:
 
 \begin{equation}
-\frac{\partial g_{ij}}{\partial t} = -2R_{ij} + F_{ij} + \mathcal{H}[R] \nabla^2 g_{ij}
+\frac{\partial g_{\mu\nu}}{\partial t} = -2R_{\mu\nu} + F_{\mu\nu} + \mathcal{H}[R] \nabla^2 g_{\mu\nu}
 \end{equation}
 
 The dynamic dissipation coefficient \(\mathcal{H}[R]\) dissipates recursive tension in regions of excessive curvature.
@@ -105,7 +105,7 @@ Numerical simulation near singularities requires specialized techniques. We adop
 Adaptive Mesh Refinement locally refines the computational grid in high-curvature regions:
 
 \begin{equation}
-\Delta x_{\text{local}} = \Delta x_{\text{global}} \exp(-\beta |R|)
+\Delta x_{\text{local}} = \Delta x_{\text{global}} \exp(-\beta_{\text{mesh}} |R|)
 \end{equation}
 
 where \(\|R\|\) denotes the Ricci tensor norm.
@@ -113,7 +113,7 @@ where \(\|R\|\) denotes the Ricci tensor norm.
 Singularity Excision removes singular loci from the computational domain when regularization fails:
 
 \begin{equation}
-\mathcal{M}_{\text{sim}} = \mathcal{M} \setminus \{p : \det(g_{ij}(p, t)) < \epsilon_{\text{min}}\}
+\mathcal{M}_{\text{sim}} = \mathcal{M} \setminus \{p : \det(g_{\mu\nu}(p, t)) < \epsilon_{\text{min}}\}
 \end{equation}
 
 Causal Boundary Tracking monitors semantic horizon evolution to resolve causal boundary propagation:

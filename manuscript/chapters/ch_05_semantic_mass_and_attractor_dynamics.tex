@@ -19,7 +19,7 @@ Semantic mass, \(M(p,t)\), quantifies the capacity of a structure at point \(p\)
 M(p, t) = D(p, t) \cdot \rho(p, t) \cdot A(p, t)
 \end{equation}
 
-where \(D(p, t)\) is the recursive depth, \(\rho(p, t) = 1/\det(g_{ij})\) is the constraint density, and \(A(p, t)\) is the attractor stability. A weakness in any single component undermines a structure's overall mass. High-mass structures are strong attractors; they stabilize the evolution of the coherence field and resist transformation, regardless of their specific propositional content.
+where \(D(p, t)\) is the recursive depth, \(\rho(p, t) = 1/\det(g_{\mu\nu})\) is the constraint density, and \(A(p, t)\) is the attractor stability. All three contributing factors are defined as dimensionless scalar fields, making the semantic mass \(M(p,t)\) a dimensionless scalar quantity. This mass functions as the source for the recursive stress-energy tensor \(T^{\text{rec}}_{\mu\nu}\) (see \S\ref{4.4:the_recursive_stress_energy_tensor}), directly linking the accumulation of stable, deep, and constrained meaning to the curvature of the manifold. A weakness in any single component undermines a structure's overall mass. High-mass structures constitute strong attractors, stabilizing the evolution of the coherence field and resisting transformation, regardless of their specific propositional content.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -29,10 +29,10 @@ where \(D(p, t)\) is the recursive depth, \(\rho(p, t) = 1/\det(g_{ij})\) is the
 The coupling between recursive activity and semantic curvature is governed by the Recurgent Field Equation (\S\ref{1.4:axiom_4_geometric_coupling_principle}), the form of which parallels the Einstein field equations \autocite{Einstein1915, MisnerThorneWheeler1973, Wald1984}:
 
 \begin{equation}
-R_{ij} - \frac{1}{2}g_{ij}R = 8\pi G_s T^{\text{rec}}_{ij}
+R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R = 8\pi G_s T^{\text{rec}}_{\mu\nu}
 \end{equation}
 
-where \(R_{ij}\) is the Ricci curvature tensor, \(R\) is the scalar curvature, \(g_{ij}\) is the metric, \(T^{\text{rec}}_{ij}\) is the recursive stress-energy tensor (\S\ref{4.4:the_recursive_stress_energy_tensor}), and \(G_s\) is the semantic gravitational constant. The stress, energy, and pressure of recursive thought, encoded in \(T^{\text{rec}}_{ij}\), generate curvature in the Semantic Manifold.
+where \(R_{\mu\nu}\) is the Ricci curvature tensor, \(R\) is the scalar curvature, \(g_{\mu\nu}\) is the metric, \(T^{\text{rec}}_{\mu\nu}\) is the recursive stress-energy tensor (\S\ref{4.4:the_recursive_stress_energy_tensor}), and \(G_s\) is the semantic gravitational constant. The stress, energy, and pressure of recursive thought, encoded in \(T^{\text{rec}}_{\mu\nu}\), generate curvature in the Semantic Manifold.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ High-mass regions generate an attractor potential, \(V(p,t)\), which shapes the 
 V(p, t) = -G_s \int_{\mathcal{M}} \frac{M(q, t)}{d(p, q)} \, dV_q
 \end{equation}
 
-From the gradient of this potential, we define a recursive force field, \(F_i = -\nabla_i V(p,t)\), which directs the evolution of semantic structures toward existing high-mass attractor basins.
+From the gradient of this potential, we define a recursive force field, \(F_\mu = -\nabla_\mu V(p,t)\), which directs the evolution of semantic structures toward existing high-mass attractor basins.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -55,16 +55,16 @@ From the gradient of this potential, we define a recursive force field, \(F_i = 
 Within an attractor basin, we model the local potential energy as a function of the coherence magnitude, \(C_{\text{mag}}\), using a harmonic oscillator. This method of employing a potential function to analyze how the stable states of a system shift and transform as its underlying parameters change is the central technique of catastrophe theory \autocite{Thom1975}. The potential is given by:
 
 \begin{equation}\label{eq:attractor_potential}
-V(C_{\text{mag}}) = \frac{1}{2}k(C_{\text{mag}} - C_0)^2
+V(C_{\text{mag}}) = \frac{1}{2}k_V(C_{\text{mag}} - C_0)^2
 \end{equation}
 
-where \(C_0\) is the equilibrium coherence level at the center of the attractor and \(k\) is the coherence rigidity parameter, or stiffness constant, for the basin.
+where \(C_0\) is the equilibrium coherence level at the center of the attractor and \(k_V\) is the coherence rigidity parameter, or stiffness constant, for the basin.
 
 \begin{itemize}
 
-    \item Soft attractors (e.g., fluid or metaphorical concepts) have a small \(k\).
+    \item Soft attractors (e.g., fluid or metaphorical concepts) have a small \(k_V\).
     
-    \item Hard attractors (e.g., axiomatic or dogmatic structures) have a large \(k\).
+    \item Hard attractors (e.g., axiomatic or dogmatic structures) have a large \(k_V\).
 
 \end{itemize}
 
