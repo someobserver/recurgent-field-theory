@@ -13,23 +13,25 @@ In some regions of semantic space, extreme recursive density induces the geometr
 \section{Classification of Semantic Singularities}
 \label{12.2:classification_of_semantic_singularities}
 
-The theory we've constructed predicts three distinct types of semantic singularities:
+The theory we have constructed predicts three distinct types of semantic singularities:
 
 Attractor Collapse Singularities occur when recursive depth \(D(p, t)\) exceeds a critical threshold \(D_{\text{crit}}\) while the humility operator \(\mathcal{H}[R]\) falls below a minimal eigenvalue \(\lambda_{\text{min}}\):
 
 \begin{equation}
-\lim_{t \to t_c} \det(g_{\mu\nu}(p, t)) = 0 \quad \text{where} \quad D(p, t) > D_{\text{crit}},\ \mathcal{H}[R] < \lambda_{\text{min}}
+\lim_{t \to t_c} \det(g_{\mu\nu}(p, t)) = 0
 \end{equation}
+
+where \(D(p, t) > D_{\text{crit}}\) and \(\mathcal{H}[R] < \lambda_{\text{min}}\), with \(D_{\text{crit}}\) being the critical recursive depth threshold and \(\lambda_{\text{min}}\) the minimal humility eigenvalue.
 
 These semantic attractors collapse under excessive recursive pressure.
 
 Bifurcation Singularities appear at topological transitions where the metric tensor rank changes discontinuously. This occurs when the system crosses a critical threshold in its phase space, as defined by the recursion-to-wisdom ratio, \(S_R\):
 
 \begin{equation}
-\operatorname{rank}(g_{\mu\nu}(p, t)) \ \text{changes at} \ t = t_c \quad \text{where} \quad S_R(p, t_c) = S_{R, \text{crit}}
+\operatorname{rank}(g_{\mu\nu}(p, t)) \ \text{changes at} \ t = t_c
 \end{equation}
 
-Here \(S_R\) is the order parameter from Chapter 7, and \(S_{R, \text{crit}}\) is the critical value where the manifold's attractor landscape undergoes a qualitative restructuring.
+where \(S_R(p, t_c) = S_{R, \text{crit}}\). Here \(S_R\) is the order parameter from Chapter 7, and \(S_{R, \text{crit}}\) is the critical value where the manifold's attractor landscape undergoes a qualitative restructuring.
 
 Semantic Event Horizons form in regions of extreme semantic mass where the temporal metric component vanishes asymptotically:
 
@@ -37,7 +39,7 @@ Semantic Event Horizons form in regions of extreme semantic mass where the tempo
 g_{00}(p, t) \to 0 \quad \text{as} \quad r \to r_s = 2G_s M(p, t)
 \end{equation}
 
-The geodesic distance \(r\) from the singularity center defines a semantic event horizon at \(r_s\), beyond which coherence cannot escape.
+where \(r\) is the geodesic distance from the singularity center, \(r_s\) is the semantic event horizon radius, \(G_s\) is the semantic gravitational constant, and \(M(p, t)\) is the semantic mass. Beyond the horizon \(r_s\), coherence cannot escape.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -52,13 +54,13 @@ Metric Renormalization introduces a local isotropic term:
 g_{\mu\nu}^{\text{reg}}(p, t) = g_{\mu\nu}(p, t) + \epsilon(p, t) \cdot \delta_{\mu\nu}
 \end{equation}
 
-where
+where \(\epsilon(p, t)\) is the regularization term given by:
 
 \begin{equation}
 \epsilon(p, t) = \epsilon_0 \exp\left[-\alpha_{\epsilon} \cdot \det(g_{\mu\nu}(p, t))\right]
 \end{equation}
 
-As \(\det(g_{\mu\nu}) \to 0\), the regularization term increases to restore invertibility.
+where \(\epsilon_0\) is the regularization strength parameter and \(\alpha_{\epsilon}\) controls the regularization decay rate. As \(\det(g_{\mu\nu}) \to 0\), the regularization term increases to restore invertibility.
 
 Semantic Mass Limiting constrains mass via saturation:
 
@@ -66,7 +68,7 @@ Semantic Mass Limiting constrains mass via saturation:
 M_{\text{reg}}(p, t) = \frac{M(p, t)}{1 + \frac{M(p, t)}{M_{\text{max}}}}
 \end{equation}
 
-This ensures \(M_{\text{reg}}(p, t)\) approaches \(M_{\text{max}}\) as \(M(p, t) \to \infty\).
+where \(M_{\text{max}}\) is the maximum allowable semantic mass, such that \(M_{\text{reg}}(p, t)\) approaches \(M_{\text{max}}\) as \(M(p, t) \to \infty\).
 
 Humility-Driven Dissipation incorporates a humility-modulated diffusion term:
 
@@ -116,8 +118,12 @@ Singularity Excision removes singular loci from the computational domain when re
 \mathcal{M}_{\text{sim}} = \mathcal{M} \setminus \{p : \det(g_{\mu\nu}(p, t)) < \epsilon_{\text{min}}\}
 \end{equation}
 
+where \(\epsilon_{\text{min}}\) is the minimum acceptable metric determinant threshold.
+
 Causal Boundary Tracking monitors semantic horizon evolution to resolve causal boundary propagation:
 
 \begin{equation}
 \frac{d}{dt} r_s(p, t) = 2G_s \frac{dM(p, t)}{dt}
 \end{equation}
+
+where the semantic horizon radius \(r_s(p, t)\) evolves in proportion to the rate of semantic mass accumulation.

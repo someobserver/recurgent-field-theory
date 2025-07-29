@@ -24,18 +24,26 @@ We represent the continuous Semantic Manifold \(\mathcal{M}\) as a discrete set 
 p_i(t) = \{\psi^\mu(t), C^\mu(t), g_{\mu\nu}(t), M(t), W(t)\}
 \end{equation}
 
-The components are core fields: the fundamental semantic field \(\psi\), coherence field \(C\), metric \(g_{\mu\nu}\), semantic mass \(M\), and wisdom field \(W\). The reference implementation represents the fields \(\psi\) and \(C\) as 2000-dimensional vectors.
+where \(\psi^\mu(t)\) is the fundamental semantic field, \(C^\mu(t)\) is the coherence field, \(g_{\mu\nu}(t)\) is the metric tensor, \(M(t)\) is the semantic mass, and \(W(t)\) is the wisdom field. The reference implementation represents the fields \(\psi\) and \(C\) as 2000-dimensional vectors.
 
 % ------------------------------------------------------------------------------------------------
 
 \subsection{Metric and Curvature Tensors}
 \label{17.2.2:metric_and_curvature_tensors}
 
-The metric tensor \(g_{\mu\nu}\) is fundamental; it defines the geometry from which all other properties derive. We compute it from the semantic field's gradients with a second-order finite difference approximation, a standard technique in numerical analysis \autocite{BurdenFairesBurden2015}.
+The metric tensor \(g_{\mu\nu}\) is fundamental; it defines the geometry from which all other properties derive. We compute it from the semantic field's gradients with a second-order finite difference approximation, a standard technique in numerical analysis \autocite{BurdenFairesBurden2016}.
 
 \begin{equation}
-g_{\mu\nu}(p,t) = \sum_{\rho=1}^n \frac{\partial \psi_\rho}{\partial x^\mu} \frac{\partial \psi_\rho}{\partial x^\nu} + \delta_{\mu\nu}, \quad \text{where} \quad \frac{\partial \psi_\rho}{\partial x^\mu} \approx \frac{\psi_\rho(x + h e_\mu) - \psi_\rho(x - h e_\mu)}{2h}
+g_{\mu\nu}(p,t) = \sum_{\rho=1}^n \frac{\partial \psi_\rho}{\partial x^\mu} \frac{\partial \psi_\rho}{\partial x^\nu} + \delta_{\mu\nu}
 \end{equation}
+
+where the partial derivatives are approximated using second-order finite differences:
+
+\begin{equation}
+\frac{\partial \psi_\rho}{\partial x^\mu} \approx \frac{\psi_\rho(x + h e_\mu) - \psi_\rho(x - h e_\mu)}{2h}
+\end{equation}
+
+where \(h\) is the discretization step size and \(e_\mu\) is the unit vector in the \(\mu\)-direction.
 
 The Christoffel symbols \(\Gamma^\rho_{\mu\nu}\) and the full Riemann curvature tensor \(R^{\rho}_{\sigma\mu\nu}\) are then computed from the discretized metric field via their standard definitions, employing finite differences for the required derivatives. These serve as the direct geometric indicators of pathological curvature.
 
@@ -133,6 +141,8 @@ For practical implementation, we realize meta-recursive tensors using structures
     \begin{equation}
     R^{(n)} \approx \sum_{\alpha_1, \ldots, \alpha_{n-1}} A^{(1)}_{\alpha_1} \otimes A^{(2)}_{\alpha_1 \alpha_2} \otimes \cdots \otimes A^{(n)}_{\alpha_{n-1}}
     \end{equation}
+    
+    where \(A^{(i)}\) are the component tensors and \(\alpha_i\) are the bond indices connecting the network components.
 
     \item \textbf{Categorical Formalisms:} We can describe meta-recursion using the language of category theory \autocite{MacLane1998}, where recursive structures are objects and structure-preserving maps are morphisms. This allows us to compose algebraic definitions of compression, abstraction, and the collapse of recursive levels.
     
@@ -165,8 +175,8 @@ The algorithms we present demonstrate the theorem constructively. The argument r
 \section{Conclusion}
 \label{17.7:conclusion}
 
-We have constructed a self-consistent field theory of semantic dynamics in tensorial form. From a set of seven axioms, we derived a dynamical system describing the co-evolution of semantic content and the structure of the space it inhabits. We have demonstrated mechanisms for the interplay of coherence, recursion, and constraint giving rise to a geometric phenomenology including phase transitions, attractor dynamics, mathematical emergence criteria, and inter-agent communication.
+In this and the preceding chapters, we have constructed a self-consistent field theory of semantic dynamics in tensorial form. From a set of seven axioms (Chapter \ref{1:axiomatic_foundation}), we derived a dynamical system describing the co-evolution of semantic content and the structure of the space it inhabits (Chapter \ref{10:the_coupled_system_of_field_equations}). We have demonstrated mechanisms for the interplay of coherence, recursion, and constraint giving rise to a geometric phenomenology including phase transitions (\S\ref{7.3:the_recurgence_phase_transition}), attractor dynamics (\S\ref{5.3:the_recurgent_field_equation}), mathematical emergence criteria (\S\ref{13.5:formal_definition_of_an_agent}), and inter-agent communication (\S\ref{14.3:inter_agent_communication_mechanisms}).
 
-This field theory provides a novel mathematical language for describing semantic systems. The framework exhibits structural distinctions between static, recursive architectures and dynamic, recurgent systems with bidirectional temporal coupling. The bidirectional temporal mechanisms formalize anticipatory and retroactive interpretive processes within the mathematical structure.
+This field theory proposes a novel mathematical language for describing semantic systems. It quantifies structural distinctions between static recursive architectures (\S\ref{9.2:recursive_systems_static_temporal_geometry}), and dynamic recurgent systems with bidirectional temporal coupling (\S\ref{9.3:recurgent_systems_dynamic_temporal_geometry}). The bidirectional temporal mechanisms in \S\ref{9.6:bidirectional_temporal_flow_in_recurgent_systems} formalize anticipatory and retroactive interpretive processes.
 
-The framework yields concrete predictions through a formal taxonomy of epistemic pathologies with measurable geometric signatures, establishing clear paths to computational implementation and empirical validation. Future applications may include semantic analysis in artificial intelligence systems and multi-agent coordination problems.
+The framework yields concrete predictions through a formal taxonomy of epistemic pathologies (\S\ref{16.2:taxonomy_of_epistemic_pathologies}) with measurable geometric signatures (\S\ref{16.3:algorithmic_and_geometric_signatures}), establishing clear paths to computational implementation and empirical validation. Future applications may include semantic analysis in artificial intelligence systems and multi-agent coordination problems.
