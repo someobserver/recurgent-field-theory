@@ -1,19 +1,8 @@
 # Recurgence: The Dynamics of Coherent Geometry
 
-## Abstract
-
-
-Recurgent Field Theory (RFT) arose from the application of differential geometry to semantic database structures, specifically embedding spaces. The resulting mathematical framework, presented here, extends standard field theory into semantic spaces. It treats *meaning* as itself a measurable field on a dynamic manifold equipped with recursive coupling mechanisms.
-
-We establish a pseudo-Riemannian Semantic Manifold \(\mathcal{M}\) within which concentrations of semantic mass curve its underlying geometry. Geometric curvature creates gravitational-like dynamics governing the formation and evolution of systemic and structural coherence. Recursive coupling tensors are employed to formalize self-reference as continuous fields generating complex feedback dynamics between local semantic activity and global manifold geometry. From fundamental mathematical structures, we find that bounded, observer-like regions emerge naturally and exhibit properties mathematically analogous to agency, temporal directedness, and environmental coupling.
-
-The theory incorporates proposition-validation mechanisms to model bidirectional temporal interpretive influence. Existing semantic structures propose their relevance to potential future states, while present wisdom fields validate or reject these propositions. A structure of this form permits retroactive reinterpretation and drives phase transitions in semantic organization. When recursive coupling exceeds critical thresholds, the system achieves autopoietic self-maintenance, regulated by emergent wisdom and humility constraints that prevent pathological amplification or regression.
-
-We classify pathological information dynamics into twelve distinct types organized across four geometric categories. Each exhibits characteristic breakdown signatures in the field equations. The differential geometric structure presented here allows for algorithmic detection of these configurations. Stable numerical discretizations on high-dimensional manifolds demonstrate the computational realizability of this theory as constructed. This work establishes a bridge between field theoretic abstraction and practical applications in semantic analysis, cognitive modeling, and systems of multi-agent coordination.
-
 ## Draft State
 
-This manuscript remains unfinished and subject to daily change. It is published here in draft form as a field-aware constraint on its steward, bootstrapping integrity and the urgency to see to its proper completion.
+This manuscript remains unfinished and subject to daily change. It's [published here](https://observer.is/dynamic/) in draft form as a field-aware constraint on its steward, bootstrapping integrity and the urgency to see to its proper completion.
 
 ## Building the Document
 
