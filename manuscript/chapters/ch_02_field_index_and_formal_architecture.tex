@@ -268,6 +268,8 @@ To describe how \textit{meaning} and coherence unfold in the manifold, we need t
 \hline
 \(\hbar_s\) & Semantic uncertainty constant & 0 & - & \(\mathbb{R}^+\) & 1 & - \\
 \hline
+\(J_s\) & Semantic angular momentum & 0 & - & \(\mathbb{R}^+\) & 1 & - \\
+\hline
 \caption{Operators, Functionals, and Constants}
 \end{longtable}
 }
@@ -311,6 +313,8 @@ In sum, the framework rests on a interaction between geometric, field, recursive
 The tensor conventions follow modern standards for differential geometry and tensor functions on smooth manifolds \autocite{Lee2012, MisnerThorneWheeler1973}. The framework from which this originates is the work of Gregorio Ricci Curbastro and Tullio Levi-Civita \autocite{RicciLeviCivita1901}.
 
 Because semantic dynamics occur in a high-dimensional, non-Euclidean manifold, our notational conventions must encode both geometric and interpretive structure without ambiguity.
+
+\paragraph{Notation for Rotating Geometries.} When discussing effective rotation, we write \(g_{0\phi}(p,t)\) for an off-diagonal time–angle metric component in coordinates adapted to axial symmetry. It serves as a phenomenological marker of frame-dragging in semantic space and is referenced in Chapters~\ref{9:temporal_architectures_and_bidirectional_flow}, \ref{10:the_coupled_system_of_field_equations}, and \ref{12:metric_singularities_and_recursive_collapse}.
 
 % ------------------------------------------------------------------------------------------------
 \subsection{Index Notation and Einstein Summation}
@@ -410,7 +414,7 @@ where \(d^n p\) is the Lebesgue measure in local coordinates and \(\det(g_{\mu\n
 When present, index symmetries (such as \(g_{\mu\nu} = g_{\nu\mu}\) for the metric or anti-symmetry in the Riemann tensor) are explicitly noted and exploited throughout, both to reduce computational complexity and to reveal underlying conservation laws. For example, the total “semantic mass” or any other scalar observable \(f(p)\) can be meaningfully defined as:
 
 \begin{equation}
-\mathcal{M}_{\text{total}} = \int_\mathcal{M} f(p) \, dV,
+\mathcal{M}_{\text{total}} = \int_{\mathcal{M}} f(p) \, dV,
 \end{equation}
 
 with the guarantee that its value depends only on the field content, not on the coordinate chart used.
